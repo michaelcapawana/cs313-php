@@ -17,9 +17,9 @@
     </script>
 </head>
 <body id="content">
-  <div id="d1" name="div1">Michael</div>
-  <div class="d2">Truman</div>
-  <div class="d3">Capawana</div>
+  <div id="d1" name="div1">Benjamin</div>
+  <div class="d2">Rajendra</div>
+  <div class="d3">Dass</div>
 
   <p><button onclick="buttonClicked()">Click me!</button></p>
 
