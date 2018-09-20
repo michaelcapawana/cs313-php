@@ -1,0 +1,32 @@
+ #content {
+ 	  align: center;
+ }
+
+ #d1 {
+     background-color: olive;
+     font-size: 50px;
+ }
+
+ .d2 {
+     background-color: pink;
+     font-size: 40px;
+ }
+ .d3 {
+     background-color: blue;
+     font-size: 30px;
+ }
+
+ #d1:hover {
+ 	   background: rgba(178, 178, 102,0.3);
+ 	   font-weight: bold;
+ }
+
+ .d2:hover {
+ background: rgba(255, 192, 203, 0.3);
+ font-weight: bold;
+}
+
+ .d3:hover {
+ 	   background: rgba(0, 0, 255, 0.3);
+ 	   font-weight: bold;
+ }

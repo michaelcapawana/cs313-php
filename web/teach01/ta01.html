@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Activity 1</title>
+  <script type="text/javascript" src="ta01.js"></script>
+  <link rel="stylesheet" type="text/css" href="ta01.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("#d1").css("background-color", $('#change').val());
+    });
+    $("#fadeInOut").click(function(){
+    $(".d3").fadeToggle(2000);
+    });
+    });
+    </script>
+</head>
+<body id="content">
+  <div id="d1" name="div1">Benjamin</div>
+  <div class="d2">Rajendra</div>
+  <div class="d3">Dass</div>
+
+  <p><button onclick="buttonClicked()">Click me!</button></p>
+
+  <p>
+    <input type="text" id="change">
+    <button>Change color</button>
+    </p>
+
+  <p><button id="fadeInOut">Fade!</button></p>
+</body>
+</html>
