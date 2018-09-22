@@ -10,7 +10,18 @@
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>
-  <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
+<div class="flexcontainer">
+  <div>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+  <div>
+    <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
+  </div>
+</div>
   <?php
      echo "Studies Computer Science at BYU-Idaho";
      echo "Accepted an offer from USAA as a Software Engineer";
