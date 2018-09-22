@@ -51,6 +51,7 @@ img {
 #list li {
       display : inline-block;
       font: 120px;
+      color: white;
 }
 
 li {
