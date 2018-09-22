@@ -21,7 +21,7 @@
 </div>
 
 <?php
-   echo "Today is " . date("l") . ", ". date("m-d-Y") . "<br>";
+   echo <id="echo"> "Today is " . date("l") . ", ". date("m-d-Y") . "<br>";
    ?>
 
 </body>
