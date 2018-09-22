@@ -20,9 +20,9 @@
   </ul>
 </div>
 
-  <?php
-     echo "Today is " . date("l") ", ". date("m-d-Y") . "<br>";
-     ?>
+<?php
+   echo "Today is " . date("l") ", ". date("m-d-Y") . "<br>";
+   ?>
 
 </body>
 </html>
