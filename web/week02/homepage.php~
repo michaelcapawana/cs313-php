@@ -10,7 +10,7 @@
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>
-<div class="flexcontainer">
+<div class="wrap">
   <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
