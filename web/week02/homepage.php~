@@ -15,7 +15,7 @@
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted an offer from USAA as a Software Engineer</li>
-    <li>Married for 2 years to Andreza</li>
+    <li>Married for 2 years to Andreza Capawana</li>
     <li>Served a mission in Vitoria, Brazil</li>
   </ul>
 

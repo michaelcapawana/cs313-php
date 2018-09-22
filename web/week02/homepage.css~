@@ -30,7 +30,17 @@ img {
 }
 
 #list {
-  display: inline;
+    background-image: url(ulbackground.png);
+    list-style-type: none;	
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 621px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#list li {
+      display : inline-block;
 }
 
 li {
