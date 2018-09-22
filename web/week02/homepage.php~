@@ -6,7 +6,7 @@
 </head>
 <body>
  <ul id="navbar">
-  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="#Home">Home</a></li>
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>

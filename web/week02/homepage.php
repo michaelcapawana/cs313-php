@@ -18,9 +18,10 @@
     <li>Married for 2 years to Andreza Capawana</li>
     <li>Served a mission in Vitoria, Brazil</li>
   </ul>
-
 </div>
+
   <?php
+     echo "Today is " . date("l") ", ". date("m-d-Y") . "<br>";
      ?>
 
 </body>
