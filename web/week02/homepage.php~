@@ -11,6 +11,11 @@
 </ul>
   <h1>Michael Capawana</h1>
 <div class="flexcontainer">
+  <ul style="float: left; min-width: 500px; border-right: solid 1px;">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+  </ul>
   <div>
     <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   </div>
