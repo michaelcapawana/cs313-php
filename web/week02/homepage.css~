@@ -54,10 +54,11 @@ img {
 
 li {
     float: left;
+    font: 60px;
 }
 
 li a {
-    font: 40px
+    font: 40px;
     display: block;
     color: #B3E1F1;
     text-align: center;
