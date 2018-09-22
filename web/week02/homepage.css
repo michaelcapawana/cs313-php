@@ -1,3 +1,23 @@
+body, html {
+    height: 75%;
+}
+
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #ffffff;
+    background-color: #3e3e42;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 14pt;
+    padding: 65px;
+    text-align: center;
+}
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
