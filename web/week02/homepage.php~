@@ -11,9 +11,7 @@
 </ul>
   <h1>Michael Capawana</h1>
 <div class="flexcontainer">
-  <div>
-    <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
-  </div>
+  <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   <ul style="float: right; min-width: 500px; border-right: solid 1px;">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted an offer from USAA as a Software Engineer</li>

@@ -9,7 +9,7 @@
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>
-  <h1>Michael Capawana</h1>
+  <h1>ichael Capawana</h1>
 <div class="flexcontainer">
   <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   <ul style="float: right; min-width: 500px; border-right: solid 1px;">
