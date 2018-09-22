@@ -50,8 +50,7 @@ img {
 
 #list li {
       display : inline-block;
-      font: 120px;
-      color: white;
+      font-size: 80px;
 }
 
 li {
@@ -60,7 +59,7 @@ li {
 }
 
 li a {
-    font: 40px;
+    font-size: 40px;
     display: block;
     color: #B3E1F1;
     text-align: center;
