@@ -11,7 +11,7 @@ h1 {
    font-size: 35px;
    color: #333;
    margin-top: 5px;
-   margin-left: 120px;
+   margin-left: 130px;
    margin-bottom: 5px;
 }
 
@@ -51,6 +51,7 @@ img {
 #list li {
       display : inline-block;
       font-size: 30px;
+      margin-bottom: 20px;
 }
 
 li {

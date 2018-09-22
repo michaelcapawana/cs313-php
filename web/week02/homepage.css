@@ -5,13 +5,15 @@
 .wrap img {
   display: table-cell;
   vertical-align: middle;
+  width: 500px;
+  height: 500px;
 }
 
 h1 {
    font-size: 35px;
    color: #333;
    margin-top: 5px;
-   margin-left: 120px;
+   margin-left: 130px;
    margin-bottom: 5px;
 }
 
