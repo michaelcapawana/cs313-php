@@ -2,7 +2,7 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #DFE0DB;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -22,7 +22,7 @@ li {
 li a {
     font: 40px
     display: block;
-    color: white;
+    color: #B3E1F1;
     text-align: center;
     text-decoration: none;
     padding: 30px 16px;
