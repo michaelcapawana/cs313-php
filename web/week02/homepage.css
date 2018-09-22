@@ -15,6 +15,7 @@ h1 {
 }
 
 body {
+    font: 40px;
     line-height: 1.8;
     color: #000000;
     background-color: #DFE0DB;
@@ -49,6 +50,7 @@ img {
 
 #list li {
       display : inline-block;
+      font: 120px;
 }
 
 li {
