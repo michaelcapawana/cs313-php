@@ -2,7 +2,30 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #ffffff;
-    background-color: #3e3e42;
+    background-color: #ffffff;
     background-size: cover;
     background-attachment: fixed;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }

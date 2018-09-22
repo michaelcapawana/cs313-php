@@ -2,7 +2,7 @@ body {
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     color: #ffffff;
-    background-color: #3e3e42;
+    background-color: #ffffff;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -19,10 +19,10 @@ li {
 }
 
 li a {
+    font: 40px
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
