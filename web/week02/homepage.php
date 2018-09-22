@@ -22,8 +22,7 @@
 
 <?php
    echo '<div class="echo">Today is</div>';
-   echo . date("m-d-Y");
-   ?>
+      ?>
 
 </body>
 </html>
