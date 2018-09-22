@@ -41,7 +41,6 @@ img {
 }
 
 #list {
-    background-image: url(ulbackground.png);
     list-style-type: none;	
     background-repeat: no-repeat;
     height: 105px;
@@ -71,4 +70,5 @@ li a {
 
 li a:hover {
     background-color: #111;
+    color: #ffffff;
 }
