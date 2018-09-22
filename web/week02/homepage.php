@@ -26,7 +26,7 @@
   <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   <?php
      echo "Studies Computer Science at BYU-Idaho";
-     echo "Accepted an offer from USAA as a Software Enigineer";
+     echo "Accepted an offer from USAA as a Software Engineer";
      echo "Married for 2 years to Andreza";
      echo "Served a mission in Vitoria, Brazil";
      ?>
