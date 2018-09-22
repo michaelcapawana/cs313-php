@@ -9,14 +9,14 @@
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>
-  <h1>ichael Capawana</h1>
+  <h1>Michael Capawana</h1>
 <div class="flexcontainer">
   <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   <ul style="float: right; min-width: 500px; border-right: solid 1px;">
-    <li>Studies Computer Science at BYU-Idaho</li>
-    <li>Accepted an offer from USAA as a Software Engineer</li>
-    <li>Married for 2 years to Andreza</li>
-    <li>Served a mission in Vitoria, Brazil</li>
+    <li id="list">Studies Computer Science at BYU-Idaho</li>
+    <li id="list">Accepted an offer from USAA as a Software Engineer</li>
+    <li id="list">Married for 2 years to Andreza</li>
+    <li id="list">Served a mission in Vitoria, Brazil</li>
   </ul>
 
 </div>
