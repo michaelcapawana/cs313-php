@@ -12,7 +12,7 @@
   <h1>Michael Capawana</h1>
 <div class="flexcontainer">
   <div>
-    <ul>
+    <ul id="list">
       <li>Item 1</li>
       <li>Item 2</li>
       <li>Item 3</li>
