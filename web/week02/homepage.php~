@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="homepage.css" />
 </head>
 <body>
- <ul>
+ <ul id="navbar">
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#Coming Soon">Coming Soon</a></li>
 </ul>

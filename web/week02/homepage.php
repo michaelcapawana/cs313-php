@@ -12,13 +12,6 @@
   <h1>Michael Capawana</h1>
 <div class="flexcontainer">
   <div>
-    <ul id="list">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-  </div>
-  <div>
     <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
   </div>
 </div>
