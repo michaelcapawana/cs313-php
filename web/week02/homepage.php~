@@ -11,7 +11,7 @@
 </ul>
   <h1>Michael Capawana</h1>
 <div class="wrap">
-  <img src="sandpoint.png" alt="Sandpoint" width="500" height="500">
+  <img src="sandpoint.png" alt="Sandpoint">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>
