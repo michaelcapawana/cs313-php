@@ -21,7 +21,7 @@
 </div>
 
 <?php
-   echo '<div class="echo">"Today is " . date("m-d-Y")</div>';
+   echo "<div class=\"echo\">"Today is"  . date("m-d-Y")</div>";
    ?>
 
 </body>
