@@ -18,7 +18,7 @@ img {
     margin-right: 50px;
 }
 
-ul {
+#navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
