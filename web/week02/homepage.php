@@ -5,11 +5,12 @@
   <link rel="stylesheet" type="text/css" href="homepage.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    $(".wrap").fadeOut(function() { 
+    $(".wrap").click(function(){
+    $("#sandpoint").fadeOut(function() { 
     $(this).load(function() { $(this).fadeIn(); }); 
     $(this).attr("src", "http://sstatic.net/su/img/logo.png"); 
     }); 
-    </script>
+  </script>
 </head>
 <body>
  <ul id="navbar">
@@ -18,7 +19,7 @@
 </ul>
   <h1>Michael Capawana</h1>
 <div class="wrap">
-  <img src="sandpoint.png" alt="Sandpoint">
+  <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>
