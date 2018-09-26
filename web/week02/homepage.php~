@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="homepage.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    $("#wrap").click(function(){
+    $(".wrap").click(function(){
     $("#sandpoint").fadeOut(function() { 
     $(this).load(function() { $(this).fadeIn(); }); 
     $(this).attr("src", "http://sstatic.net/su/img/logo.png"); 
@@ -18,7 +18,7 @@
   <li><a href="assignments.php">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>
-<div id="wrap">
+<div class="wrap">
   <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>

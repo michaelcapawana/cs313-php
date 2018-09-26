@@ -6,10 +6,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(".wrap").click(function(){
-    $("#sandpoint").fadeOut(function() { 
-    $(this).load(function() { $(this).fadeIn(); }); 
-    $(this).attr("src", "http://sstatic.net/su/img/logo.png"); 
-    }); 
+
+      $("#sandpoint").fadeOut(500, function() {
+        $(this).attr("src", "http://1.static.s-trojmiasto.pl/zdj/c/2/132/100x70/1320882__kr.jpg");
+        $(this).load(function () {
+          $(this).fadeIn(500);
+        });
+      });
+    });
   </script>
 </head>
 <body>
