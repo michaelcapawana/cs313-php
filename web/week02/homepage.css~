@@ -2,11 +2,11 @@
   font-size: 16px;
   margin-left:160px;
 }
-.wrap {
+#wrap {
   display: table;
 }
 
-.wrap img {
+#wrap img {
   display: table-cell;
   vertical-align: middle;
   width: 500px;
