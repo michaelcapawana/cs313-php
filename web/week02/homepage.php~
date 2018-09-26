@@ -6,8 +6,8 @@
 </head>
 <body>
  <ul id="navbar">
-  <li><a class="active" href="#Home">Home</a></li>
-  <li><a href="https://stark-lake-55725.herokuapp.com/week02/assignments.php">Coming Soon</a></li>
+  <li><a class="active" href="homepage.php">Home</a></li>
+  <li><a href="assignments.php">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>
 <div class="wrap">

@@ -3,6 +3,13 @@
 <head>
   <title>Michael Capawana Homepage</title>
   <link rel="stylesheet" type="text/css" href="homepage.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(".wrap").fadeOut(function() { 
+    $(this).load(function() { $(this).fadeIn(); }); 
+    $(this).attr("src", "http://sstatic.net/su/img/logo.png"); 
+    }); 
+    </script>
 </head>
 <body>
  <ul id="navbar">
