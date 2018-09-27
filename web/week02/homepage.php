@@ -11,6 +11,7 @@
           $(this).attr("src", "us.PNG");
           $(this).load(function () {
             $(this).fadeIn(500);
+            return false;
           })
         })
       });

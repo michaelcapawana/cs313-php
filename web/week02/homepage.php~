@@ -7,14 +7,12 @@
   <script>
     $(document).ready(function(){
       $(".wrap").click(function(e){
-        e.preventDefault();
-<!--        $("#sandpoint").fadeOut(500, function() {-->
-          $("#sandpoint").attr("src", "us.PNG");
-          return false;
-<!--          $(this).load(function () {
+        $("#sandpoint").fadeOut(500, function() {
+          $(this).attr("src", "us.PNG");
+          $(this).load(function () {
             $(this).fadeIn(500);
           })
-        });-->
+        })
       });
     });
   </script>
