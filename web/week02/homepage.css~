@@ -26,10 +26,6 @@ body {
 img {
     float: left;
     margin-left: 30px;
-    position:absolute;
-    display: none;
-    width:200px;
-    height:200px;
 }
 
 #navbar {
