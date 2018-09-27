@@ -51,3 +51,28 @@ img {
     width: 621px;
     vertical-align: middle;
     display: table-cell;
+}
+
+#list li {
+      display : inline-block;
+      font-size: 30px;
+      margin-bottom: 20px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 28px;
+    display: block;
+    color: #B3E1F1;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+li a:hover {
+    background-color: #111;
+    color: #ffffff;
+}
