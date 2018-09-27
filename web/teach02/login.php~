@@ -13,8 +13,8 @@
 </ul>
 <div class="wrap">
   <ul id="list">
-  <li><a color="black" class="active" href="">Login as Administrator</a></li>
-  <li><a color="black" href="">Login as Tester</a></li>
+  <li><a color:"#000000" class="active" href="">Login as Administrator</a></li>
+  <li><a color:"#000000" href="">Login as Tester</a></li>
   </ul>
 </div>
 

@@ -6,11 +6,9 @@
 
 </head>
 <body>
- <ul id="navbar">
-  <li><a class="active" href="home.php">Home</a></li>
-  <li><a href="about.php">About Us</a></li>
-  <li><a href="login.php">Login</a></li>
-</ul>
+<?php
+require("nav.php");
+?>
 <div class="wrap">
   <ul id="list">
   <li><a color:"#000000" class="active" href="">Login as Administrator</a></li>
