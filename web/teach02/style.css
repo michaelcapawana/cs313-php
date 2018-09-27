@@ -1,0 +1,53 @@
+echo {
+  font-size: 16px;
+  margin-left:160px;
+}
+.wrap {
+  display: table;
+}
+
+.wrap img {
+   height: 500px;
+   width: 500px;
+}
+
+h1 {
+   font-size: 35px;
+   color: #333;
+   margin-top: 5px;
+   margin-left: 130px;
+   margin-bottom: 5px;
+}
+
+body {
+    font: 40px;
+    line-height: 1.8;
+    color: #000000;
+    background-color: #DFE0DB;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    float: left;
+    margin-left: 30px;
+    height: 500px;
+    width: 500px;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#list {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    height: 105px;
+    width: 621px;
+    vertical-align: middle;
+    display: table-cell;
