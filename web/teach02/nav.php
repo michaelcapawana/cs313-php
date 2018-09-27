@@ -1,6 +1,5 @@
 <?php
 $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
-echo "The current value is $file";
 ?>
 
 <nav class="nav">
