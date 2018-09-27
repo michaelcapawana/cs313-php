@@ -5,18 +5,16 @@
   <link rel="stylesheet" type="text/css" href="homepage.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-
-$(document).ready(function(){
-    $(".wrap").click(function(){
-
-      $("#sandpoint").fadeOut(500, function() {
-        $(this).attr("src", "us.PNG");
-       $(this).load(function () {
-         <!-- $(this).fadeIn(500);-->
+    $(document).ready(function(){
+      $(".wrap").click(function(){
+        $("#andpoint").fadeOut(500, function() {
+          $(this).attr("src", "us.PNG");
+          $(this).load(function () {
+            $(this).fadeIn(500);
+          });
         });
       });
     });
-});
   </script>
 </head>
 <body>
