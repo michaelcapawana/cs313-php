@@ -6,7 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('#sandpoint').fadeIn(1500).delay(3500).fadeOut(1500);
+      $('#sandpoint').fadeIn(0).delay(5000).fadeOut(1500);
       $('#us').delay(5000).fadeIn(1500);
 <!--      $(".wrap").click(function(){
         $("#sandpoint").fadeOut(500, function() {
@@ -27,7 +27,7 @@
   <h1>Michael Capawana</h1>
 <div class="wrap">
   <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
-  <img id="us" src="us.PNG" alt="Us">
+  <img id="us" src="us.PNG" alt="Us" display="none">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>
