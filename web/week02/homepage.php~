@@ -7,10 +7,10 @@
   <script>
     $(document).ready(function(){
       $(".wrap").click(function(){
-        $("#andpoint").fadeOut(500, function() {
+        $("#sandpoint").fadeOut(500, function() {
           $(this).attr("src", "us.PNG");
           $(this).load(function () {
-            $(this).fadeIn(500);
+            $("#us").fadeIn(500);
           });
         });
       });
@@ -25,6 +25,7 @@
   <h1>Michael Capawana</h1>
 <div class="wrap">
   <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
+  <img id="us" src="us.PNG" alt="Us">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>
