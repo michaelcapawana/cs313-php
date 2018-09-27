@@ -2,8 +2,10 @@
   font-size: 16px;
   margin-left:160px;
 }
-
-#sandpoint {
+.wrap {
+  display: table;
+}
+.wrap img {
   display: table-cell;
   vertical-align: middle;
   width: 100px;
