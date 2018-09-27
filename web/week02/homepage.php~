@@ -8,7 +8,7 @@
     $(".wrap").click(function(){
 
       $("#sandpoint").fadeOut(500, function() {
-        $(this).attr("src", "http://1.static.s-trojmiasto.pl/zdj/c/2/132/100x70/1320882__kr.jpg");
+        $(this).attr("src", "us.PNG");
         $(this).load(function () {
           $(this).fadeIn(500);
         });

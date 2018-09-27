@@ -22,7 +22,7 @@
   <li><a href="assignments.php">Coming Soon</a></li>
 </ul>
   <h1>Michael Capawana</h1>
-<div class="wrap">
+<div id="wrap">
   <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
