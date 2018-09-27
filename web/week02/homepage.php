@@ -25,7 +25,7 @@
   <h1>Michael Capawana</h1>
 <div class="wrap">
   <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
-  <img id="us" src="us.PNG" alt="Us" display="none">
+  <img id="us" src="us.PNG" alt="Us" visibility="hidden">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>
