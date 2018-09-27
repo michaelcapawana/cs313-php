@@ -15,7 +15,7 @@
 <div class="wrap">
   <img id="clothes" src="clothes.png" alt="clothes">
   <ul id="list">
-    <li>We sell all of the clothes you need</li>
+    <li>We sell all of the clothes you need.</li>
   </ul>
 </div>
 
@@ -26,4 +26,3 @@
 
 </body>
 </html>
-

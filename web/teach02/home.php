@@ -13,9 +13,8 @@
 </ul>
   <h1>Clothing Store</h1>
 <div class="wrap">
-  <img id="clothes" src="clothes.png" alt="clothes">
   <ul id="list">
-    <li>We sell all of the clothes you need</li>
+    <li>Welcome, You are curently not logged in</li>
   </ul>
 </div>
 
