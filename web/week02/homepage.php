@@ -10,6 +10,7 @@
         e.preventDefault();
 <!--        $("#sandpoint").fadeOut(500, function() {-->
           $("#sandpoint").attr("src", "us.PNG");
+          return false;
 <!--          $(this).load(function () {
             $(this).fadeIn(500);
           })
