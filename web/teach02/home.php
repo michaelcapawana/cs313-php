@@ -14,10 +14,10 @@
 <div class="wrap">
   <img id="clothes" src="clothes.png" alt="clothes">
   <ul id="list">
-    <li>Shirts</li>
-    <li>Pants</li>
-    <li>Shoes</li>
-    <li>Jewlery</li>
+    <li>Shirts                     </li>
+    <li>Pants                      </li>
+    <li>Shoes                      </li>
+    <li>Jewlery                    </li>
   </ul>
 </div>
 
