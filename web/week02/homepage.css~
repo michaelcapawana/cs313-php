@@ -9,8 +9,8 @@
 #sandpoint {
   display: table-cell;
   vertical-align: middle;
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
 }
 
 h1 {
