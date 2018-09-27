@@ -9,9 +9,8 @@
       $(".wrap").click(function(){
         $("#sandpoint").fadeOut(500, function() {
           $("#sandpoint").attr("src", "us.PNG");
-          $(this).load(function () {
+<!--          $(this).load(function () {-->
             $(this).fadeIn(500);
-          });
         });
       });
     });
