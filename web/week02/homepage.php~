@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("#sandpoint").fadeOut(500, function() {
         $(this).attr("src", "us.PNG");
         $(this).load(function () {
-          $(this).fadeIn(500);
+          $(this).fadeIn(0);
         });
       });
     });
@@ -26,7 +26,7 @@ $(document).ready(function(){
 </ul>
   <h1>Michael Capawana</h1>
 <div class="wrap">
-  <img id="sandpoint" src="us.PNG" alt="Sandpoint">
+  <img id="sandpoint" src="sandpoint.png" alt="Sandpoint">
   <ul id="list">
     <li>Studies Computer Science at BYU-Idaho</li>
     <li>Accepted offer from USAA as a Software Engineer</li>

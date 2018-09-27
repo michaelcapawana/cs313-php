@@ -11,9 +11,9 @@ $(document).ready(function(){
 
       $("#sandpoint").fadeOut(500, function() {
         $(this).attr("src", "us.PNG");
-        $(this).load(function () {
-          $(this).fadeIn(0);
-        });
+       <!-- $(this).load(function () {
+          $(this).fadeIn(500);
+        });-->
       });
     });
 });
