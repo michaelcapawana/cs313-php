@@ -6,7 +6,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".wrap").click(function(){
+      $(".wrap").click(function(e){
+        e.preventDefault();
         $("#sandpoint").fadeOut(500, function() {
           $(this).attr("src", "us.PNG");
           $(this).load(function () {
