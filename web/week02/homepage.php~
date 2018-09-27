@@ -12,8 +12,8 @@
           $(this).load(function () {
             $(this).fadeIn(500);
             return false;
-          })
-        })
+          });
+        });
       });
     });
   </script>

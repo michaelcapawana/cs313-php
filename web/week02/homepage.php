@@ -6,11 +6,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".wrap").click(function(e){
-        $("#sandpoint").fadeOut(500, function() {
-          $(this).attr("src", "us.PNG");
-          $(this).load(function () {
-            $(this).fadeIn(500);
+      $(".wrap").click(function(){
+<!--        $("#sandpoint").fadeOut(500, function() {-->
+          $("#sandpoint").attr("src", "us.PNG");
+      <!--    $(this).load(function () {
+            $(this).fadeIn(500);-->
             return false;
           });
         });
