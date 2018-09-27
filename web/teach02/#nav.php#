@@ -2,10 +2,12 @@
 $file = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);
 ?>
 
-<nav class="nav">
-  
  <ul id="navbar">
-  
+  <li><a class="active" href="homepage.php">Home</a></li>
+  <li><a href="assignments.php">Coming Soon</a></li>
+</ul>
+
+
 
 <li class="nav-item <?php if ($file === 'about') echo 'active' ?>">
 <a href="about.php">About Us</a>

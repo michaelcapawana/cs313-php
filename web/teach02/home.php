@@ -6,7 +6,6 @@
 
 </head>
 <body>
-
 <?php
 require("nav.php");
 ?>
