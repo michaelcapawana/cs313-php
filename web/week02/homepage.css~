@@ -6,7 +6,7 @@
   display: table;
 }
 
-#wrap img {
+#sandpoint {
   display: table-cell;
   vertical-align: middle;
   width: 500px;
