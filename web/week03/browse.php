@@ -9,6 +9,18 @@
     box-sizing: border-box;
 }
 
+h1 {
+    size: 40px;
+    position: center;
+    color: green;
+}
+
+h2 {
+    size: 40px;
+    position: center;
+    color: green;
+}
+
 .column {
     float: left;
     width: 33.33%;
@@ -37,6 +49,7 @@
 ?>
 
 <h1>Michael's Padaria</h1>
+<h2>Home of the Best Brazilian Treats</h2>
 
 <div class="row">
   <div class="column">
