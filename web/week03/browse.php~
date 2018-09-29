@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color:  #009B3A;
+}
+
 h1 {
     font-size: 60px;
     text-align: center;

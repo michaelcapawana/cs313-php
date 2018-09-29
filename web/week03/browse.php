@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Michael's Padaria</title>
+  <title>Michael's Brazilian Treats</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 
 <style>
@@ -18,13 +18,6 @@ h1 {
     text-align: center;
     color: #FEDF00;
     margin: 2px;
-}
-
-h2 {
-    font-size: 40px;
-    text-align: center;
-    color: #FEDF00;
-    margin: 0px;
 }
 
 .banner {
@@ -63,8 +56,7 @@ h2 {
 ?>
 
 <div class="banner">
-<h1>Michael's Padaria</h1>
-<h2>Home of the Best Brazilian Treats</h2>
+<h1>Michael's Brazilian Treats</h1>
 </div>
 
 <div class="food">
