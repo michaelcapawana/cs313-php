@@ -22,7 +22,7 @@ h1 {
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     color: #FEDF00;
     margin-top: 1px;
