@@ -55,12 +55,6 @@ h6 {
     background-color: #009B3A;
 }
 
-.text::after {
-    display: table;
-    clear: both;
-
-}
-
 .row::after {
     content: "";
     clear: both;
@@ -85,7 +79,7 @@ h6 {
 <div class="row">
   <div class="column">
     <img src="bolo.jpg" alt="Snow" style="width:100%">
-    <div class="text">
+    <div>
       <h6>Bolo - $5</h6>
       <button>Add to Cart</button>
     </div>
