@@ -51,6 +51,12 @@ h6 {
     background-color: #009B3A;
 }
 
+.text::after {
+    display: table;
+    clear: both;
+
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -75,7 +81,10 @@ h6 {
 <div class="row">
   <div class="column">
     <img src="bolo.jpg" alt="Snow" style="width:100%">
-    <h6>Bolo - $5</h6>
+    <div class="text">
+      <h6>Bolo - $5</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
   <div class="column">
     <img src="coxinha.jpg" alt="Forest" style="width:100%">
@@ -83,7 +92,7 @@ h6 {
   </div>
   <div class="column">
     <img src="empadinha.jpg" alt="Mountains" style="width:100%">
-    <h6>Empadinha de Frango - $2</h6>
+    <h6>Empadinha - $2</h6>
   </div>
 </div>
 <div class="row">
