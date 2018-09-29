@@ -20,7 +20,7 @@ h2 {
     font-size: 40px;
     text-align: center;
     color: green;
-    padding: 0px;
+    margin: 0px;
 }
 
 .column {
