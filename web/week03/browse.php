@@ -36,7 +36,10 @@ h6 {
 .column {
     float: left;
     width: 33.33%;
-    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .column img {
@@ -76,11 +79,11 @@ h6 {
   </div>
   <div class="column">
     <img src="coxinha.jpg" alt="Forest" style="width:100%">
-    <h6>Coxinha - $4</h6>
+    <h6>Coxinha - $3</h6>
   </div>
   <div class="column">
     <img src="empadinha.jpg" alt="Mountains" style="width:100%">
-    <h6>Empadinha de Frango - $4</h6>
+    <h6>Empadinha de Frango - $2</h6>
   </div>
 </div>
 <div class="row">
