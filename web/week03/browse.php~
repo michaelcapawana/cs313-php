@@ -36,24 +36,24 @@
 
 <div class="row">
   <div class="column">
-    <img src="bolo" alt="Snow" style="width:100%">
+    <img src="bolo.jpg" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="coxinha" alt="Forest" style="width:100%">
+    <img src="coxinha.jpg" alt="Forest" style="width:100%">
   </div>
   <div class="column">
-    <img src="empadinha" alt="Mountains" style="width:100%">
+    <img src="empadinha.jpg" alt="Mountains" style="width:100%">
   </div>
 </div>
 <div class="row">
   <div class="column">
-    <img src="salgado" alt="Snow" style="width:100%">
+    <img src="salgado.jpg" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="sonho" alt="Forest" style="width:100%">
+    <img src="sonho.jpg" alt="Forest" style="width:100%">
   </div>
   <div class="column">
-    <img src="paoDeMel" alt="Mountains" style="width:100%">
+    <img src="paoDeMel.jpg" alt="Mountains" style="width:100%">
   </div>
 </div>
 

@@ -15,7 +15,11 @@
     padding: 5px;
 }
 
-/* Clearfix (clear floats) */
+.img {
+    height: 150px;
+    width: 150px;
+}
+
 .row::after {
     content: "";
     clear: both;
