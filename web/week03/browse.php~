@@ -12,15 +12,19 @@
 h1 {
     font-size: 60px;
     text-align: center;
-    color: green;
+    color: #009B3A;
     margin: 2px;
 }
 
 h2 {
     font-size: 40px;
     text-align: center;
-    color: green;
+    color: #009B3A;
     margin: 0px;
+}
+
+.banner {
+    background-color: #FEDF00
 }
 
 .column {
@@ -32,6 +36,10 @@ h2 {
 .column img {
     height: 250px;
     width: 150px;
+}
+
+.food {
+    background-color: #002776;
 }
 
 .row::after {
@@ -50,9 +58,12 @@ h2 {
 //require("nav.php");
 ?>
 
+<div class="banner">
 <h1>Michael's Padaria</h1>
 <h2>Home of the Best Brazilian Treats</h2>
+</div>
 
+<div class="food">
 <div class="row">
   <div class="column">
     <img src="bolo.jpg" alt="Snow" style="width:100%">
@@ -75,7 +86,7 @@ h2 {
     <img src="paoDeMel.jpg" alt="Mountains" style="width:100%">
   </div>
 </div>
-
+</div>
 </body>
 </html>
 
