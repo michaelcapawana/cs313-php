@@ -13,6 +13,10 @@ body {
     background-color:  #009B3A;
 }
 
+button {
+    float: right;
+}
+
 h1 {
     font-size: 60px;
     text-align: center;
