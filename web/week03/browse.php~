@@ -12,19 +12,19 @@
 h1 {
     font-size: 60px;
     text-align: center;
-    color: #009B3A;
+    color: #FEDF00;
     margin: 2px;
 }
 
 h2 {
     font-size: 40px;
     text-align: center;
-    color: #009B3A;
+    color: #FEDF00;
     margin: 0px;
 }
 
 .banner {
-    background-color: #FEDF00
+    background-color: #009B3A;
 }
 
 .column {
@@ -39,7 +39,7 @@ h2 {
 }
 
 .food {
-    background-color: #002776;
+    background-color: #009B3A;
 }
 
 .row::after {
