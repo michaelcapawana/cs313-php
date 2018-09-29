@@ -17,7 +17,7 @@ h1 {
     font-size: 60px;
     text-align: center;
     color: #FEDF00;
-    margin: 2px;
+    margin-top: 2px;
 }
 
 .banner {

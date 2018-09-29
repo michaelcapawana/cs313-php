@@ -18,6 +18,7 @@ h1 {
     text-align: center;
     color: #FEDF00;
     margin-top: 2px;
+    margin-bottom: 0px;
 }
 
 .banner {
