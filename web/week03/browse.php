@@ -31,6 +31,7 @@ h6 {
     color: #FEDF00;
     margin-top: 1px;
     margin-bottom: 0px;
+    display: inline-block;
 }
 
 .banner {
