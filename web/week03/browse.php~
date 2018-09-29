@@ -21,7 +21,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-h1 {
+h6 {
     font-size: 14px;
     text-align: center;
     color: #FEDF00;
