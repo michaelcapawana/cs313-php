@@ -15,7 +15,7 @@
     padding: 5px;
 }
 
-.img {
+.column img {
     height: 150px;
     width: 150px;
 }

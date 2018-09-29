@@ -12,11 +12,11 @@
 .column {
     float: left;
     width: 33.33%;
-    padding: 5px;
+    padding: 20px;
 }
 
 .column img {
-    height: 150px;
+    height: 300px;
     width: 150px;
 }
 
