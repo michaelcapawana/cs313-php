@@ -4,22 +4,57 @@
   <title>Michael's Padaria</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+
 </head>
+
+
+
 <body>
 <?php
 //require("nav.php");
 ?>
 
-  <h1>Michael's Padaria</h1>
-<div class="wrap">
-  <ul id="list">
-    <li>Coxinha</li>
-    <li>Empadinha de Frango</li>
-    <li>Pao de Mel</li>
-    <li>Salgado</li>
-    <li>Sonho</li>
-    <li>Bolo</li>
-  </ul>
+<h1>Michael's Padaria</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="bolo" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="coxinha" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="empadinha" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="salgado" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sonho" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="paoDeMel" alt="Mountains" style="width:100%">
+  </div>
 </div>
 
 </body>
