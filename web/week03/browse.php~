@@ -57,7 +57,7 @@ h6 {
 }
 
 .items {
-    width: 10%;
+    width: 80%;
 }
 
 .row::after {
