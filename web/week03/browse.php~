@@ -58,7 +58,7 @@ h6 {
 
 .items {
     width: 60%;
-    margin-left: 80px;
+    margin-left: 70px;
 }
 
 .row::after {
@@ -77,10 +77,12 @@ h6 {
 //require("nav.php");
 ?>
 
+
+
+
 <div class="banner">
 <h1>Michael's Brazilian Treats</h1>
 </div>
-
 <div class="food">
 <div class="row">
   <div class="column">
@@ -92,25 +94,40 @@ h6 {
   </div>
   <div class="column">
     <img src="coxinha.jpg" alt="Forest" style="width:100%">
-    <h6>Coxinha - $3</h6>
+    <div class="items">
+      <h6>Coxinha - $3</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
   <div class="column">
     <img src="empadinha.jpg" alt="Mountains" style="width:100%">
-    <h6>Empadinha - $2</h6>
+    <div class="items">
+      <h6>Empadinha - $2</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
 </div>
 <div class="row">
   <div class="column">
     <img src="salgado.jpg" alt="Snow" style="width:100%">
-    <h6>Salgado - $4</h6>
+    <div class="items">
+      <h6>Salgado - $4</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
   <div class="column">
     <img src="sonho.jpg" alt="Forest" style="width:100%">
-    <h6>Sonho - $2</h6>
+    <div class="items">
+      <h6>Sonho - $2</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
   <div class="column">
     <img src="paoDeMel.jpg" alt="Mountains" style="width:100%">
-    <h6>Pao de Mel - $3</h6>
+    <div class="items">
+      <h6>Pao de Mel - $3</h6>
+      <button>Add to Cart</button>
+    </div>
   </div>
 </div>
 </div>

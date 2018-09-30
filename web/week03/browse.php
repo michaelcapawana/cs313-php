@@ -57,7 +57,7 @@ h6 {
 }
 
 .items {
-    width: 60%;
+    width: 65%;
     margin-left: 70px;
 }
 
