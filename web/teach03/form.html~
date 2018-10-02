@@ -21,6 +21,13 @@
   <br>
   <textarea rows="10" cols="30" name="comments">comments</textarea>
   <br>
+  <input type="checkbox" name="continent" value="NA">North America<br>
+  <input type="checkbox" name="continent" value="SA">South America<br>
+  <input type="checkbox" name="continent" value="E">Europe<br>
+  <input type="checkbox" name="continent" value="AS">Asia<br>
+  <input type="checkbox" name="continent" value="AU">Australia<br>
+  <input type="checkbox" name="continent" value="AF">Africa<br>
+  <input type="checkbox" name="continent" value="AN">Antarctica<br>
   <input type="submit" value="Submit">
 </form> 
 
