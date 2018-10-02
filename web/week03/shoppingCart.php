@@ -75,7 +75,14 @@ h6 {
 
 <body>
 <?php
-//require("nav.php");
+   if($_SESSION['haveBolo'] === True)
+   {
+     echo "it works!";
+   }   
+   else 
+   {
+     echo "Nope";
+   }
 ?>
 
 <div class="banner">
