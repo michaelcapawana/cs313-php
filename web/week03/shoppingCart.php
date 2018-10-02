@@ -87,10 +87,15 @@ h6 {
 ?>
 
 <div class="banner">
-<h1>Shopping Cart</h1>
+  <h1>Shopping Cart</h1>
 </div>
 
-
+<div class="cartItems">
+  <ul>
+    <li>Bolo</li>
+    <li>Coxinha</li>
+  </ul>
+</div>
 
 
 </body>
