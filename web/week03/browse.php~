@@ -14,6 +14,7 @@ body {
 }
 
 button {
+    display: inline-block;
     float: right;
 }
 
@@ -74,7 +75,12 @@ h6 {
 
 <body>
 <?php
-//require("nav.php");
+
+
+
+
+$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel)
+
 ?>
 
 

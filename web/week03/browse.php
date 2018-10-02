@@ -75,7 +75,17 @@ h6 {
 
 <body>
 <?php
-//require("nav.php");
+   $bolo = 0;
+   if(isset($_POST['addBolo'])){
+       addBolo();
+   }
+   addBolo() {
+       $bolo += 1;
+       echo "You have $bolo bolos in your cart";
+   }
+
+$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel)
+
 ?>
 
 
@@ -90,7 +100,12 @@ h6 {
     <img src="bolo.jpg" alt="Snow" style="width:100%">
     <div class="items">
       <h6>Bolo - $5</h6>
-      <button>Add to Cart</button>
+
+
+<form method="post">
+    <button name="addBolo">Add to Cart</button>
+</form>
+
     </div>
   </div>
   <div class="column">
