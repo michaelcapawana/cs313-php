@@ -75,18 +75,18 @@ h6 {
 
 <body>
 <?php
-   echo "Hello World";
-  /* $bolo = 0;
+   $bolo = 0;
    if(isset($_POST['addBolo'])){
-       addBolo();
+       //addBolo();
+       echo "This worked";"
    }
-   addBolo() {
+   /*addBolo() {
        $bolo += 1;
        echo "You have $bolo bolos in your cart";
-   }
+   }*/
 
 //$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel);
-*/
+
 ?>
 
 

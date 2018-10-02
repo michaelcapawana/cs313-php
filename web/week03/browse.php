@@ -78,7 +78,7 @@ h6 {
    $bolo = 0;
    if(isset($_POST['addBolo'])){
        //addBolo();
-       echo "This worked";"
+       echo "This worked";
    }
    /*addBolo() {
        $bolo += 1;
