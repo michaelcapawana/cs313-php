@@ -92,23 +92,23 @@ h6 {
      {
        echo "Bolo<br>";
      }   
-     if($_SESSION['haveBolo'] === True)
+     if($_SESSION['haveCoxinha'] === True)
      {
        echo "Coxinha<br>";
      }
-     if($_SESSION['haveBolo'] === True)
+     if($_SESSION['haveEmpadinha'] === True)
      {
        echo "Empadinha<br>";
      }
-     if($_SESSION['haveBolo'] === True)
+     if($_SESSION['haveSalgado'] === True)
      {
        echo "Salgado<br>";
      }
-     if($_SESSION['haveBolo'] === True)
+     if($_SESSION['haveSonho'] === True)
      {
        echo "Sonho<br>";
      }
-     if($_SESSION['haveBolo'] === True)
+     if($_SESSION['havePaoDeMel'] === True)
      {
        echo "Pao de Mel<br>";
      }

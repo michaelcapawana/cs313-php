@@ -90,27 +90,27 @@ h6 {
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Bolo";
+       echo "Bolo<br>";
      }   
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Coxinha";
+       echo "Coxinha<br>";
      }
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Empadinha";
+       echo "Empadinha<br>";
      }
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Salgado";
+       echo "Salgado<br>";
      }
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Sonho";
+       echo "Sonho<br>";
      }
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Pao de Mel";
+       echo "Pao de Mel<br>";
      }
 
    }
