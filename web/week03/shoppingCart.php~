@@ -90,13 +90,29 @@ h6 {
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
-       echo "it works!";
+       echo "Bolo";
      }   
-     else 
+     if($_SESSION['haveBolo'] === True)
      {
-       echo "Nope<br>";
+       echo "Coxinha";
      }
-     echo "Yep";
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Empadinha";
+     }
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Salgado";
+     }
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Sonho";
+     }
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Pao de Mel";
+     }
+
    }
 ?>
 
@@ -106,8 +122,7 @@ h6 {
 
 <div class="cartItems">
   <ul>
-    <li><?php display()?></li>
-    <li>Coxinha</li>
+    <?php display()?>
   </ul>
 </div>
 
