@@ -9,8 +9,8 @@ The continents you have visited are:
 <?php
 $continent = $_POST["continents"];
 foreach ($continents as $continent) {
-  echo $_POST["continent"]; ?><br>
+  echo $_POST["continent"]; <br>
 }
-
+?>
 </body>
 </html> 
