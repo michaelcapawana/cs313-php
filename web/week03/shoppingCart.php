@@ -40,7 +40,7 @@ h6 {
 }
 
 .cartItems {
-    padding: 0px;
+    padding: 20px;
     background-color: white;
     font-size: 35px;
     text-align: left;
