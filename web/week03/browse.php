@@ -75,7 +75,7 @@ h6 {
 
 <body>
 <?php
-   $bolo = 0;
+   $bolo = "";
    if(isset($_POST['addBolo'])){
        addBolo();
    }
