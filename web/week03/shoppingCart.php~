@@ -94,7 +94,7 @@ h6 {
      }   
      else 
      {
-       echo "Nope";
+       echo "Nope\n";
      }
      echo "Yep";
    }
