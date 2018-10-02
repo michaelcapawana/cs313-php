@@ -44,6 +44,7 @@ h6 {
     background-color: white;
     font-size: 35px;
     text-align: left;
+    margin: 400px;
 }
 .column {
     float: left;
