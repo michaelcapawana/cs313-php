@@ -14,10 +14,10 @@
   <input type="text" name="email" value="johndoe@byui.edu">
   <br><br>
   Major:<br>
-  <input type="radio" name="csmajor" value="Computer Science">Computer Science<br>
-  <input type="radio" name="webmajor" value="Web Design and Development">Web Design and Development<br>
-  <input type="radio" name="citmajor" value="Computer Information Technology">Computer Information Technology<br>
-  <input type="radio" name="cemajor" value="Computer Engineering">Computer Engineering<br>
+  <input type="radio" name="major" value="Computer Science">Computer Science<br>
+  <input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
+  <input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
+  <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>
   <br>
   <textarea rows="10" cols="30" name="comments">comments</textarea>
   <br>
