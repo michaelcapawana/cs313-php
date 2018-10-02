@@ -76,17 +76,18 @@ h6 {
 <body>
 <?php
    $bolo = False;
+   $coxinha = False;
+   $empadinha = False;
+   $salgado = False;
+   $sonho = False;
+   $paoDeMel = False;
+
    if(isset($_POST['addBolo'])){
        $bolo = True;
        $_SESSION['haveBolo'] = $bolo;
    }
-   if($_SESSION['haveBolo'] === True)
-   {
-       echo "We have cake";
-   }
-   else {
-       echo "No cake";
-   }
+   
+
 
 //$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel);
 
@@ -96,6 +97,8 @@ h6 {
 
 
 <div class="banner">
+
+<a href="shoppingCart.php">Shopping Cart</a>
 <h1>Michael's Brazilian Treats</h1>
 </div>
 <div class="food">

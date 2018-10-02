@@ -75,7 +75,7 @@ h6 {
 
 <body>
 <?php
-session_start();
+   session_start();
    if($_SESSION['haveBolo'] === True)
    {
      echo "it works!";

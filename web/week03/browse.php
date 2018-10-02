@@ -75,6 +75,7 @@ h6 {
 
 <body>
 <?php
+   session_start();
    $bolo = False;
    $coxinha = False;
    $empadinha = False;
