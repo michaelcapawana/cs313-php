@@ -75,13 +75,14 @@ h6 {
 
 <body>
 <?php
-   $bolo = "";
+   $bolo = $_SESSION['numBolo'];
    if(isset($_POST['addBolo'])){
        addBolo();
    }
    function addBolo() {
        $bolo++;
        echo "You have $bolo bolos in your cart";
+       $_SESSION['numBolo'] = $bolo;
    }
 
 //$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel);
