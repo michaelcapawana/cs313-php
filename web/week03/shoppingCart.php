@@ -46,6 +46,8 @@ h6 {
     text-align: left;
     margin-left: 350px;
     margin-right: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .column {
     float: left;

@@ -40,11 +40,12 @@ h6 {
 }
 
 .cartItems {
-    padding: 200px;
+    padding: 0px;
     background-color: white;
     font-size: 35px;
     text-align: left;
-    margin: 400px;
+    margin-left: 350px;
+    margin-right: 350px;
 }
 .column {
     float: left;
