@@ -7,9 +7,9 @@ Your major is: <?php echo $_POST["major"]; ?><br>
 Your comments say: <?php echo $_POST["comments"]; ?><br>
 The continents you have visited are: 
 <?php
-$continent = $_POST["continents"];
+$continents = $_POST["continents"];
 foreach ($continents as $continent) {
-  echo $_POST["continent"]; <br>
+  echo $continent . "<br>";
 }
 ?>
 </body>
