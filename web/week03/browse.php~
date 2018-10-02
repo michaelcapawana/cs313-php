@@ -75,11 +75,11 @@ h6 {
 
 <body>
 <?php
-   $bolo = $_SESSION['numBolo'];
    if(isset($_POST['addBolo'])){
        addBolo();
    }
    function addBolo() {
+       $bolo = $_SESSION['numBolo'];
        $bolo++;
        echo "You have $bolo bolos in your cart";
        $_SESSION['numBolo'] = $bolo;
