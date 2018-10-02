@@ -75,18 +75,17 @@ h6 {
 
 <body>
 <?php
-   $bolo = 0;
-   echo "You have $bolo bolos in your cart";
+   $bolo = False;
    if(isset($_POST['addBolo'])){
-       //addBolo();
-       $bolo++;
-       echo "You have $bolo bolos in your cart";
+       $bolo = True;
+       $_SESSION['haveBolo'] = $bolo;
    }
-   function addBolo() {
-       $bolo = $_SESSION['numBolo'];
-       $bolo++;
-       echo "You have $bolo bolos in your cart";
-       $_SESSION['numBolo'] = $bolo;
+   if($_SESSION['haveBolo'] === True)
+   {
+       echo "We have cake";
+   }
+   else {
+       echo "No cake";
    }
 
 //$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel);
