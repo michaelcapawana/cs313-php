@@ -48,6 +48,7 @@ h6 {
     margin-right: 350px;
     margin-top: 15px;
     margin-bottom: 15px;
+    height: 300px;
 }
 .column {
     float: left;
