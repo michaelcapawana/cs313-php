@@ -6,7 +6,7 @@
 <body>
 
 <h1>Enter Your Data Below</h1>
-<form action="/action_page.php">
+<form action="/results.php" method="post">
   Name:<br>
   <input type="text" name="name" value="John Doe">
   <br>
