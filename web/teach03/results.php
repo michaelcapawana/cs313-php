@@ -11,6 +11,6 @@ $continent = $_POST["continents"];
 foreach ($continents as $continent) {
   echo $_POST["continent"]; ?><br>
 }
-?>
+
 </body>
 </html> 
