@@ -19,7 +19,7 @@
   <input type="radio" name="citmajor" value="Computer Information Technology">Computer Information Technology<br>
   <input type="radio" name="cemajor" value="Computer Engineering">Computer Engineering<br>
   <br>
-  <input type="textarea" rows="10" cols="30" name="comments" value="comments">
+  <textarea rows="10" cols="30" name="comments">comments</textarea>
   <br>
   <input type="submit" value="Submit">
 </form> 
