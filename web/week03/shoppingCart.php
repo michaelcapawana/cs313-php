@@ -82,9 +82,6 @@ h6 {
 <h1>Shopping Cart</h1>
 </div>
 
-<?php 
-
-
 
 
 
