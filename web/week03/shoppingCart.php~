@@ -87,13 +87,15 @@ h6 {
 <body>
 <?php
    session_start();
-   if($_SESSION['haveBolo'] === True)
-   {
-     echo "it works!";
-   }   
-   else 
-   {
-     echo "Nope";
+   function display() {
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "it works!";
+     }   
+     else 
+     {
+       echo "Nope";
+     }
    }
 ?>
 
@@ -103,7 +105,7 @@ h6 {
 
 <div class="cartItems">
   <ul>
-    <li>Bolo</li>
+    <li><?php display()?></li>
     <li>Coxinha</li>
   </ul>
 </div>
