@@ -77,6 +77,7 @@ h6 {
 <?php
    if(isset($_POST['addBolo'])){
        addBolo();
+       unset($_POST['addBolo']);
    }
    function addBolo() {
        $bolo = $_SESSION['numBolo'];
