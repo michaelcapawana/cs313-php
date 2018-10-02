@@ -75,7 +75,7 @@ h6 {
 
 <body>
 <?php
-  // echo "Hello World";
+  /* echo "Hello World";
    $bolo = 0;
    if(isset($_POST['addBolo'])){
        addBolo();
@@ -86,7 +86,7 @@ h6 {
    }
 
 //$products = array("bolo" => $bolo, "coxinha" => $coxinha, "empadinha" => $empadinha, "salgado" => $salgado, "sonho" = $sonho, "paoDeMel" => $paoDeMel);
-
+*/
 ?>
 
 
