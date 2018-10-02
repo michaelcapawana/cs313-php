@@ -78,9 +78,8 @@ h6 {
    $bolo = 0;
    if(isset($_POST['addBolo'])){
        addBolo();
-       echo "This worked";
    }
-   func addBolo() {
+   function addBolo() {
        $bolo += 1;
        echo "You have $bolo bolos in your cart";
    }

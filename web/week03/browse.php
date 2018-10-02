@@ -80,7 +80,7 @@ h6 {
        addBolo();
    }
    function addBolo() {
-       $bolo += 1;
+       $bolo++;
        echo "You have $bolo bolos in your cart";
    }
 
