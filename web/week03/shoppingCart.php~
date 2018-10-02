@@ -39,6 +39,12 @@ h6 {
     background-color: #009B3A;
 }
 
+.cartItems {
+    padding: 200px;
+    background-color: white;
+    font-size: 35px;
+    text-align: left;
+}
 .column {
     float: left;
     width: 33.33%;
