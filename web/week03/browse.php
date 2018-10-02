@@ -14,6 +14,7 @@ body {
 }
 
 button {
+    display: inline-block;
     float: right;
 }
 
