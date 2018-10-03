@@ -124,30 +124,27 @@ h6 {
     <img src="bolo.jpg" alt="Snow" style="width:100%">
     <div class="items">
       <h6>Bolo - $5</h6>
-
-
-<form method="post">
-    <button name="addBolo">Add to Cart</button>
-</form>
-
+      <form method="post">
+	<button name="addBolo">Add to Cart</button>
+      </form>
     </div>
   </div>
   <div class="column">
     <img src="coxinha.jpg" alt="Forest" style="width:100%">
     <div class="items">
       <h6>Coxinha - $3</h6>
-<form method="post">
-    <button name="addBolo">Add to Cart</button>
-</form>
+      <form method="post">
+	<button name="addCoxinha">Add to Cart</button>
+      </form>
     </div>
   </div>
   <div class="column">
     <img src="empadinha.jpg" alt="Mountains" style="width:100%">
     <div class="items">
       <h6>Empadinha - $2</h6>
-<form method="post">
-    <button name="addBolo">Add to Cart</button>
-</form>
+      <form method="post">
+	<button name="addEmpadinha">Add to Cart</button>
+      </form>
     </div>
   </div>
 </div>
@@ -157,22 +154,26 @@ h6 {
     <div class="items">
       <h6>Salgado - $4</h6>
       <form method="post">
-    <button name="addBolo">Add to Cart</button>
-</form>
+	<button name="addSalgado">Add to Cart</button>
+      </form>
     </div>
   </div>
   <div class="column">
     <img src="sonho.jpg" alt="Forest" style="width:100%">
     <div class="items">
       <h6>Sonho - $2</h6>
-      <button>Add to Cart</button>
+      <form method="post">
+	<button name="addSonho">Add to Cart</button>
+      </form>
     </div>
   </div>
   <div class="column">
     <img src="paoDeMel.jpg" alt="Mountains" style="width:100%">
     <div class="items">
       <h6>Pao de Mel - $3</h6>
-      <button>Add to Cart</button>
+      <form method="post">
+	<button name="addPaoDeMel">Add to Cart</button>
+      </form>
     </div>
   </div>
 </div>
