@@ -12,7 +12,9 @@
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";
-       <button>remove bolo</button>
+       <form method="post">
+        <button name="addBolo">Add to Cart</button>
+      </form>
      }   
      if($_SESSION['haveCoxinha'] === True)
      {
