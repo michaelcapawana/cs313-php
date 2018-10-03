@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shopping Cart</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-
-<style>
 * {
     box-sizing: border-box;
 }
@@ -41,7 +34,6 @@ h6 {
 .banner {
     background-color: #009B3A;
 }
-
 .cartItems {
     padding: 20px;
     background-color: white;
@@ -75,61 +67,3 @@ h6 {
     width: 65%;
     margin-left: 70px;
 }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-</style>
-
-</head>
-
-
-
-<body>
-<?php
-   session_start();
-   function display() {
-     if($_SESSION['haveBolo'] === True)
-     {
-       echo "Bolo<br>";
-     }   
-     if($_SESSION['haveCoxinha'] === True)
-     {
-       echo "Coxinha<br>";
-     }
-     if($_SESSION['haveEmpadinha'] === True)
-     {
-       echo "Empadinha<br>";
-     }
-     if($_SESSION['haveSalgado'] === True)
-     {
-       echo "Salgado<br>";
-     }
-     if($_SESSION['haveSonho'] === True)
-     {
-       echo "Sonho<br>";
-     }
-     if($_SESSION['havePaoDeMel'] === True)
-     {
-       echo "Pao de Mel<br>";
-     }
-
-   }
-?>
-<a href="browse.php">Continue Shopping</a>
-<div class="banner">
-  <h1>Shopping Cart</h1>
-</div>
-<div class="cartItems">
-  <ul>
-    <?php display()?>
-  </ul>
-</div>
-
-
-</body>
-</html>
-
-
