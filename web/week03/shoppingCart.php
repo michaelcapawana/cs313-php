@@ -10,11 +10,7 @@
 
 
 
-if(isset($_POST['removeBolo'])){
-       $bolo = False;
-       $_SESSION['haveBolo'] = $bolo;
-       display();
-   }
+
    if(isset($_POST['addCoxinha'])){
        $coxinha = True;
        $_SESSION['haveCoxinha'] = $coxinha;
@@ -49,6 +45,13 @@ if(isset($_POST['removeBolo'])){
         <button name="removeBolo">Remove from Cart</button>
       </form><?php;
      }   
+     if(isset($_POST['removeBolo'])){
+       $bolo = False;
+       $_SESSION['haveBolo'] = $bolo;
+       display();
+     }
+
+
      if($_SESSION['haveCoxinha'] === True)
      {
        echo "Coxinha<br>";
