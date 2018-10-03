@@ -8,7 +8,10 @@
 * {
     box-sizing: border-box;
 }
-
+a {
+    float: left;
+    font-size: 20px;
+}
 body {
     background-color:  #009B3A;
 }
@@ -115,11 +118,10 @@ h6 {
 
    }
 ?>
-
+<a href="browse.php">Continue Shopping</a>
 <div class="banner">
   <h1>Shopping Cart</h1>
 </div>
-
 <div class="cartItems">
   <ul>
     <?php display()?>
