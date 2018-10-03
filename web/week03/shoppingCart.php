@@ -35,12 +35,12 @@
 
 
 
-
    session_start();
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";?>
+       <h6>Cake</h6>
        <form method="post">
         <button name="removeBolo">Remove from Cart</button>
       </form><?php;
@@ -48,7 +48,7 @@
      if(isset($_POST['removeBolo'])){
        $bolo = False;
        $_SESSION['haveBolo'] = $bolo;
-       ob_end_clean();
+       
      }
 
 

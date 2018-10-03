@@ -35,7 +35,6 @@
 
 
 
-
    session_start();
    function display() {
      if($_SESSION['haveBolo'] === True)
@@ -48,7 +47,7 @@
      if(isset($_POST['removeBolo'])){
        $bolo = False;
        $_SESSION['haveBolo'] = $bolo;
-       display();
+       
      }
 
 
