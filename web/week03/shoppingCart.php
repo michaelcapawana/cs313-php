@@ -7,13 +7,46 @@
 
 <body>
 <?php
+
+
+
+if(isset($_POST['removeBolo'])){
+       $bolo = False;
+       $_SESSION['haveBolo'] = $bolo;
+       display();
+   }
+   if(isset($_POST['addCoxinha'])){
+       $coxinha = True;
+       $_SESSION['haveCoxinha'] = $coxinha;
+   }
+   if(isset($_POST['addEmpadinha'])){
+       $empadinha = True;
+       $_SESSION['haveEmpadinha'] = $empadinha;
+   }
+     if(isset($_POST['addSalgado'])){
+       $salgado = True;
+       $_SESSION['haveSalgado'] = $salgado;
+   }
+     if(isset($_POST['addSonho'])){
+       $sonho = True;
+       $_SESSION['haveSonho'] = $sonho;
+   }
+     if(isset($_POST['addPaoDeMel'])){
+       $paoDeMel = True;
+       $_SESSION['havePaoDeMel'] = $paoDeMel;
+   }
+
+
+
+
+
    session_start();
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";?>
        <form method="post">
-        <button name="addBolo">Add to Cart</button>
+        <button name="removeBolo">Remove from Cart</button>
       </form><?php;
      }   
      if($_SESSION['haveCoxinha'] === True)
