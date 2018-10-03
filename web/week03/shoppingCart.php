@@ -12,6 +12,7 @@
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";
+       <button>remove bolo</button>
      }   
      if($_SESSION['haveCoxinha'] === True)
      {
@@ -37,6 +38,7 @@
    }
 ?>
 <a href="browse.php">Continue Shopping</a>
+<a href="checkout.php">Checkout</a>
 <div class="banner">
   <h1>Shopping Cart</h1>
 </div>
