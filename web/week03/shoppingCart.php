@@ -48,7 +48,7 @@
      if(isset($_POST['removeBolo'])){
        $bolo = False;
        $_SESSION['haveBolo'] = $bolo;
-       display();
+       ob_end_clean();
      }
 
 
