@@ -11,10 +11,10 @@
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
-       echo "Bolo<br>";
-       echo "<form method="post">
+       echo "Bolo<br>";?>
+       <form method="post">
         <button name="addBolo">Add to Cart</button>
-      </form>";
+      </form><?php;
      }   
      if($_SESSION['haveCoxinha'] === True)
      {
