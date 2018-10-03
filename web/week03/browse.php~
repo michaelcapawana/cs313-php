@@ -8,8 +8,11 @@
 * {
     box-sizing: border-box;
 }
-
-body {
+a {
+    float: left;
+}
+body
+ {
     background-color:  #009B3A;
 }
 
