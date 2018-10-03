@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 a {
-    float: left;
+    float: right;
 }
 body
  {

@@ -10,6 +10,7 @@
 }
 a {
     float: right;
+    font-size: 20px;
 }
 body
  {
