@@ -40,14 +40,13 @@
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";?>
-       <form method="post">
+       <form method="post" action="shoppingCart.php">
         <button name="removeBolo">Remove from Cart</button>
       </form><?php;
      }   
      if(isset($_POST['removeBolo'])){
        $bolo = False;
        $_SESSION['haveBolo'] = $bolo;
-	ob_clean();
      }
 
 
