@@ -33,12 +33,13 @@
 
 
 <?php
-function display() {
+   session_start();
+   function display() {
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";
      }
-     if($_SESSION['haveCoxinha'] === True)
+       if($_SESSION['haveCoxinha'] === True)
      {
        echo "Coxinha<br>";
      }
@@ -58,5 +59,5 @@ function display() {
      {
        echo "Pao de Mel<br>";
      }
-}
+   }
 ?>
