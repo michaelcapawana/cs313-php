@@ -5,33 +5,6 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<h1>Checkout</h1>
-<div class="cartItems">
-  <ul>
-    <?php display()?>
-  </ul>
-</div>
-<form action="confirmation.php" method="post">
-  Name:<br>
-  <input type="text" name="name">
-  <br>
-  Street Address:<br>
-  <input type="text" name="address">
-  <br>
-  City:<br>
-  <input type="text" name="city">
-  <br>
-  State:<br>
-  <input type="text" name="state">
-  <br>
-  Zip Code:<br>
-  <input type="text" name="zip">
-  <br>
-</form>
-</body>
-</html>
-
-
 <?php
    session_start();
    function display() {
@@ -61,5 +34,32 @@
      }
    }
 ?>
+
+<h1>Checkout</h1>
+<div class="cartItems">
+  <ul>
+    <?php display()?>
+  </ul>
+</div>
+<form action="confirmation.php" method="post">
+  Name:<br>
+  <input type="text" name="name">
+  <br>
+  Street Address:<br>
+  <input type="text" name="address">
+  <br>
+  City:<br>
+  <input type="text" name="city">
+  <br>
+  State:<br>
+  <input type="text" name="state">
+  <br>
+  Zip Code:<br>
+  <input type="text" name="zip">
+  <br>
+</form>
+</body>
+</html>
+
 
 
