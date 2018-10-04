@@ -4,32 +4,59 @@
   <title>Checkout</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
 <h1>Checkout</h1>
+<div class="cartItems">
+  <ul>
+    <?php display()?>
+  </ul>
+</div>
 <form action="confirmation.php" method="post">
   Name:<br>
-  <input type="text" name="name" value="John Doe">
+  <input type="text" name="name">
   <br>
-  Email:<br>
-  <input type="text" name="email" value="johndoe@byui.edu">
-  <br><br>
-  Major:<br>
-  <input type="radio" name="major" value="Computer Science">Computer Science<br>
-  <input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
-  <input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
-  <input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>
+  Street Address:<br>
+  <input type="text" name="address">
   <br>
-  <textarea rows="10" cols="30" name="comments">comments</textarea>
+  City:<br>
+  <input type="text" name="city">
   <br>
-  <input type="checkbox" name="continents[]" value="North America">North America<br>
-  <input type="checkbox" name="continents[]" value="South Amercia">South America<br>
-  <input type="checkbox" name="continents[]" value="Europe">Europe<br>
-  <input type="checkbox" name="continents[]" value="Asia">Asia<br>
-  <input type="checkbox" name="continents[]" value="Australia">Australia<br>
-  <input type="checkbox" name="continents[]" value="Africa">Africa<br>
-  <input type="checkbox" name="continents[]" value="Antarctica">Antarctica<br>
-  <input type="submit" value="Submit">
+  State:<br>
+  <input type="text" name="state">
+  <br>
+  Zip Code:<br>
+  <input type="text" name="zip">
+  <br>
 </form>
-
 </body>
 </html>
+
+
+
+<?php
+function display() {
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Bolo<br>";
+     }
+     if($_SESSION['haveCoxinha'] === True)
+     {
+       echo "Coxinha<br>";
+     }
+     if($_SESSION['haveEmpadinha'] === True)
+     {
+       echo "Empadinha<br>";
+     }
+     if($_SESSION['haveSalgado'] === True)
+     {
+       echo "Salgado<br>";
+     }
+     if($_SESSION['haveSonho'] === True)
+     {
+       echo "Sonho<br>";
+     }
+     if($_SESSION['havePaoDeMel'] === True)
+     {
+       echo "Pao de Mel<br>";
+     }
+
+?>

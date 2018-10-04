@@ -5,6 +5,11 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <h1>Checkout</h1>
+<div class="cartItems">
+  <ul>
+    <?php display()?>
+  </ul>
+</div>
 <form action="confirmation.php" method="post">
   Name:<br>
   <input type="text" name="name">
@@ -24,3 +29,34 @@
 </form>
 </body>
 </html>
+
+
+
+<?php
+function display() {
+     if($_SESSION['haveBolo'] === True)
+     {
+       echo "Bolo<br>";
+     }
+     if($_SESSION['haveCoxinha'] === True)
+     {
+       echo "Coxinha<br>";
+     }
+     if($_SESSION['haveEmpadinha'] === True)
+     {
+       echo "Empadinha<br>";
+     }
+     if($_SESSION['haveSalgado'] === True)
+     {
+       echo "Salgado<br>";
+     }
+     if($_SESSION['haveSonho'] === True)
+     {
+       echo "Sonho<br>";
+     }
+     if($_SESSION['havePaoDeMel'] === True)
+     {
+       echo "Pao de Mel<br>";
+     }
+}
+?>
