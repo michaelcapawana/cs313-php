@@ -7,7 +7,7 @@
 <h1>Checkout</h1>
 <div class="cartItems">
   <ul>
-    <?php display()?>
+    <?php display();?>
   </ul>
 </div>
 <form action="confirmation.php" method="post">
