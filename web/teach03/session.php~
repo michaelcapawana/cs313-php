@@ -8,7 +8,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION["numVisits"]))
+if(isset($_SESSION["numVisits"])
 {
   $_SESSION["numVisits"]++;
 }
