@@ -17,7 +17,9 @@ else
 $_SESSION["numVisits"] = 1;
 }
 
-echo "You have visited $_SESSION["totalNumVisits"] times.";
+$visits = $_SESSION["numVisits"];
+
+echo "You have visited $visits times.";
 
 
 ?>
