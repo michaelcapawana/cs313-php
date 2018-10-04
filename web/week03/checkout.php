@@ -4,6 +4,7 @@
   <title>Checkout</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+<body>
 <h1>Checkout</h1>
 <div class="cartItems">
   <ul>
@@ -31,7 +32,6 @@
 </html>
 
 
-
 <?php
    session_start();
    function display() {
@@ -39,7 +39,7 @@
      {
        echo "Bolo<br>";
      }
-       if($_SESSION['haveCoxinha'] === True)
+     if($_SESSION['haveCoxinha'] === True)
      {
        echo "Coxinha<br>";
      }
@@ -61,3 +61,5 @@
      }
    }
 ?>
+
+
