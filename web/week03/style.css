@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 a {
+    color: #5C3027;
     font-size: 20px;
 }
 body {
@@ -20,7 +21,7 @@ button {
 h1 {
     font-size: 60px;
     text-align: center;
-    color: #FEDF00;
+    color: #5C3027;
     margin-top: 2px;
     margin-bottom: 0px;
 }
@@ -28,7 +29,7 @@ h1 {
 h6 {
     font-size: 20px;
     text-align: center;
-    color: #FEDF00;
+    color: #5C3027;
     margin-top: 1px;
     margin-bottom: 0px;
     display: inline-block;
