@@ -12,7 +12,6 @@
      if($_SESSION['haveBolo'] === True)
      {
        ?> <div align='center'><?php echo "Bolo<br>"; ?></div> 
-       //echo "Bolo<br>";?>
        <form method="post">
          <button id="checkoutButton" name="removeBolo">Remove from Cart</button>
        </form><?php;
