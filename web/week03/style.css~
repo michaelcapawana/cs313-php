@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 a {
     color: #5C3027;
     font-size: 20px;
@@ -25,6 +22,7 @@ body {
 #checkoutButton {
     display: flex;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 button {
     float: center;
@@ -92,4 +90,11 @@ h6 {
     content: "";
     clear: both;
     display: table;
+}
+.order {
+  width: 200px;
+}
+
+.history {
+    flex: 1;
 }

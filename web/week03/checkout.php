@@ -36,11 +36,13 @@
 ?>
 <a href="shoppingCart.php">Return to Cart</a>
 <h1>Checkout</h1>
-<div class="cartItems">
+<div class="total">
+<div class="order">
   <ul>
     <?php display()?>
   </ul>
 </div>
+<div class="address">
 <form action="confirmation.php" method="post">
   Name:<br>
   <input type="text" name="name">
@@ -59,6 +61,8 @@
   <br>
   <input type="submit" value="Confirm Payment">
 </form>
+</div>
+</div>
 </body>
 </html>
 
