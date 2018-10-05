@@ -22,7 +22,9 @@ body {
     padding-top: 10px;
     float: left;
 }
-
+#checkoutButton {
+    display: flex;
+}
 button {
     float: center;
 }
@@ -50,16 +52,18 @@ h6 {
 .banner {
     background-color: #DBEFFE;
 }
+
 .cartItems {
-    padding: 20px;
+    padding-right: 35px;
     background-color: white;
     font-size: 35px;
-    text-align: left;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 300px;
+    height: 400px;
+    display:flex;
+    justify-content: center;
 }
 .column {
     float: left;

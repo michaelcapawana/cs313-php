@@ -13,7 +13,7 @@
      {
        echo "Bolo<br>";?>
        <form method="post">
-         <button name="removeBolo">Remove from Cart</button>
+         <button id="checkoutButton" name="removeBolo">Remove from Cart</button>
        </form><?php;
      }   
      if(isset($_POST['removeBolo'])){
