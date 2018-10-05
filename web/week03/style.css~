@@ -67,3 +67,8 @@ h6 {
     width: 65%;
     margin-left: 70px;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

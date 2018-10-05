@@ -2,11 +2,14 @@
     box-sizing: border-box;
 }
 a {
-    float: left;
     font-size: 20px;
 }
 body {
-    background-color:  #009B3A;
+    background-color: #f9f9f9; 
+}
+
+#browseLink {
+    float:right;
 }
 
 button {
@@ -17,7 +20,7 @@ button {
 h1 {
     font-size: 60px;
     text-align: center;
-    color: #FEDF00;
+    color: #009B3A;
     margin-top: 2px;
     margin-bottom: 0px;
 }

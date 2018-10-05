@@ -39,7 +39,6 @@
        $paoDeMel = True;
        $_SESSION['havePaoDeMel'] = $paoDeMel;
    }
-
 ?>
 
 
