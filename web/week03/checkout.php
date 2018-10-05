@@ -34,7 +34,7 @@
      }
    }
 ?>
-
+<a href="shoppingCart.php">Return to Cart</a>
 <h1>Checkout</h1>
 <div class="cartItems">
   <ul>
@@ -57,7 +57,7 @@
   Zip Code:<br>
   <input type="text" name="zip">
   <br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Confirm Payment">
 </form>
 </body>
 </html>

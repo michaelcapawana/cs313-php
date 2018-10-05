@@ -57,6 +57,7 @@
   Zip Code:<br>
   <input type="text" name="zip">
   <br>
+  <input type="submit" value="Submit">
 </form>
 </body>
 </html>
