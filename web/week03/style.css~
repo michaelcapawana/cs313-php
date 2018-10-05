@@ -92,9 +92,12 @@ h6 {
     display: table;
 }
 .order {
-  width: 200px;
+    width: 200px;
 }
 
 .history {
     flex: 1;
+}
+.total {
+    display: flex;
 }
