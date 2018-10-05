@@ -24,6 +24,7 @@ body {
 }
 #checkoutButton {
     display: flex;
+    margin-bottom: 20px;
 }
 button {
     float: center;
@@ -54,15 +55,15 @@ h6 {
 }
 
 .cartItems {
-    padding-right: 35px;
-    background-color: white;
+    background-color: #FFFFFD;
     font-size: 35px;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 400px;
+    height: 500px;
     display:flex;
+    text-align: center;
     justify-content: center;
 }
 .column {

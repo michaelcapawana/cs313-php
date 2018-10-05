@@ -22,7 +22,9 @@ body {
     padding-top: 10px;
     float: left;
 }
-
+#checkoutButton {
+    display: flex;
+}
 button {
     float: center;
 }
