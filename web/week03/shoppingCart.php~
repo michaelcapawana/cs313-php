@@ -7,71 +7,91 @@
 
 <body>
 <?php
-
-
-
-
-   if(isset($_POST['addCoxinha'])){
-       $coxinha = True;
-       $_SESSION['haveCoxinha'] = $coxinha;
-   }
-   if(isset($_POST['addEmpadinha'])){
-       $empadinha = True;
-       $_SESSION['haveEmpadinha'] = $empadinha;
-   }
-     if(isset($_POST['addSalgado'])){
-       $salgado = True;
-       $_SESSION['haveSalgado'] = $salgado;
-   }
-     if(isset($_POST['addSonho'])){
-       $sonho = True;
-       $_SESSION['haveSonho'] = $sonho;
-   }
-     if(isset($_POST['addPaoDeMel'])){
-       $paoDeMel = True;
-       $_SESSION['havePaoDeMel'] = $paoDeMel;
-   }
-
-
-
-
    session_start();
    function display() {
      if($_SESSION['haveBolo'] === True)
      {
        echo "Bolo<br>";?>
        <form method="post">
-        <button name="removeBolo">Remove from Cart</button>
-      </form><?php;
+         <button name="removeBolo">Remove from Cart</button>
+       </form><?php;
      }   
      if(isset($_POST['removeBolo'])){
        $bolo = False;
        $_SESSION['haveBolo'] = $bolo;
-	header("Refresh:0; url=shoppingCart.php");
+       header("Refresh:0; url=shoppingCart.php");
      }
 
 
      if($_SESSION['haveCoxinha'] === True)
      {
-       echo "Coxinha<br>";
+       echo "Coxinha<br>";?>
+       <form method="post">
+         <button name="removeCoxinha">Remove from Cart</button>
+       </form><?php;
+
      }
-     if($_SESSION['haveEmpadinha'] === True)
-     {
-       echo "Empadinha<br>";
-     }
-     if($_SESSION['haveSalgado'] === True)
-     {
-       echo "Salgado<br>";
-     }
-     if($_SESSION['haveSonho'] === True)
-     {
-       echo "Sonho<br>";
-     }
-     if($_SESSION['havePaoDeMel'] === True)
-     {
-       echo "Pao de Mel<br>";
+     if(isset($_POST['removeCoxinha'])){
+       $coxinha = False;
+       $_SESSION['haveCoxinha'] = $coxinha;
+       header("Refresh:0; url=shoppingCart.php");
      }
 
+
+     if($_SESSION['haveEmpadinha'] === True)
+     {
+       echo "Empadinha<br>";?>
+       <form method="post">
+         <button name="removeEmpadinha">Remove from Cart</button>
+       </form><?php;
+     }
+     if(isset($_POST['removeEmpadinha'])){
+       $empadinha = False;
+       $_SESSION['haveEmpadinha'] = $empadinha;
+       header("Refresh:0; url=shoppingCart.php");
+     }
+
+
+     if($_SESSION['haveSalgado'] === True)
+     {
+       echo "Salgado<br>";?>
+       <form method="post">
+         <button name="removeSalgado">Remove from Cart</button>
+       </form><?php;
+     }
+     if(isset($_POST['removeSalgado'])){
+       $salgado = False;
+       $_SESSION['haveSalgado'] = $salgado;
+       header("Refresh:0; url=shoppingCart.php");
+     }
+
+
+     if($_SESSION['haveSonho'] === True)
+     {
+       echo "Sonho<br>";?>
+       <form method="post">
+         <button name="removeSonho">Remove from Cart</button>
+       </form><?php;
+     }
+     if(isset($_POST['removeSonho'])){
+       $sonho = False;
+       $_SESSION['haveSonho'] = $sonho;
+       header("Refresh:0; url=shoppingCart.php");
+     }
+
+
+     if($_SESSION['havePaoDeMel'] === True)
+     {
+       echo "Pao de Mel<br>";?>
+       <form method="post">
+         <button name="removePaoDeMel">Remove from Cart</button>
+       </form><?php;
+     }
+     if(isset($_POST['removePaoDeMel'])){
+       $paoDeMel = False;
+       $_SESSION['havePaoDeMel'] = $paoDeMel;
+       header("Refresh:0; url=shoppingCart.php");
+     }
    }
 ?>
 <a href="browse.php">Continue Shopping</a>

@@ -7,12 +7,25 @@ a {
 }
 body {
     background-color: #DBEFFE;
+    height: 820px;
 }
 
 #browseLink {
     padding-right: 20px;
     padding-top: 10px;
-    float:right;
+    float: right;
+}
+
+#cartShop {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+#cartCheckout {
+    padding-right: 20px;
+    padding-top: 10px;
+    float: right;
 }
 
 button {
