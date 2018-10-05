@@ -27,7 +27,7 @@
      {
        echo "Coxinha<br>";?>
        <form method="post">
-         <button name="removeCoxinha">Remove from Cart</button>
+         <button id="checkoutButton" name="removeCoxinha">Remove from Cart</button>
        </form><?php;
 
      }
@@ -42,7 +42,7 @@
      {
        echo "Empadinha<br>";?>
        <form method="post">
-         <button name="removeEmpadinha">Remove from Cart</button>
+         <button id="checkoutButton" name="removeEmpadinha">Remove from Cart</button>
        </form><?php;
      }
      if(isset($_POST['removeEmpadinha'])){
@@ -56,7 +56,7 @@
      {
        echo "Salgado<br>";?>
        <form method="post">
-         <button name="removeSalgado">Remove from Cart</button>
+         <button id="checkoutButton" name="removeSalgado">Remove from Cart</button>
        </form><?php;
      }
      if(isset($_POST['removeSalgado'])){
@@ -70,7 +70,7 @@
      {
        echo "Sonho<br>";?>
        <form method="post">
-         <button name="removeSonho">Remove from Cart</button>
+         <button id="checkoutButton" name="removeSonho">Remove from Cart</button>
        </form><?php;
      }
      if(isset($_POST['removeSonho'])){
@@ -84,7 +84,7 @@
      {
        echo "Pao de Mel<br>";?>
        <form method="post">
-         <button name="removePaoDeMel">Remove from Cart</button>
+         <button id="checkoutButton" name="removePaoDeMel">Remove from Cart</button>
        </form><?php;
      }
      if(isset($_POST['removePaoDeMel'])){
