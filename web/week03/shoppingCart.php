@@ -94,8 +94,8 @@
      }
    }
 ?>
-<a id="cartShop" href="browse.php">Continue Shopping</a>
-<a id="cartCheckout" href="checkout.php">Checkout</a>
+<a class="leftLink" href="browse.php">Continue Shopping</a>
+<a class="rightLink" href="checkout.php">Checkout</a>
 <div class="banner">
   <h1>Shopping Cart</h1>
 </div>

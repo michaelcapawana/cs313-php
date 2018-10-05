@@ -4,28 +4,23 @@
 a {
     color: #5C3027;
     font-size: 20px;
+    padding-top: 10px;
 }
 body {
     background-color: #DBEFFE;
     height: 820px;
 }
 
-#browseLink {
+.rightLink {
     padding-right: 20px;
     padding-top: 10px;
     float: right;
 }
 
-#cartShop {
+.leftLink {
     padding-left: 20px;
     padding-top: 10px;
     float: left;
-}
-
-#cartCheckout {
-    padding-right: 20px;
-    padding-top: 10px;
-    float: right;
 }
 
 button {
