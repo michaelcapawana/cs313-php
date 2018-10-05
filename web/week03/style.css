@@ -25,6 +25,7 @@ body {
 #checkoutButton {
     display: flex;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 button {
     float: center;

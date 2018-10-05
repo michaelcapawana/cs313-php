@@ -55,6 +55,7 @@ h6 {
 }
 
 .cartItems {
+    padding-right: 35px;
     background-color: #FFFFFD;
     font-size: 35px;
     margin-left: 200px;
