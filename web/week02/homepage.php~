@@ -7,10 +7,10 @@
   <script>
     $(document).ready(function(){
       $(".wrap").click(function(){
-        $("#sandpoint").fadeOut(500, function() {
+        $("#sandpoint").fadeOut(1500, function() {
           $("#sandpoint").attr("src", "us.PNG");
-<!--          $(this).load(function () {-->
-            $(this).fadeIn(500);
+<!--          $(this).load(function() {-->
+            $(this).fadeIn(1500);
         });
       });
     });

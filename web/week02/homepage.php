@@ -9,7 +9,6 @@
       $(".wrap").click(function(){
         $("#sandpoint").fadeOut(1500, function() {
           $("#sandpoint").attr("src", "us.PNG");
-<!--          $(this).load(function() {-->
             $(this).fadeIn(1500);
         });
       });
@@ -19,7 +18,7 @@
 <body>
  <ul id="navbar">
   <li><a class="active" href="homepage.php">Home</a></li>
-  <li><a href="assignments.php">Coming Soon</a></li>
+  <li><a href="assignments.php">Assignments</a></li>
 </ul>
   <h1>Michael Capawana</h1>
 <div class="wrap">
