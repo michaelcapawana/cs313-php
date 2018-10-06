@@ -9,10 +9,10 @@
   <li><a class="active" href="homepage.php">Home</a></li>
   <li><a href="assignments.php">Assignments</a></li>
 </ul>
-  <h2>Michael Capawana's Assignments</h1>
 <div class="center">
+<h2>Michael Capawana's Assignments</h1>
   <ul>
-    <li><a id="assignments" href="/week03/browse.php">Assignments</a></li>
+    <li><a class="assignments" href="/week03/browse.php">Assignments</a></li>
   </ul>
 </div>
 </body>
