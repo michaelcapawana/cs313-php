@@ -84,4 +84,7 @@ li a:hover {
 .assignments {
     color: black;
     font-size: 30px;
+    text-align: center;
+    float: center;
+    text-decoration: none;
 }
