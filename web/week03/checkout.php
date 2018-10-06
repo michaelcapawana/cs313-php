@@ -59,6 +59,7 @@
 </div>
 <div class="order">
   <ul>
+    Order:<br>
     <?php display()?>
   </ul>
 </div>
