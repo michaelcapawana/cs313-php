@@ -92,12 +92,17 @@ h6 {
     display: table;
 }
 .order {
-    width: 200px;
+ 
 }
 
-.history {
-    flex: 1;
+.address {
+    margin-left: 300px;
+    width: 400px;
+    
 }
 .total {
     display: flex;
+    font-size: 34px;
+    text-align: center;
+    
 }

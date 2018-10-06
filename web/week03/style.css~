@@ -67,7 +67,7 @@ h6 {
 }
 .column {
     float: left;
-    width: 33.33%;
+    width: 27%;
     padding-top: 30px;
     padding-bottom: 0px;
     padding-right: 40px;
