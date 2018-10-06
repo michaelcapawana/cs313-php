@@ -54,7 +54,7 @@
   Zip Code:<br>
   <input type="text" name="zip" style="font-size: 15px;">
   <br>
-  <input type="submit" value="Confirm Payment" style="color: green; font-size: 20px;">
+  <input type="submit" value="Confirm Payment" style="color: green; font-size: 26px;">
 </form>
 </div>
 <div class="order">
