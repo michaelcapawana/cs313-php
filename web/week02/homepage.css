@@ -89,6 +89,6 @@ li a:hover {
     text-decoration: none;
 }
 
-.assignments a:hover {
+a:hover {
     color: green; 
 }

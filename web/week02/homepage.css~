@@ -88,3 +88,7 @@ li a:hover {
     float: center;
     text-decoration: none;
 }
+
+.assignments a:hover {
+    color: green; 
+}
