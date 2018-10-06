@@ -6,6 +6,11 @@
   display: table;
 }
 
+.wrap img {
+   height: 500px;
+   width: 500px;
+}
+
 h1 {
    font-size: 35px;
    color: #333;
