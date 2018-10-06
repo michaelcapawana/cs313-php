@@ -51,6 +51,12 @@ Thank you <?php echo $name; ?> for your purchase<br>
 Your order has been sent to: <?php echo $address; ?><br>
 <?php echo $city; ?>, <?php echo $state; ?> <?php echo $zip; ?><br>
 </div>
+<div class="order">
+  <ul>
+    Order:<br>
+    <?php display()?>
+  </ul>
+</div>
 
 
 </body>

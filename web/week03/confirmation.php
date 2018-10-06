@@ -45,9 +45,10 @@ $zip = htmlspecialchars($_POST["zip"]);
 ?>
 
 <body>
+<h1>Order Confirmed!</h1>
 <div class="total">
 <div class="address">
-Thank you <?php echo $name; ?> for your purchase<br>
+Thank you <?php echo $name; ?> for your purchase!<br><br>
 Your order has been sent to: <?php echo $address; ?><br>
 <?php echo $city; ?>, <?php echo $state; ?> <?php echo $zip; ?><br>
 </div>
