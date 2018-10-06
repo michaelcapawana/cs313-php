@@ -12,7 +12,7 @@
 <div class="center">
 <h2>Michael Capawana's Assignments</h1>
   <ul>
-    <li><a class="assignments" href="/week03/browse.php">Assignments</a></li>
+    <a class="assignments" href="/week03/browse.php">Week 03 - Shopping Cart</a>
   </ul>
 </div>
 </body>
