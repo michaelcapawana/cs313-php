@@ -40,21 +40,21 @@
 <div class="address">
 <form action="confirmation.php" method="post">
   Name:<br>
-  <input type="text" name="name">
+  <input type="text" name="name" style="font-size: 15px;">
   <br>
   Street Address:<br>
-  <input type="text" name="address">
+  <input type="text" name="address" style="font-size: 15px;">
   <br>
   City:<br>
-  <input type="text" name="city">
+  <input type="text" name="city" style="font-size: 15px;">
   <br>
   State:<br>
-  <input type="text" name="state">
+  <input type="text" name="state" style="font-size: 15px;">
   <br>
   Zip Code:<br>
-  <input type="text" name="zip">
+  <input type="text" name="zip" style="font-size: 15px;">
   <br>
-  <input type="submit" value="Confirm Payment">
+  <input type="submit" value="Confirm Payment" style="color: green; font-size: 20px;">
 </form>
 </div>
 <div class="order">
