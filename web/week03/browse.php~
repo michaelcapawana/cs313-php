@@ -52,7 +52,12 @@
 <div class="food">
 <div class="row">
   <div class="column">
-    <img src="bolo.jpg" alt="Snow" style="width:100%">
+    <div class="imageInn">
+      <img src="bolo.jpg" alt="Bolo" style="width:100%">
+    </div>
+    <div class="hoverImg">
+      <img src="boloDescription.jpg" alt="Bolo Description" style="width:100%">
+    </div>
     <div class="items">
       <h6>Bolo - $5</h6>
       <form method="post">
