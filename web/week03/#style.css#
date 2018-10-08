@@ -1,0 +1,152 @@
+a {
+    color: #5C3027;
+    font-size: 20px;
+    padding-top: 10px;
+}
+body {
+    background-color: #DBEFFE;
+    height: 820px;
+}
+
+.rightLink {
+    padding-right: 20px;
+    padding-top: 10px;
+    float: right;
+}
+
+.leftLink {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+#checkoutButton {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+button {
+    float: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: #5C3027;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    position: center; 
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+h6 {
+    font-size: 20px;
+    text-align: center;
+    color: #5C3027;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.banner {
+    background-color: #DBEFFE;
+}
+
+.cartItems {
+    padding-right: 35px;
+    background-color: #FFFFFD;
+    font-size: 35px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 500px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.column {
+    float: left;
+    width: 27%;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.column img {
+    height: 250px;
+    width: 150px;
+}
+
+.food {
+    background-color: #DBEFFE;
+}
+
+.items {
+    text-align: center;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.order {
+ 
+}
+
+.address {
+    margin-left: 300px;
+    width: 400px;
+    
+}
+.total {
+    display: flex;
+    font-size: 34px;
+    text-align: center;
+    
+}
+
+.imageBox {
+  position: relative;
+  float: left;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+
+
+
+
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;    
+}
+
+.wrapper.slide:hover img {
+    margin-top: -100px;
+}
+
+.wrapper img {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+}
+
+.wrapper.fade img {
+    position: absolute;
+}

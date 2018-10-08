@@ -50,7 +50,7 @@
 <div class="food">
 <div class="row">
   <div class="column">
-    <div class="wrapper slide">
+    <div class="wrapper fade">
       <img src="bolo.jpg" alt="Bolo" style="width:100%">
       <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
     </div>
