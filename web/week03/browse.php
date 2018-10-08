@@ -50,15 +50,12 @@
 <div class="food">
 <div class="row">
   <div class="column">
-<div class="imageBox">
-    <div class="imageInn">
+    <div class="wrapper slide">
       <img src="bolo.jpg" alt="Bolo" style="width:100%">
-    </div>
-    <div class="hoverImg">
       <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
     </div>
-</div>
-    <div class="items">
+  </div>
+  <div class="items">
       <h6>Bolo - $5</h6>
       <form method="post">
 	<button name="addBolo">Add to Cart</button>
