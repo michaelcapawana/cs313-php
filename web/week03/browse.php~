@@ -42,16 +42,6 @@
 ?>
 
 
-<div class="imageBox">
-    <div class="imageInn">
-      <img src="bolo.jpg" alt="Bolo" style="width:100%">
-    </div>
-    <div class="hoverImg">
-      <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
-    </div>
-</div>
-
-
 <div class="banner">
 
 <a class="rightLink" href="shoppingCart.php">Shopping Cart</a>
@@ -62,10 +52,10 @@
   <div class="column">
 <div class="imageBox">
     <div class="imageInn">
-      <img src="bolo.jpg" alt="Bolo" style="width:100%">
+      <img src="bolo.jpg" alt="Bolo">
     </div>
     <div class="hoverImg">
-      <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
+      <img src="boloDescription.png" alt="Bolo Description">
     </div>
 </div>
     <div class="items">
