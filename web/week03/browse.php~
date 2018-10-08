@@ -46,7 +46,7 @@
 
 <div class="banner">
 
-<a id="browseLink" href="shoppingCart.php">Shopping Cart</a>
+<a class="rightLink" href="shoppingCart.php">Shopping Cart</a>
 <h1>Michael's Brazilian Treats</h1>
 </div>
 <div class="food">

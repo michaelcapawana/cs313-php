@@ -106,3 +106,17 @@ h6 {
     text-align: center;
     
 }
+
+
+.column .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.column:hover .hoverImg {
+  display: block;
+}
+
+
