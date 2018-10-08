@@ -124,3 +124,33 @@ h6 {
 }
 
 
+
+
+
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;    
+}
+
+.wrapper.slide:hover img {
+    margin-top: -100px;
+}
+
+.wrapper.fade img:hover {
+    opacity: 0;
+}
+
+.wrapper img {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    display: block;
+}
+
+.wrapper.fade img {
+    position: absolute;
+}
