@@ -56,7 +56,7 @@
       <img src="bolo.jpg" alt="Bolo" style="width:100%">
     </div>
     <div class="hoverImg">
-      <img src="boloDescription.jpg" alt="Bolo Description" style="width:100%">
+      <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
     </div>
     <div class="items">
       <h6>Bolo - $5</h6>

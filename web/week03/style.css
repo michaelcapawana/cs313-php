@@ -108,14 +108,14 @@ h6 {
 }
 
 
-.column .hoverImg {
+.imageBox .hoverImg {
   position: absolute;
   left: 0;
   top: 0;
   display: none;
 }
 
-.column:hover .hoverImg {
+.imageBox:hover .hoverImg {
   display: block;
 }
 
