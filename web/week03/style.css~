@@ -129,6 +129,7 @@ h6 {
 
 
 .wrapper {
+    width: 27%;
     //width: 200px;
     //height: 200px;
     margin: 20px auto;
@@ -149,6 +150,8 @@ h6 {
     -moz-transition: 0.5s;
     transition: 0.5s;
     display: block;
+    height: 250px;	
+    width: 150px;
 }
 
 .wrapper.fade img {
