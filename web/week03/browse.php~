@@ -50,9 +50,9 @@
 <div class="food">
 <div class="row">
   <div class="column">
-    <div class="wrapper fade">
-      <img src="bolo.jpg" alt="Bolo" style="width:100%">
+    <div class="wrapper slide">
       <img src="boloDescription.png" alt="Bolo Description" style="width:100%">
+      <img src="bolo.jpg" alt="Bolo" style="width:100%">
     </div>
     <div class="items">
       <h6>Bolo - $5</h6>
