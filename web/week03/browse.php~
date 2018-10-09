@@ -62,7 +62,10 @@
     </div>
   </div>
   <div class="column">
-    <img src="coxinha.jpg" alt="Forest" style="width:100%">
+    <div class="wrapper fade">
+      <img src="coxinhaDescription.png" alt="Coxinha Description" style="width:100%">
+      <img src="coxinha.jpg" alt="Coxinha" style="width:100%">
+    </div>
     <div class="items">
       <h6>Coxinha - $3</h6>
       <form method="post">
@@ -71,7 +74,10 @@
     </div>
   </div>
   <div class="column">
-    <img src="empadinha.jpg" alt="Mountains" style="width:100%">
+    <div class="wrapper fade">
+      <img src="empadinhaDescription.png" alt="Empadinha Description" style="width:100%">
+      <img src="empadinha.jpg" alt="Empadinha" style="width:100%">
+    </div>
     <div class="items">
       <h6>Empadinha - $2</h6>
       <form method="post">
@@ -82,7 +88,10 @@
 </div>
 <div class="row">
   <div class="column">
-    <img src="salgado.jpg" alt="Snow" style="width:100%">
+    <div class="wrapper fade">
+      <img src="salgadoDescription.png" alt="Salgado Description" style="width:100%">
+      <img src="salgado.jpg" alt="Salgado" style="width:100%">
+    </div>
     <div class="items">
       <h6>Salgado - $4</h6>
       <form method="post">
@@ -91,7 +100,10 @@
     </div>
   </div>
   <div class="column">
-    <img src="sonho.jpg" alt="Forest" style="width:100%">
+    <div class="wrapper fade">
+      <img src="sonhoDescription.png" alt="Sonho Description" style="width:100%">
+      <img src="sonho.jpg" alt="Sonho" style="width:100%">
+    </div>
     <div class="items">
       <h6>Sonho - $2</h6>
       <form method="post">
@@ -100,7 +112,10 @@
     </div>
   </div>
   <div class="column">
-    <img src="paoDeMel.jpg" alt="Mountains" style="width:100%">
+    <div class="wrapper fade">
+      <img src="padDeMelDescription.png" alt="Pao De Mel Description" style="width:100%">
+      <img src="paoDeMel.jpg" alt="Pao De Mel" style="width:100%">
+    </div>
     <div class="items">
       <h6>Pao de Mel - $3</h6>
       <form method="post">

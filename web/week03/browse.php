@@ -113,7 +113,7 @@
   </div>
   <div class="column">
     <div class="wrapper fade">
-      <img src="padDeMelDescription.png" alt="Pao De Mel Description" style="width:100%">
+      <img src="paoDeMelDescription.png" alt="Pao De Mel Description" style="width:100%">
       <img src="paoDeMel.jpg" alt="Pao De Mel" style="width:100%">
     </div>
     <div class="items">
