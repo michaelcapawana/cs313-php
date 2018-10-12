@@ -29,22 +29,6 @@ foreach ($db->query('SELECT username, password FROM users') as $row)
   echo '<br/>';
 }
 
-
-foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
-{
-  echo 'rating: ' . $row['rating'];
-  echo ' description: ' . $row['description'];
-  echo 'rating: ' . $row['user_id'];	
-  echo ' description: ' . $row['business'];
-  echo '<br/>';
-}
-
-foreach ($db->query('SELECT business FROM business') as $row)
-{
-  echo 'business: ' . $row['business'];
-  echo '<br/>';
-}
-
 ?>
 
 
