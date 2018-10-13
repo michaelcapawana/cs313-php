@@ -53,7 +53,17 @@ foreach ($db->query('SELECT business FROM business') as $row)
 <html>
 <head>
   <title>Rate IBC Groups</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+<?php 
+$loggedIn = FALSE;
+$name = "Put sql stuff here to get name";
+if($loggedIn) {
+  echo "Welcome " .$name;?>
+  <button class="logout"> <?php
+}
+else {
+  ?><link rel="stylesheet" type="text/css" href="style.css" /><?php
+}
+?>
 </head>
 
 <body>
