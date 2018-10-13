@@ -1,28 +1,9 @@
-html, body, section {
-  height: 100%;
-}
-
-body {
-  font-family: sans-serif;
-  
-}
-
-.body {
-    display: flex;
-}
-
 .rightSide {
-    background-color: red;
-    flex: 3;
-    padding: 1rem;
 
 }
 
 .leftSide {
 
-    background-color: blue;
-    flex: 1;
-    padding: 1rem;
 }
 
 .banner {
@@ -33,7 +14,11 @@ a {
     color: #5C3027;
     font-size: 20px;
     padding-top: 10px;
-    text-shadow: 0 2px 2px #b6701e;
+}
+
+body {
+    background-color: #DBEFFE;
+    height: 820px;
 }
 
 .rightLink {
@@ -44,7 +29,6 @@ a {
 
 h1 {
     font-size: 60px;
-    text-shadow: 0 2px 2px #b6701e;
     color: #5C3027;
     margin-top: 2px;
     margin-bottom: 0px;
