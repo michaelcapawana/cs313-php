@@ -1,5 +1,5 @@
 <?php
-
+/*
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -44,7 +44,7 @@ foreach ($db->query('SELECT business FROM business') as $row)
   echo 'business: ' . $row['business'];
   echo '<br/>';
 }
-
+*/
 ?>
 
 
