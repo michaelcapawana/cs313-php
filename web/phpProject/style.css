@@ -14,7 +14,7 @@ body {
 .rightSide {
     background-color: red;
     flex: 3;
-    padding: 1rem;
+    padding: 20rem;
 
 }
 
@@ -22,7 +22,7 @@ body {
 
     background-color: blue;
     flex: 1;
-    padding: 1rem;
+    padding: 10rem;
 }
 
 .banner {
