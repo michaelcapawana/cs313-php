@@ -63,6 +63,7 @@ foreach ($db->query('SELECT business FROM business') as $row)
 <a class="rightLink" href="signin.php">Log In</a>
 <h1>Rate IBC Groups</h1>
 </div>
+<div class="body">
 <div class="leftSide">
 
 
@@ -71,6 +72,7 @@ foreach ($db->query('SELECT business FROM business') as $row)
 
 <div class="rightSide">
 
+</div>
 </div>
 
 
