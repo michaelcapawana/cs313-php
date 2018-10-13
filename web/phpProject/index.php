@@ -49,3 +49,34 @@ foreach ($db->query('SELECT business FROM business') as $row)
 
 
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rate IBC Groups</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div class="banner">
+
+<a class="rightLink" href="signin.php">Log In</a>
+<h1>Rate IBC Groups</h1>
+</div>
+<div class="leftSide">
+
+
+</div>
+
+
+<div class="rightSide">
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

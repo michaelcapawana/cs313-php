@@ -1,3 +1,5 @@
+right link
+banner
 <?php
 
 try
@@ -29,7 +31,54 @@ foreach ($db->query('SELECT username, password FROM users') as $row)
   echo '<br/>';
 }
 
+
+foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
+{
+  echo 'rating: ' . $row['rating'];
+  echo ' description: ' . $row['description'];
+  echo 'rating: ' . $row['user_id'];	
+  echo ' description: ' . $row['business'];
+  echo '<br/>';
+}
+
+foreach ($db->query('SELECT business FROM business') as $row)
+{
+  echo 'business: ' . $row['business'];
+  echo '<br/>';
+}
+
 ?>
 
 
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rate IBC Groups</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div class="banner">
+
+<a class="rightLink" href="signin.php">Log In</a>
+<h1>Rate IBC Groups</h1>
+</div>
+<div class="leftSide">
+
+
+</div>
+
+
+<div class="rightSide">
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
