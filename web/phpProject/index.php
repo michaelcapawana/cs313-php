@@ -35,14 +35,14 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
 {
   echo 'rating: ' . $row['rating'];
   echo ' description: ' . $row['description'];
-  echo 'rating: ' . $row['user_id'];	
-  echo ' description: ' . $row['business'];
+  echo ' rating: ' . $row['user_id'];	
+  echo ' userID: ' . $row['business'];
   echo '<br/>';
 }
 
-foreach ($db->query('SELECT business FROM business') as $row)
+foreach ($db->query('SELECT name FROM business') as $row)
 {
-  echo 'business: ' . $row['business'];
+  echo 'business: ' . $row['name'];
   echo '<br/>';
 }
 
