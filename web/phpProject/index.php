@@ -1,5 +1,5 @@
 <?php
-/*
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -22,10 +22,11 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT username, password FROM users') as $row)
+foreach ($db->query('SELECT username, password, name FROM users') as $row)
 {
   echo 'user: ' . $row['username'];
   echo ' password: ' . $row['password'];
+  echo ' name: ' . $row['name'];
   echo '<br/>';
 }
 
@@ -44,7 +45,7 @@ foreach ($db->query('SELECT business FROM business') as $row)
   echo 'business: ' . $row['business'];
   echo '<br/>';
 }
-*/
+
 ?>
 
 
