@@ -44,7 +44,7 @@ function login()
     //$test = $db->query('SELECT password FROM users WHERE username = 'mcapawana';
     //echo 'TEST: ' . $test;
 
-    $tester = $db->query('SELECT password FROM users WHERE username = "mcapawana";
+    $tester = $db->query('SELECT password FROM users WHERE username = "mcapawana"');
     echo 'TEST2: ' . $tester;
 }
 
