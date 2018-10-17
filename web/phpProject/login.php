@@ -41,11 +41,11 @@ function login()
     //$tempPassword = $db->query('SELECT password FROM users WHERE username = $_POST["username"]; 
     //echo 'Password: ' . $tempPassword;
 
-    $test = $db->query('SELECT password FROM users WHERE username = 'mcapawana';
-    echo 'TEST: ' . $test;
+    //$test = $db->query('SELECT password FROM users WHERE username = 'mcapawana';
+    //echo 'TEST: ' . $test;
 
-    $tester = $db->query('SELECT password FROM users WHERE username = "mcapawana";
-    echo 'TEST2: ' . $tester;
+    //$tester = $db->query('SELECT password FROM users WHERE username = "mcapawana";
+    //echo 'TEST2: ' . $tester;
 }
 
 if(isset($_POST['login']))
