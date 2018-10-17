@@ -39,7 +39,7 @@ function login()
 {
     echo "hello ".$_POST["username"];
 }
-if(isset($_POST['submit']))
+if(isset($_POST['login']))
 {
    login();
 } 
