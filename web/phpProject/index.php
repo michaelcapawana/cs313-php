@@ -22,6 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
+/*
 foreach ($db->query('SELECT username, password, name FROM users') as $row)
 {
   echo 'user: ' . $row['username'];
@@ -46,7 +47,7 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
   echo ' score: ' . $row['score'];
   echo '<br/>';
 }
-
+*/
 ?>
 
 
@@ -77,7 +78,15 @@ else {
 </div>
 <div class="body">
 <div class="leftSide">
-<h2>Top 5</h2>
+<h2>Top5</h2>
+<?php
+foreach ($db->query('SELECT name, score FROM business ORDER BY downloads DESC') as $row)
+{
+  echo $row['name'];
+  echo '  ' . $row['score'];
+  echo '<br/>';
+}
+?>
 
 </div>
 

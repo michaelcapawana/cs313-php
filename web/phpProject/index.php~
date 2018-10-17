@@ -40,9 +40,10 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
   echo '<br/>';
 }
 
-foreach ($db->query('SELECT name FROM business') as $row)
+foreach ($db->query('SELECT name, score FROM business') as $row)
 {
   echo 'business: ' . $row['name'];
+  echo ' score: ' . $row['score'];
   echo '<br/>';
 }
 
