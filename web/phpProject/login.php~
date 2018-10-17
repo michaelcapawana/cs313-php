@@ -38,8 +38,8 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
 function login()
 {
     echo "Hello ".$_POST["username"];
-    //$tempPassword = $db->query('SELECT password FROM users WHERE username = $_POST["username"]; 
-    //echo 'Password: ' . $tempPassword;
+    $tempPassword = $db->query('SELECT password FROM users WHERE username = $_POST["username"]; 
+    echo 'Password: ' . $tempPassword;
 
     //$test = $db->query('SELECT password FROM users WHERE username = 'mcapawana';
     //echo 'TEST: ' . $test;
