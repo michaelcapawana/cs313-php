@@ -42,7 +42,7 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
 
 foreach ($db->query('SELECT name FROM business') as $row)
 {
-  echo 'business: ' . $row['business'];
+  echo 'business: ' . $row['name'];
   echo '<br/>';
 }
 
