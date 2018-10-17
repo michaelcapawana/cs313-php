@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
-/*
+
 foreach ($db->query('SELECT username, password, name FROM users') as $row)
 {
   echo 'user: ' . $row['username'];
@@ -30,7 +30,7 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
   echo ' name: ' . $row['name'];
   echo '<br/>';
 }
-*/
+
 
 
 

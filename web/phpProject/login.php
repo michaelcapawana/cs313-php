@@ -41,7 +41,7 @@ function login()
     $tempPassword = $db->query('SELECT password FROM users WHERE username = $_POST["username"]'); 
     echo 'Password: ' . $tempPassword;
 
-    $tester = $db->query('SELECT password FROM users WHERE username = "mcapawana"');
+    $tester = 'SELECT password FROM users WHERE username = "mcapawana"';
     echo 'TEST2: ' . $tester;
 }
 
