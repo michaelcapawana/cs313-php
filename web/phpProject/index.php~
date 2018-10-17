@@ -80,7 +80,7 @@ else {
 <div class="leftSide">
 <h2>Top5</h2>
 <?php
-foreach ($db->query('SELECT name, score FROM business ORDER BY downloads DESC') as $row)
+foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $row)
 {
   echo $row['name'];
   echo '  ' . $row['score'];

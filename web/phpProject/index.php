@@ -93,6 +93,13 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
 
 <div class="rightSide">
 
+<?php
+foreach ($db->query('SELECT name, score FROM business ORDER BY name DESC') as $row)
+{
+  echo $row['name'];
+  echo '<br/>';
+}
+?>
 </div>
 </div>
 
