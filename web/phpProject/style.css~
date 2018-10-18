@@ -53,3 +53,11 @@ h1 {
     display:flex;
     justify-content: center;
 }
+
+h2 {
+    font-size: 40px;
+    text-shadow: 0 2px 2px white;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
