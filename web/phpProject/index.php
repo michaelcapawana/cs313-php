@@ -49,6 +49,8 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
   echo '<br/>';
 }
 */
+
+
 ?>
 
 
@@ -72,12 +74,28 @@ else {
 
 <body>
 
-<div class="banner">
-<a class="leftLink" href=signup.php>Sign Up</a>
-<a class="rightLink" href="login.php">Log In</a>
-<h1>Rate IBC Groups</h1>
-</div>
+<?php
+session_start();
+function display() {
+  if($_SESSION['loggedIn'] === True) {
+    $name = $_SESSION['name'];
+    <div class="banner">
+    <a class="leftLink" href=signup.php>Signup</a>
+    <a class="rightLink" href="login.php">Login</a>
+    <h1>Rate IBC Groups</h1>
+    </div>
+  } else {
+    <div class="banner">
+    <a class="leftLink" href=signup.php>Sign Up</a>
+    <a class="rightLink" href="login.php">Log In</a>
+    <h1>Rate IBC Groups</h1>
+    </div>
+  }
+}
+?>
+
 <div class="body">
+
 <div class="leftSide">
 <h2>Top 5</h2>
 <p><?php
