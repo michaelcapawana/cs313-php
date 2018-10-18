@@ -34,16 +34,17 @@ body {
 }
 
 a {
-    color: white;
+    color: darkcyan;
     font-size: 20px;
     padding-top: 10px;
+    text-decoration: none;
 }
 
 .rightLink {
     padding-right: 20px;
     padding-top: 10px;
     float: right;
-    text-decoration: none;
+    color: white;
 }
 
 h1 {
