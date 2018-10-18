@@ -38,8 +38,13 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
 function login()
 {
     $un = $_POST["username"];
+    $pw = $_POST["password"];
     echo $un;
-    $tempPassword = $db->query("SELECT password FROM users WHERE username=".$un);
+    echo $pw;
+    $tempPassword = $db->prepare('SELECT * FROM users WHERE username=:un AND password=:pw');
+    $tempPassword->execute(array(':un' => $un, ':pw' => $pw));
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo $rows;
     echo 'Password: ' . $tempPassword;
 
 }

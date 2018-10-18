@@ -43,7 +43,7 @@ function login()
     echo $pw;
     $tempPassword = $db->prepare('SELECT * FROM users WHERE username=:un AND password=:pw');
     $tempPassword->execute(array(':un' => $un, ':pw' => $pw));
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $rows = $tempPassword->fetchAll(PDO::FETCH_ASSOC);
     echo $rows;
     echo 'Password: ' . $tempPassword;
 
