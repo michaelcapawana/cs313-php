@@ -39,6 +39,8 @@ function login($db)
 	}
      if($tempPassword == $pw) {
      	  echo "This works!";
+	  header("index.php");
+    	  exit;
      } else {
        echo "nope";
      }
