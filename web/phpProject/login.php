@@ -68,7 +68,7 @@ if(isset($_POST['login']))
 <h3>Log In</h3>
 <form action="login.php" method="post" accept-charset='UTF-8'>
   Username:<br>
-  <input type="text" name="username" style="font-size: 2em;">
+  <input type="text" name="username" placeholder="Username" style="font-size: 2em;">
   <br>
   Password:<br>
   <input type="text" name="password" style="font-size: 2em;">
