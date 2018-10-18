@@ -61,8 +61,7 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
 <html>
 <head>
   <title>Rate IBC Groups</title>
-  ?><link rel="stylesheet" type="text/css" href="style.css" /><?php
-?>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
