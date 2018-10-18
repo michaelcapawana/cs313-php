@@ -46,9 +46,9 @@ function login($db)
      }
 }
 
-function alert($msg) {
-    echo "<script type='text/javascript'>alert('$msg');</script>";
-}
+//function alert($msg) {
+  //  echo "<script type='text/javascript'>alert('$msg');</script>";
+//}
 
 if(isset($_POST['login']))
 {

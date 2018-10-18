@@ -42,8 +42,12 @@ function login($db)
 	  header("Location: index.php");
     	  exit;
      } else {
-       echo "nope";
+       alert("Invalid Username or Password");       
      }
+}
+
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
 }
 
 if(isset($_POST['login']))
