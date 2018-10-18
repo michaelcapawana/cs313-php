@@ -58,7 +58,7 @@ if(isset($_POST['signup']))
 
 <div class="banner">
 <a class="rightLink" href="index.php">Return to Home</a>
-<a class="leftLink" href="login.php">Sign Up</a>
+<a class="leftLink" href="login.php">Log In</a>
 <h1>Rate IBC Groups</h1>
 </div>
 
