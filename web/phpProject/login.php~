@@ -42,9 +42,6 @@ function login($db)
     echo $un;
     echo $pw;
 
-    //$tempPassword = $db->query("SELECT password FROM users WHERE username='" . $un . "';");
-    //echo "Password: " . $tempPassword;
-    
     $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
@@ -52,7 +49,6 @@ function login($db)
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
 	echo "Pass: " . $tempPassword;
-	//echo count($results);
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
