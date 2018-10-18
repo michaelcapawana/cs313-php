@@ -65,7 +65,7 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
 </head>
 
 <body>
-
+<!--
 /*
 <?php
 session_start();
@@ -84,7 +84,7 @@ session_start();
     </div>
   }
 ?>
-*/
+*/-->
 <div class="body">
 
 <div class="leftSide">
