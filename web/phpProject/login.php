@@ -65,6 +65,7 @@ if(isset($_POST['login']))
 
 <div class="body">
 <div class="standard">
+<h3>Please Log In</h3>
 <form action="login.php" method="post" accept-charset='UTF-8'>
   <input type="text" name="username" placeholder="Username" style="font-size: 2em; margin-top:150px;">
   <br>
