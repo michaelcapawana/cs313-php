@@ -91,42 +91,28 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
 
 
 <div class="rightSide">
-fjdskalf
-dsaklfa
-fdjskfd
-fdf
-sfd
-f
-d
-sfdsa
-fd
-fsad
-fas
-df
-sdf
-dsf
-ds
-f
-s
-sd
-f
-sdf
-sd
-sd
-f
-
-sdf
-sdf
-sdf
-sdf
-sd
-
 <p><?php
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
   echo $row['name'];
   echo '<br/>';
 }
+foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
+{
+  echo $row['name'];
+  echo '<br/>';
+}
+foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
+{
+  echo $row['name'];
+  echo '<br/>';
+}
+foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
+{
+  echo $row['name'];
+  echo '<br/>';
+}
+
 ?></p>
 </div>
 </div>
