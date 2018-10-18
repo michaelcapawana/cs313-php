@@ -83,7 +83,7 @@ else {
 foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $row)
 {
   echo $row['name'];
-  echo '  ' . $row['score'];
+  echo ' - ' . $row['score'];
   echo '<br/>';
 }
 ?></p>
@@ -95,6 +95,10 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
   echo $row['name'];
+  echo ' - ' . $row['score'];
+  echo '<br/>';
+  echo "<a href='viewReview.php?id=$id'>View Reviews</a>";
+  echo "<a href='leaveReview.php?id=$id'>Leave Reviews</a>";
   echo '<br/>';
 }
 ?></p>

@@ -97,22 +97,6 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo $row['name'];
   echo '<br/>';
 }
-foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
-{
-  echo $row['name'];
-  echo '<br/>';
-}
-foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
-{
-  echo $row['name'];
-  echo '<br/>';
-}
-foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
-{
-  echo $row['name'];
-  echo '<br/>';
-}
-
 ?></p>
 </div>
 </div>
