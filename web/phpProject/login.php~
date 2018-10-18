@@ -41,9 +41,6 @@ function login()
     $un = $_POST["username"];
 
     $tempPassword = $db->prepare('SELECT password FROM users WHERE username= "' . $un . '";');
-    echo 'Password1: ' . $tempPassword;
-
-    $tempPassword = $db->prepare('SELECT password FROM users WHERE username=$_POST["username"]'); 
     echo 'Password: ' . $tempPassword;
 
     $tester = $db->prepare('SELECT password FROM users WHERE username=mcapawana');
