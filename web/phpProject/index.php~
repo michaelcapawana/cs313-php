@@ -98,9 +98,9 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo $row['name'];
   echo ' - ' . $row['score'];
   echo '<br/>';
-  echo "<a href='viewReview.php?id=$id'>View Reviews</a>";
+  echo "<a href='leaveReview.php?id=$id'>Leave Review</a>";
   echo " ";
-  echo "<a href='leaveReview.php?id=$id'>Leave Reviews</a>";
+  echo "<a href='viewReview.php?id=$id'>View Reviews</a>";
   echo '<br/>';
 }
 ?></p>
