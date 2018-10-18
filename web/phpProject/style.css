@@ -16,7 +16,7 @@ body {
 .rightSide {
     background-color: white;
     flex: 2;
-    padding: 10rem;
+    padding: 4rem;
     overflow-y: auto;
     text-align: center;
 }
