@@ -35,7 +35,7 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
 
 
 
-function login()
+function login($db)
 {
     $un = $_POST["username"];
     $pw = $_POST["password"];
