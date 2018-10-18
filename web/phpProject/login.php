@@ -65,15 +65,12 @@ if(isset($_POST['login']))
 
 <div class="body">
 <div class="standard">
-<h3>Log In</h3>
 <form action="login.php" method="post" accept-charset='UTF-8'>
-  Username:<br>
-  <input type="text" name="username" placeholder="Username" style="font-size: 2em;">
+  <input type="text" name="username" placeholder="Username" style="font-size: 2em; padding-top:15px;">
   <br>
-  Password:<br>
-  <input type="text" name="password" style="font-size: 2em;">
+  <input type="text" name="password" placeholder="Password" style="font-size: 2em; padding-top:25px;">
   <br>
-  <input type="submit" value="Log In" name="login" style="color: black; font-size: 2.5em;">
+  <input type="submit" value="Log In" name="login" style="color: black; font-size: 2.5em; padding-top:25px;">
 </form>
 </div>
 </div>
