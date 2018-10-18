@@ -37,6 +37,11 @@ function login($db)
 	} catch(PDOException $e) {
 	  echo "Error";
 	}
+     if($tempPassword == $pw) {
+     	  echo "This works!";
+     } else {
+       echo "nope";
+     }
 }
 
 if(isset($_POST['login']))
