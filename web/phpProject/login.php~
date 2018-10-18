@@ -47,13 +47,9 @@ function login()
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
     	$stmt->execute();
-	$result = $stmt->fetch(PDO::FETCH_ASSOC);
+	$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	if (isset($tempPassword)) {
- 	  echo $tempPassword;
-	  } else {
-   	  echo 'not in database!';
-	  }
+	echo count($result);
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
