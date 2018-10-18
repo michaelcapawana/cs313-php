@@ -42,7 +42,7 @@ function login($db)
     echo $un;
     echo $pw;
 
-    $tempPassword = $db->query("SELECT password FROM users WHERE username="$un);
+    $tempPassword = $db->query("SELECT password FROM users WHERE username=".$un);
     echo $tempPassword;
     
 /*    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
