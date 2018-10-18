@@ -81,7 +81,7 @@ else {
 <div class="leftSide">
 <h2>Top 5</h2>
 <p><?php
-foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $row)
+foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC' LIMIT 5) as $row)
 {
   echo $row['name'];
   echo ' - ' . $row['score'];
@@ -89,7 +89,6 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
 }
 ?></p>
 </div>
-
 
 <div class="rightSide">
 <p><?php
@@ -106,11 +105,6 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 ?></p>
 </div>
 </div>
-
-
-
-
-
 
 </body>
 </html>
