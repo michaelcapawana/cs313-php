@@ -63,6 +63,7 @@ if(isset($_POST['login']))
 <h1>Rate IBC Groups</h1>
 </div>
 
+<div class="body">
 <div class="standard">
 <h3>Log In</h3>
 <p><form action="login.php" method="post" accept-charset='UTF-8'>
@@ -74,7 +75,7 @@ if(isset($_POST['login']))
   <br>
   <input type="submit" value="Log In" name="login" style="color: green; font-size: 26px;">
 </form></p>
-
+</div>
 </div>
 </body>
 </html> 
