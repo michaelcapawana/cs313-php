@@ -59,10 +59,7 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
   <title>Rate IBC Groups</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
-
-
-
+<body>
 
 
 
@@ -88,14 +85,7 @@ session_start();
 ?>
 
 
-
-
-
-
-
-
-
-
+<div class="body">
 <div class="leftSide">
 <h2>Top 5</h2>
 <p><?php
