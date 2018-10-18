@@ -49,8 +49,11 @@ function login()
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	echo $result['password'];
-	echo $tempPassword;
+	if (isset($tempPassword)) {
+ 	  echo $tempPassword;
+	  } else {
+   	  echo 'not in database!';
+	  }
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
