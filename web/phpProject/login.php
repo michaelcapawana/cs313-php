@@ -41,12 +41,19 @@ function login()
     $pw = $_POST["password"];
     echo $un;
     echo $pw;
-    $tempPassword = $db->prepare('SELECT * FROM users WHERE username=:un AND password=:pw');
-    $tempPassword->execute(array(':un' => $un, ':pw' => $pw));
-    $rows = $tempPassword->fetchAll(PDO::FETCH_ASSOC);
-    echo $rows;
-    echo 'Password: ' . $tempPassword;
 
+
+    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
+    $stmt->bindValue(':username', $un, PDO::PARAM_STR);
+    try {
+    	$stmt->execute();
+	$result = $stmt->fetch(PDO::FETCH_ASSOC);
+	$tempPassword = $result['password'];
+	echo $tempPassword;
+	$stmt->closeCursor();
+	} catch(PDOException $e) {
+	  echo "Error";
+	}
 }
 
 if(isset($_POST['login']))
