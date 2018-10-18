@@ -35,7 +35,6 @@ a {
     color: darkcyan;
     font-size: 20px;
     padding-top: 10px;
-    text-shadow: 0 2px 2px white;
 }
 
 .rightLink {
@@ -46,7 +45,7 @@ a {
 
 h1 {
     font-size: 60px;
-    text-shadow: 0 2px 2px #white;
+    text-shadow: 0 2px 2px white;
     color: darkcyan;
     margin-top: 2px;
     margin-bottom: 0px;

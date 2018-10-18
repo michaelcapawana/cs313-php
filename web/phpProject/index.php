@@ -86,20 +86,19 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
   echo '  ' . $row['score'];
   echo '<br/>';
 }
-?>
-</p>
+?></p>
 </div>
 
 
 <div class="rightSide">
 
-<?php
+<p><?php
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
   echo $row['name'];
   echo '<br/>';
 }
-?>
+?></p>
 </div>
 </div>
 
