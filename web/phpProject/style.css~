@@ -17,6 +17,7 @@ body {
     background-color: darkcyan;
     text-align: center;
     height: 100%;
+    flex: 1;
 }
 
 .rightSide {
@@ -73,6 +74,15 @@ h1 {
 h2 {
     font-size: 40px;
     color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: center;
+}
+
+h3 {
+    padding-top: 30px;
+    font-size: 40px;
+    color: white;
     margin-top: 0px;
     margin-bottom: 0px;
     position: center;
