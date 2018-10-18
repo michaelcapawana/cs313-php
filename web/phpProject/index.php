@@ -78,8 +78,8 @@ else {
 </div>
 <div class="body">
 <div class="leftSide">
-<h2>Top5</h2>
-<?php
+<h2>Top 5</h2>
+<p><?php
 foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $row)
 {
   echo $row['name'];
@@ -87,7 +87,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC') as $
   echo '<br/>';
 }
 ?>
-
+</p>
 </div>
 
 
