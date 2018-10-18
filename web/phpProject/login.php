@@ -44,7 +44,7 @@ function login($db)
 
     $tempPassword = $db->query("SELECT password FROM users WHERE username='" . $un . "';");
     echo $tempPassword;
-    
+/*    
     $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
@@ -55,7 +55,7 @@ function login($db)
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
-	}
+	}*/
 }
 
 if(isset($_POST['login']))
