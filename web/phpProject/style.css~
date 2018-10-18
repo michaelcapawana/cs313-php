@@ -9,12 +9,13 @@ body {
 
 .body {
     display: flex;
+    height: 100%;
 }
 
 .rightSide {
     background-color: red;
-    flex: 7;
-    padding: 20rem;
+    flex: 2;
+    padding: 10rem;
 
 }
 
@@ -22,7 +23,7 @@ body {
 
     background-color: blue;
     flex: 1;
-    padding: 10rem;
+    padding: 5rem;
 }
 
 .banner {
