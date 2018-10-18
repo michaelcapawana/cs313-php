@@ -78,7 +78,6 @@ else {
 
 <?php
 session_start();
-function display() {
   if($_SESSION['loggedIn'] === True) {
     $name = $_SESSION['name'];
     <div class="banner">
@@ -93,7 +92,6 @@ function display() {
     <h1>Rate IBC Groups</h1>
     </div>
   }
-}
 ?>
 
 <div class="body">
