@@ -37,11 +37,9 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
 
 function login()
 {
-    echo "Hello ".$_POST["username"];
     $un = $_POST["username"];
-
+    echo $un;
     $tempPassword = $db->query("SELECT password FROM users WHERE username=".$un);
-    echo "this";
     echo 'Password: ' . $tempPassword;
 
 }
