@@ -73,7 +73,7 @@ else {
 <body>
 
 <div class="banner">
-
+<a class="leftLink" href=signup.php>Sign Up</a>
 <a class="rightLink" href="login.php">Log In</a>
 <h1>Rate IBC Groups</h1>
 </div>

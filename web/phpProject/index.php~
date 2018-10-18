@@ -81,7 +81,7 @@ else {
 <div class="leftSide">
 <h2>Top 5</h2>
 <p><?php
-foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC' LIMIT 5) as $row)
+foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 5') as $row)
 {
   echo $row['name'];
   echo ' - ' . $row['score'];
