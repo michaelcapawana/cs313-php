@@ -48,8 +48,8 @@ function login()
     try {
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
-	$stmt = $result['password'];
-	echo $stmt;
+	$tempPassword = $result['password'];
+	echo $tempPassword;
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
