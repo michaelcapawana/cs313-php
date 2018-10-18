@@ -22,19 +22,6 @@ catch (PDOException $ex)
   die();
 }
 
-
-foreach ($db->query('SELECT username, password, name FROM users') as $row)
-{
-  echo 'user: ' . $row['username'];
-  echo ' password: ' . $row['password'];
-  echo ' name: ' . $row['name'];
-  echo '<br/>';
-}
-
-
-
-
-
 function login($db)
 {
     $un = $_POST["username"];
@@ -66,9 +53,10 @@ if(isset($_POST['login']))
 <html>
 <head>
 <title>Log In</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+<div class="leftSide">
 <h1>Log In</h1>
 
 <form action="login.php" method="post" accept-charset='UTF-8'>
@@ -81,6 +69,6 @@ if(isset($_POST['login']))
   <input type="submit" value="Log In" name="login" style="color: green; font-size: 26px;">
 </form>
 
-
+</div>
 </body>
 </html> 

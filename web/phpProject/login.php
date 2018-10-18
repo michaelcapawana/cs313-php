@@ -56,9 +56,16 @@ if(isset($_POST['login']))
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div class="leftSide">
-<h1>Log In</h1>
 
+<div class="banner">
+<a class="rightLink" href="index.php">Return to Home</a>
+<a class="leftLink" href="signup.php">Sign Up</a>
+<h1>Rate IBC Groups</h1>
+</div>
+
+<h2>Log In</h2>
+
+<div class="standard">
 <form action="login.php" method="post" accept-charset='UTF-8'>
   Username:<br>
   <input type="text" name="username" style="font-size: 15px;">
