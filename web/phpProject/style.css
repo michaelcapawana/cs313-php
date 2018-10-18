@@ -47,6 +47,13 @@ a {
     color: white;
 }
 
+.leftLink {
+    padding-right: 70px;
+    padding-top: 10px;
+    float: right;
+    color: white;
+}
+
 h1 {
     font-size: 60px;
     color: darkcyan;
