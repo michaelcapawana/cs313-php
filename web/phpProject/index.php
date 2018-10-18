@@ -82,8 +82,8 @@ session_start();
     <a class="rightLink" href="login.php">Login</a>
     <h1>Rate IBC Groups</h1>
     </div><?php
-  } else {
-    <div class="banner">?>
+  } else {?>
+    <div class="banner">
     <a class="leftLink" href=signup.php>Sign Up</a>
     <a class="rightLink" href="login.php">Log In</a>
     <h1>Rate IBC Groups</h1>
