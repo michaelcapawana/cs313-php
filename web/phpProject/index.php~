@@ -99,6 +99,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 
 </div>
 
 <div class="rightSide">
+<h2>Companies</h2>
 <p><?php
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
