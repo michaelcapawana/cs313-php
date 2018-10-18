@@ -60,7 +60,7 @@ function login($db)
 
 if(isset($_POST['login']))
 {
-   login();
+   login($db);
 } 
 ?> 
 
