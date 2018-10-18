@@ -71,7 +71,7 @@ session_start();
   if($_SESSION['loggedIn'] === True) {
     $name = $_SESSION['name'];?>
     <div class="banner">
-    <a class="rightLink" href="login.php">Log Out</a>
+    <a class="rightLink" href="index.php"><?php session_unset();?>Log Out</a>
     <a class="leftLink" href=signup.php><?php echo"Hello, " . $name?></a>
     <h1>Rate IBC Groups</h1>
     </div><?php
