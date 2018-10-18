@@ -40,7 +40,7 @@ function login()
     echo "Hello ".$_POST["username"];
     $un = $_POST["username"];
 
-    $tempPassword = $db->prepare('SELECT password FROM users WHERE username=:un');
+    $tempPassword = $db->prepare('SELECT password FROM users WHERE username= "' . $un . '";');
     echo 'Password1: ' . $tempPassword;
 
     $tempPassword = $db->prepare('SELECT password FROM users WHERE username=$_POST["username"]'); 

@@ -38,7 +38,12 @@ foreach ($db->query('SELECT username, password, name FROM users') as $row)
 function login()
 {
     echo "Hello ".$_POST["username"];
-    $tempPassword = $db->query('SELECT password FROM users WHERE username = $_POST["username"]'); 
+    $un = $_POST["username"];
+
+    $tempPassword = $db->prepare('SELECT password FROM users WHERE username=:un');
+    echo 'Password1: ' . $tempPassword;
+
+    $tempPassword = $db->prepare('SELECT password FROM users WHERE username=$_POST["username"]'); 
     echo 'Password: ' . $tempPassword;
 
     $tester = $db->prepare('SELECT password FROM users WHERE username=mcapawana');
