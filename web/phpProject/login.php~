@@ -26,16 +26,13 @@ function login($db)
 {
     $un = $_POST["username"];
     $pw = $_POST["password"];
-    echo $un;
-    echo $pw;
-
     $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	echo "Pass: " . $tempPassword;
+	//echo "Pass: " . $tempPassword;
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
