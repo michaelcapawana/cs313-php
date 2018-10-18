@@ -42,20 +42,20 @@ function login($db)
     echo $un;
     echo $pw;
 
-    $tempPassword = $db->query("SELECT password FROM users WHERE username=".$un);
-    echo $tempPassword;
+    //$tempPassword = $db->query("SELECT password FROM users WHERE username=".$un);
+    //echo $tempPassword;
     
-/*    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
+    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
     	$stmt->execute();
-	$result = $stmt->fetch(PDO::FETCH_ASSOC);
+	$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	echo $tempPassword;
+	echo count($results);
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
-	}*/
+	}
 }
 
 if(isset($_POST['login']))
