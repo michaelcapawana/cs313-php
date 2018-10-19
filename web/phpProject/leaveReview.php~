@@ -1,0 +1,60 @@
+<?php
+
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+
+function login($db)
+{
+    $un = $_POST["username"];
+    $pw = $_POST["password"];
+    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
+    $stmt->bindValue(':username', $un, PDO::PARAM_STR);
+    try {
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $tempPassword = $result['password'];
+        //echo "Pass: " . $tempPassword;
+        $stmt->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error";
+        }
+     if($tempPassword === $pw && $tempPassword != NULL) {
+          session_start();
+          $_SESSION['loggedIn'] = true;
+          $_SESSION['name'] = $un;
+
+          header("Location: index.php");
+          exit;
+     } else {
+       alert("Invalid Username or Password");
+     }
+}
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+
+if(isset($_POST['login']))
+{
+   login($db);
+}
+?>
+
