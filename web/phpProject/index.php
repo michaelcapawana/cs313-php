@@ -100,6 +100,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 
 <p><?php
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
+  $name = $row['name'];
   echo $row['name'];
   echo ' - ' . $row['score'];
   echo '<br/>';
@@ -107,7 +108,6 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo " ";
   echo "<a href='viewReviews.php?id=$name'>View Reviews</a>";
   echo '<br/>';
-$name = $row['name'];
 }
 ?></p>
 </div>
