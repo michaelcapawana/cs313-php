@@ -22,6 +22,8 @@ catch (PDOException $ex)
   die();
 }
 
+echo $GET['id'];
+
 ?>
 
 
@@ -41,7 +43,7 @@ catch (PDOException $ex)
 <div class="standard">
 
 <?php 
-  echo $GET['id'];
+  
 ?>
   
 
