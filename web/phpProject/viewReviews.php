@@ -46,7 +46,7 @@ catch (PDOException $ex)
 echo $name;
 
     $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
-    $stmt->bindValue(':business', $name, PDO::PARAM_STR);
+    $stmt->bindValue(':business', $name, PDO::PARAM_INT);
     try {
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
