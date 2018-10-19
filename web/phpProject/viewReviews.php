@@ -41,9 +41,8 @@ catch (PDOException $ex)
 <div class="standard">
 
 <?php 
-  $name = $GET['id'];
-  echo $name;
-  echo "<html><h3>".$name."</h3></html>";?>
+  echo $GET['id'];
+  echo "<html><h3>".$GET['id']."</h3></html>";?>
 
 </div>
 </div>
