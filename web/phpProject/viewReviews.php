@@ -64,7 +64,7 @@ echo $name;
         $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
-          echo '<br/>'
+          echo '<br/>';
         }
 
 
