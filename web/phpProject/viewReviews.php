@@ -53,7 +53,7 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
   echo '<br/>';
 }
 
-    $stmt = $db->prepare('SELECT rating, description, user_id FROM reviews WHERE business=:business');
+    $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
@@ -61,10 +61,10 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
         $user_id = $result['user_id'];
         echo $user_id;
 	echo '<br/>';
-        $rating = $result['rating'];
-        $description = $result['description'];
-        echo "Rating: " . $rating . "/5 Stars: " . $description;
-	echo '<br/>';
+        //$rating = $result['rating'];
+        //$description = $result['description'];
+        //echo "Rating: " . $rating . "/5 Stars: " . $description;
+	//echo '<br/>';
         echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {

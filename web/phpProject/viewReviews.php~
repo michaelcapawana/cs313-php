@@ -57,13 +57,15 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $user_id = $result['user_id'];
         echo $user_id;
 	echo '<br/>';
         $rating = $result['rating'];
         $description = $result['description'];
         echo "Rating: " . $rating . "/5 Stars: " . $description;
+	echo '<br/>';
+        echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
