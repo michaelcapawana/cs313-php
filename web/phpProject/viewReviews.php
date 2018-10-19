@@ -44,8 +44,19 @@ catch (PDOException $ex)
   echo "<html><h3>Reviews for ".$name."</h3></html>";  
 
 
-$num = $db->query('SELECT id FROM business WHERE name="$name"');
-echo $num;
+$statment = $db->prepare('SELECT id FROM business WHERE name=:name');
+$statment->bindValue(':name', $name, PDO::PARAM_STR);
+try {
+    $statement->execute();
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $num = $result['id'];
+    echo $num;
+    $statement->closeCursor();
+    } catch(PDOException $e) {
+          echo "Error with num: $e";
+          echo '<br/>';
+    }
+
 
 
     //$num = 3;
@@ -53,8 +64,8 @@ echo $num;
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $reviewer = $result['description'];
+        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        $reviewer = $results['description'];
         echo $reviewer;
 
         echo '<br/>';
@@ -65,7 +76,7 @@ echo $num;
         //echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {
-          echo "Error: $e";
+          echo "Error with desc.: $e";
           echo '<br/>';
         }
 /*

@@ -44,7 +44,7 @@ catch (PDOException $ex)
   echo "<html><h3>Reviews for ".$name."</h3></html>";  
 
 
-$num = $db->query('SELECT id FROM business WHERE name = $name');
+$num = $db->query('SELECT id FROM business WHERE name="$name"');
 echo $num;
 
 
