@@ -50,21 +50,17 @@ try {
     $statement->execute();
     $result = $statement->fetch(PDO::FETCH_ASSOC);
     $num = $result['id'];
-    echo $num;
     $statement->closeCursor();
     } catch(PDOException $e) {
           echo "Error with num: $e";
           echo '<br/>';
     }
 
-
-
-    //$num = 3;
-  $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business');
+    $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business');
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $reviewer = $results['description'];
         echo $reviewer;
 
