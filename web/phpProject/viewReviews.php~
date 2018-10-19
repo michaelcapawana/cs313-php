@@ -44,8 +44,8 @@ catch (PDOException $ex)
   echo "<html><h3>Reviews for ".$name."</h3></html>";  
 
 
-$statment = $db->prepare('SELECT id FROM business WHERE name=:name');
-$statment->bindValue(':name', $name, PDO::PARAM_STR);
+$statement = $db->prepare('SELECT id FROM business WHERE name=:name');
+$statement->bindValue(':name', $name, PDO::PARAM_STR);
 try {
     $statement->execute();
     $result = $statement->fetch(PDO::FETCH_ASSOC);
@@ -57,7 +57,7 @@ try {
           echo '<br/>';
     }
 
-
+/*
 
     //$num = 3;
     $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.user_id=:business');
@@ -78,7 +78,7 @@ try {
         } catch(PDOException $e) {
           echo "Error with desc.: $e";
           echo '<br/>';
-        }
+        }*/
 /*
 foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
 {
