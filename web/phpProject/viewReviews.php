@@ -42,7 +42,8 @@ catch (PDOException $ex)
 
 <?php 
   echo $GET['id'];
-  echo "<html><h3>".$GET['id']."</h3></html>";?>
+?>
+  
 
 </div>
 </div>
