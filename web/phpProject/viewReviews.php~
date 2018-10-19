@@ -56,13 +56,13 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
 
 echo $name;
 
-    $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
+    $stmt = $db->prepare('SELECT description FROM reviews WHERE business=:business');
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $user = $result['user_id'];
-        echo $user;
+        $words = $result['description'];
+        echo $words;
 	//echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
