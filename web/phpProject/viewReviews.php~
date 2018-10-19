@@ -49,16 +49,17 @@ echo $name;
     $stmt->bindValue(':business', $name, PDO::PARAM_INT);
     try {
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetchAll();
         $reviewer = $result['user_id'];
         echo $reviewer;
+
         //echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
         //echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
         //echo '<br/>';
-        $stmt->closeCursor();
+        //$stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
           echo '<br/>';
