@@ -43,7 +43,7 @@ echo $_GET['id'];
 <div class="standard">
 
 <?php 
-  
+  echo "<html><h3>".$GET_['id']."</h3></html>";  
 ?>
   
 
