@@ -51,7 +51,8 @@ if(isset($_POST['login']))
 
 <?php
   $name = $_GET['id'];
-  echo "<html><h3>Leave a Review for".$name."</h3></html>";?>
+  echo "<html><h3>Leave a Review for ".$name."</h3></html>";?>
+
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
   <input type="text" name="password" placeholder="Still in Progress" style="font-size: 2em; margin-top:25px;">
   <br>
