@@ -50,7 +50,7 @@ echo $name;
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $reviewer = $result['description'];
         echo $reviewer;
 

@@ -43,9 +43,12 @@ catch (PDOException $ex)
   $name = $_GET['id'];
   echo "<html><h3>Reviews for ".$name."</h3></html>";  
 
-echo $name;
 
-    $num = 3;
+$num = $db->query('SELECT id FROM business WHERE name = $name');
+echo $num;
+
+
+    //$num = 3;
     $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.user_id=:business');
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
