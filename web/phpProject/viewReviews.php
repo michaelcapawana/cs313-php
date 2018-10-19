@@ -53,7 +53,19 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
   echo '<br/>';
 }
 
-echo $name;
+$stmt = $db->prepare('SELECT user_id FROM reviews WHERE name=:name LIMIT 1');
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    try {
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $tempPassword = $result['user_id'];
+        //echo "Pass: " . $tempPassword;
+        $stmt->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error";
+        }
+
+
 
     $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
