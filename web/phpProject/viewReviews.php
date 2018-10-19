@@ -22,7 +22,6 @@ catch (PDOException $ex)
   die();
 }
 
-echo  $_GET['id'];
 ?>
 
 
@@ -43,6 +42,7 @@ echo  $_GET['id'];
 
 <?php 
   $name = $GET['id'];
+  echo $name;
   echo "<html><h3>".$name."</h3></html>";?>
 
 </div>
