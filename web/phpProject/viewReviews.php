@@ -43,9 +43,6 @@ catch (PDOException $ex)
   $name = $_GET['id'];
   echo "<html><h3>".$name."</h3></html>";  
 
-
-
-
 echo $name;
 
     $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
@@ -61,15 +58,11 @@ echo $name;
         //echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
         //echo '<br/>';
-        $stmt->closeCursor();
+        //$stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
           echo '<br/>';
         }
-
-
-
-
 
 foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
 {
@@ -80,12 +73,7 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
   echo '<br/>';
 }
 
-
-
-
 ?>
-
-  
 
 </div>
 </div>
