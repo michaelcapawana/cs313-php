@@ -22,21 +22,18 @@ catch (PDOException $ex)
   die();
 }
 
-function leaveReview($db)
-{
 
-}
+$id = $_GET["id"];
+echo $id;
 
-if(isset($_POST['login']))
-{
-   leaveReview($db);
-}
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-<title>Leave a Review</title>
+<title>Reviews</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -45,3 +42,11 @@ if(isset($_POST['login']))
 <a class="rightLink" href="index.php">Return to Home</a>
 <h1>Rate IBC Groups</h1>
 </div>
+<div class="body">
+<div class="standard">
+<h3>...</h3>
+
+</div>
+</div>
+</body>
+</html>
