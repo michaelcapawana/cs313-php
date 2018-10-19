@@ -106,7 +106,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo "<a href='leaveReview.php?id=<?php echo $name->id;?>'>Leave Review</a>";
   echo " ";
 
-  echo "<a href='viewReviews.php?id=<?php echo $row['name'];?>'>View Reviews</a>";
+  echo "<a href='viewReviews.php?id=$row["name"]'>View Reviews</a>";
   echo '<br/>';
 }
 ?></p>
