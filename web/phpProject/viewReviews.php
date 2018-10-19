@@ -60,14 +60,14 @@ try {
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        //$reviewer = $results['description'];
-        //echo $reviewer;
-	echo count($results['description']);
+        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        $reviewer = $results['user_id'];
+	$rating = $result['rating'];
+        $description = $result['description'];
+        echo $reviewer;
+	
         echo '<br/>';
-        //$rating = $result['rating'];
-        //$description = $result['description'];
-        //echo "Rating: " . $rating . "/5 Stars: " . $description;
+        echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
         //echo '<br/>';
         $stmt->closeCursor();
