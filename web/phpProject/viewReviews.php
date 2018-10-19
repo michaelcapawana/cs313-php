@@ -64,10 +64,10 @@ try {
         $reviewer = $results['description'];
 	//$rating = $result['rating'];
         //$description = $result['description'];
-        //echo $reviewer;
+        echo $reviewer;
 	
         echo '<br/>';
-        echo "Rating: " . $rating . "/5 Stars: " . $description;
+        //echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
         //echo '<br/>';
         $stmt->closeCursor();
