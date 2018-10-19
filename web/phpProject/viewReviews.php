@@ -60,10 +60,9 @@ echo $name;
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        //$reviewer = $result['user_id'];
-        echo count($result['user_id']);
-        //echo $reviewer;
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $reviewer = $result['user_id'];
+        echo $reviewer;
 	//echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
