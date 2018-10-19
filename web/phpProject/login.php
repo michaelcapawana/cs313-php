@@ -37,7 +37,7 @@ function login($db)
 	} catch(PDOException $e) {
 	  echo "Error";
 	}
-     if($tempPassword == $pw) {
+     if($tempPassword === $pw && $tempPassword != NULL) {
           session_start();
 	  $_SESSION['loggedIn'] = true;
 	  $_SESSION['name'] = $un;

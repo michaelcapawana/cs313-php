@@ -38,7 +38,10 @@ function login($db)
 	  echo "Error";
 	}
      if($tempPassword == $pw) {
-     	  echo "This works!";
+          session_start();
+	  $_SESSION['loggedIn'] = true;
+	  $_SESSION['name'] = $un;
+
 	  header("Location: index.php");
     	  exit;
      } else {
