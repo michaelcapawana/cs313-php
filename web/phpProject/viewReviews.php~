@@ -45,8 +45,9 @@ catch (PDOException $ex)
 
 echo $name;
 
-    $stmt = $db->prepare('SELECT description FROM reviews WHERE business=:business LIMIT 1');
-    $stmt->bindValue(':business', $name, PDO::PARAM_STR);
+    $num = 3;
+    $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business, FROM reviews, business WHERE reviews.user_id:$num');
+    $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
