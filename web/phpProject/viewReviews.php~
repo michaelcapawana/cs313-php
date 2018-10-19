@@ -44,27 +44,6 @@ catch (PDOException $ex)
   echo "<html><h3>".$name."</h3></html>";  
 
 
-foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
-{
-  echo 'rating: ' . $row['rating'];
-  echo ' description: ' . $row['description'];
-  echo ' rating: ' . $row['user_id'];
-  echo ' userID: ' . $row['business'];
-  echo '<br/>';
-}
-
-$stmt = $db->prepare('SELECT user_id FROM reviews WHERE name=:name LIMIT 1');
-    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
-    try {
-        $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $tempPassword = $result['user_id'];
-        //echo "Pass: " . $tempPassword;
-        $stmt->closeCursor();
-        } catch(PDOException $e) {
-          echo "Error";
-        }
-
 
 
     $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
