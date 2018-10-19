@@ -21,9 +21,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-echo $_GET['id'];
-
 ?>
 
 
@@ -42,12 +39,25 @@ echo $_GET['id'];
 <div class="body">
 <div class="standard">
 
-<?php 
-  echo $_GET['id'];
+<p><?php 
   $name = $_GET['id'];
-  echo $name;
   echo "<html><h3>".$name."</h3></html>";  
-?>
+
+
+foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
+{
+  echo 'rating: ' . $row['rating'];
+  echo ' description: ' . $row['description'];
+  echo ' rating: ' . $row['user_id'];
+  echo ' userID: ' . $row['business'];
+  echo '<br/>';
+}
+
+foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
+
+
+?></p>
+
   
 
 </div>

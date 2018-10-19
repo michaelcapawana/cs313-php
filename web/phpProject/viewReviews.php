@@ -39,10 +39,40 @@ catch (PDOException $ex)
 <div class="body">
 <div class="standard">
 
-<?php 
+<p><?php 
   $name = $_GET['id'];
   echo "<html><h3>".$name."</h3></html>";  
-?>
+
+
+foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
+{
+  echo 'rating: ' . $row['rating'];
+  echo ' description: ' . $row['description'];
+  echo ' rating: ' . $row['user_id'];
+  echo ' userID: ' . $row['business'];
+  echo '<br/>';
+}
+
+    $stmt = $db->prepare('SELECT rating, description, user_id FROM reviews WHERE business=:business');
+    $stmt->bindValue(':business', $name, PDO::PARAM_STR);
+    try {
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $user_id = $result['user_id'];
+        echo $user_id;
+	echo '<br/>';
+        $rating = $result['rating'];
+        $description = $result['description'];
+        echo "Rating: " . $rating . "/5 Stars: " . $description;
+        $stmt->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error";
+        }
+
+
+
+?></p>
+
   
 
 </div>
