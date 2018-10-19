@@ -45,14 +45,6 @@ catch (PDOException $ex)
 
 
 
-foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
-{
-  echo 'rating: ' . $row['rating'];
-  echo ' description: ' . $row['description'];
-  echo ' rating: ' . $row['user_id'];
-  echo ' userID: ' . $row['business'];
-  echo '<br/>';
-}
 
 echo $name;
 
@@ -63,16 +55,30 @@ echo $name;
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         $reviewer = $result['user_id'];
         echo $reviewer;
-	//echo '<br/>';
+        //echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
         //echo "Rating: " . $rating . "/5 Stars: " . $description;
-	//echo '<br/>';
+        //echo '<br/>';
         //echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
         }
+
+
+
+
+
+foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
+{
+  echo 'rating: ' . $row['rating'];
+  echo ' description: ' . $row['description'];
+  echo ' rating: ' . $row['user_id'];
+  echo ' userID: ' . $row['business'];
+  echo '<br/>';
+}
+
 
 
 
