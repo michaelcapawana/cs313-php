@@ -57,7 +57,7 @@ try {
           echo '<br/>';
     }
 
-/*
+
 
     //$num = 3;
     $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.user_id=:business');
@@ -78,7 +78,7 @@ try {
         } catch(PDOException $e) {
           echo "Error with desc.: $e";
           echo '<br/>';
-        }*/
+        }
 /*
 foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
 {
