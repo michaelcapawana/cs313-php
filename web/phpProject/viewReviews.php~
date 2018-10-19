@@ -45,11 +45,11 @@ catch (PDOException $ex)
 
 echo $name;
 
-    $stmt = $db->prepare('SELECT description FROM reviews WHERE business=:business');
+    $stmt = $db->prepare('SELECT description FROM reviews WHERE business=:business LIMIT 1');
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $reviewer = $result['description'];
         echo $reviewer;
 
@@ -59,7 +59,7 @@ echo $name;
         //echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
         //echo '<br/>';
-        //$stmt->closeCursor();
+        $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error";
           echo '<br/>';
