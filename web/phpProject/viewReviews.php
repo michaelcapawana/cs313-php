@@ -61,7 +61,7 @@ echo $name;
         //echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {
-          echo "Error: " . XSXC$e;
+          echo "Error: $e";
           echo '<br/>';
         }
 
