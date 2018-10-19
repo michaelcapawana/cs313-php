@@ -60,7 +60,7 @@ try {
 
 
     //$num = 3;
-    $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business, business.business FROM reviews, business WHERE business=:business');
+  $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business, business.business FROM reviews, business WHERE business.business=:business');
     $stmt->bindValue(':business', $num, PDO::PARAM_STR);
     try {
         $stmt->execute();
