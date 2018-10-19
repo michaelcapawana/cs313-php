@@ -41,7 +41,7 @@ catch (PDOException $ex)
 
 <?php 
   $name = $_GET['id'];
-  echo "<html><h3>"Reviews for $name"</h3></html>";  
+  echo "<html><h3>"Reviews for " . $name</h3></html>";  
 
 echo $name;
 
