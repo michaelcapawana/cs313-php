@@ -45,14 +45,24 @@ catch (PDOException $ex)
 
 
 
+foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
+{
+  echo 'rating: ' . $row['rating'];
+  echo ' description: ' . $row['description'];
+  echo ' rating: ' . $row['user_id'];
+  echo ' userID: ' . $row['business'];
+  echo '<br/>';
+}
+
+echo $name;
 
     $stmt = $db->prepare('SELECT user_id FROM reviews WHERE business=:business');
     $stmt->bindValue(':business', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $user_id = $result['user_id'];
-        echo $user_id;
+        $user = $result['user_id'];
+        echo $user;
 	//echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
