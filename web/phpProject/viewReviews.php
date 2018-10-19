@@ -62,7 +62,7 @@ echo $name;
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         //$reviewer = $result['user_id'];
-        echo count($result);
+        echo count($result['user_id']);
         //echo $reviewer;
 	//echo '<br/>';
         //$rating = $result['rating'];

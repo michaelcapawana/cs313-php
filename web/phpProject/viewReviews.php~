@@ -61,8 +61,9 @@ echo $name;
     try {
         $stmt->execute();
         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $reviewer = $result['user_id'];
-        echo $reviewer;
+        //$reviewer = $result['user_id'];
+        echo count($result);
+        //echo $reviewer;
 	//echo '<br/>';
         //$rating = $result['rating'];
         //$description = $result['description'];
