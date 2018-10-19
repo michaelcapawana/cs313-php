@@ -40,7 +40,7 @@ echo  $_GET['id'];
 </div>
 <div class="body">
 <div class="standard">
-<h3><?php $_GET['id'];</h3>
+<h3><?php $_GET['id'];?></h3>
 
 </div>
 </div>
