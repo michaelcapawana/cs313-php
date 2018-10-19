@@ -21,9 +21,6 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
-echo $_GET['id'];
-
 ?>
 
 
@@ -43,9 +40,7 @@ echo $_GET['id'];
 <div class="standard">
 
 <?php 
-  echo $_GET['id'];
   $name = $_GET['id'];
-  echo $name;
   echo "<html><h3>".$name."</h3></html>";  
 ?>
   
