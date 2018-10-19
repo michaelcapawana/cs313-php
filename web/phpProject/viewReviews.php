@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
-echo  $_GET['name'];
+echo  $_GET['id'];
 
 ?>
 
