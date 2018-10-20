@@ -68,6 +68,8 @@ try {
 	  $rating = $results['rating'];
 	  $description = $results['description'];
 	  echo "Rating: " . $rating . "/5 Stars - " . $description;
+	  echo '<br/>';
+	  echo '<br/>';
 	}
 
         $stmt->closeCursor();

@@ -77,7 +77,7 @@ try {
           echo "Error with desc.: $e";
           echo '<br/>';
         }
-/*
+
 foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
 {
   echo 'rating: ' . $row['rating'];
@@ -85,7 +85,7 @@ foreach ($db->query('SELECT rating, description, user_id, business FROM reviews'
   echo ' rating: ' . $row['user_id'];
   echo ' userID: ' . $row['business'];
   echo '<br/>';
-}*/
+}
 
 ?>
 
