@@ -57,7 +57,7 @@ try {
     }
 
     $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business');
-    $stmt->bindValue(':business', $num, PDO::PARAM_STR);
+    $stmt->bindValue(':business', $num, PDO::PARAM_INT);
     try {
         $stmt->execute();
         $results = $stmt->fetch(PDO::FETCH_ASSOC);

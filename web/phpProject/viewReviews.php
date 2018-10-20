@@ -61,9 +61,11 @@ try {
     try {
         $stmt->execute();
         $results = $stmt->fetch(PDO::FETCH_ASSOC);
-        $reviewer = $results['description'];
-	echo $reviewer;
 
+	$description = $results['description'];
+  	echo $description;
+        $reviewer = $results['description'];
+	//echo $reviewer;
 
 
 	$rating = $results['rating'];
