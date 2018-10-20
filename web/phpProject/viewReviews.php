@@ -57,7 +57,7 @@ try {
     }
 
 function getContent($db, $num) {
-    $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business');
+    $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business LIMIT 2');
     $stmt->bindValue(':business', $num, PDO::PARAM_INT);
     try {
         $stmt->execute();
