@@ -56,35 +56,28 @@ try {
           echo '<br/>';
     }
 
+function getContent() {
     $stmt = $db->prepare('SELECT reviews.rating, reviews.user_id, reviews.description, reviews.business FROM reviews, business WHERE reviews.business=:business');
     $stmt->bindValue(':business', $num, PDO::PARAM_INT);
     try {
         $stmt->execute();
-	while($results = $stmt->fetch(PDO::FETCH_ASSOC))
-	{
-          $reviewer = $results['user_id'];
-	  echo $reviewer;
-	  echo '<br/>';
-	  $rating = $results['rating'];
-	  $description = $results['description'];
-	  echo "Rating: " . $rating . "/5 Stars - " . $description;
-	  echo '<br/>';
-	  echo '<br/>';
-	}
-
-        $stmt->closeCursor();
-        } catch(PDOException $e) {
+	return $stmt->fetchAll(PDO::FETCH_ASSOC));
+	} catch(PDOException $e) {
           echo "Error with desc.: $e";
           echo '<br/>';
         }
+}
 
-foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
-{
-  echo 'rating: ' . $row['rating'];
-  echo ' description: ' . $row['description'];
-  echo ' rating: ' . $row['user_id'];
-  echo ' userID: ' . $row['business'];
-  echo '<br/>';
+$data = getContent();
+foreach($data as $row) {
+    $reviewer = $row['user_id'];
+    echo $reviewer;
+    echo '<br/>';
+    $description = $row['description'];
+    $rating = $row['rating'];
+    echo "Rating: " . $rating . "/5 Stars - " . $description;
+          echo '<br/>';
+          echo '<br/>';
 }
 
 ?>
