@@ -62,10 +62,14 @@ try {
         $stmt->execute();
         $results = $stmt->fetch(PDO::FETCH_ASSOC);
         $reviewer = $results['description'];
-	//$rating = $result['rating'];
-        //$description = $result['description'];
-        echo $reviewer;
-	
+	echo $reviewer;
+
+
+
+	$rating = $results['rating'];
+	echo $rating;
+        //$description = $results['description'];
+        	
         echo '<br/>';
         //echo "Rating: " . $rating . "/5 Stars: " . $description;
         //echo '<br/>';
