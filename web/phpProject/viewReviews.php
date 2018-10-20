@@ -74,10 +74,10 @@ foreach($data as $row) {
     $stm = $db->prepare('SELECT name FROM users WHERE id=:user');
     $stm->bindValue(':user', $user, PDO::PARAM_STR);
     try {
-    $statement->execute();
-    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $stm->execute();
+    $result = $stm->fetch(PDO::FETCH_ASSOC);
     $reviewer = $result['name'];
-    $statement->closeCursor();
+    $stm->closeCursor();
     } catch(PDOException $e) {
           echo "Error with num: $e";
           echo '<br/>';
