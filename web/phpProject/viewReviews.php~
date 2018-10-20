@@ -60,20 +60,16 @@ try {
     $stmt->bindValue(':business', $num, PDO::PARAM_INT);
     try {
         $stmt->execute();
-        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+	while($results = $stmt->fetch(PDO::FETCH_ASSOC))
+	{
+          $reviewer = $results['user_id'];
+	  echo $reviewer;
+	  echo '<br/>';
+	  $rating = $results['rating'];
+	  $description = $results['description'];
+	  echo "Rating: " . $rating . "/5 Stars - " . $description;
+	}
 
-        $reviewer = $results['user_id'];
-	echo $reviewer;
-	echo '<br/>';
-
-	$rating = $results['rating'];
-	$description = $results['description'];
-	echo "Rating: " . $rating . "/5 Stars: " . $description;
-        	
-        echo '<br/>';
-        //echo "Rating: " . $rating . "/5 Stars: " . $description;
-        //echo '<br/>';
-        //echo '<br/>';
         $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error with desc.: $e";
