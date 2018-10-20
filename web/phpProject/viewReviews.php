@@ -68,9 +68,42 @@ function getContent($db, $num) {
         }
 }
 
+
+
+
+$stm = $db->prepare('SELECT name FROM users WHERE id=:user');
+$stm->bindValue('user:', $reviewer, PDO::PARAM_STR);
+try {
+    $statement->execute();
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $reviewer = $result['name'];
+    $statement->closeCursor();
+    } catch(PDOException $e) {
+          echo "Error with num: $e";
+          echo '<br/>';
+    }
+
+
+
+
+
 $data = getContent($db, $num);
 foreach($data as $row) {
-    $reviewer = $row['user_id'];
+    
+    $stm = $db->prepare('SELECT name FROM users WHERE id=:user');
+    $stm->bindValue('user:', $row['user_id'], PDO::PARAM_STR);
+    try {
+    $statement->execute();
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $reviewer = $result['name'];
+    $statement->closeCursor();
+    } catch(PDOException $e) {
+          echo "Error with num: $e";
+          echo '<br/>';
+    }
+
+
+    //$reviewer = $row['user_id'];
     echo $reviewer;
     echo '<br/>';
     $description = $row['description'];
