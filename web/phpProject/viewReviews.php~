@@ -61,7 +61,7 @@ function getContent() {
     $stmt->bindValue(':business', $num, PDO::PARAM_INT);
     try {
         $stmt->execute();
-	return $stmt->fetchAll(PDO::FETCH_ASSOC));
+	return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	} catch(PDOException $e) {
           echo "Error with desc.: $e";
           echo '<br/>';
