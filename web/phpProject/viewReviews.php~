@@ -64,8 +64,8 @@ try {
 
 	$description = $results['description'];
   	echo $description;
-        $reviewer = $results['description'];
-	//echo $reviewer;
+        $reviewer = $results['user_id'];
+	echo $reviewer;
 
 
 	$rating = $results['rating'];
