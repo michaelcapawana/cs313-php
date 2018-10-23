@@ -24,25 +24,52 @@ catch (PDOException $ex)
 
 function leaveReview($db)
 {
-    $un = $_POST["username"];
-    $pw = $_POST["password"];
-    $name = $_POST["name"];
+    $session_start();
+    $username = $_SESSION['name'];        
+    $rating = $_POST["rating"];
+    $details = $_POST["details"];
+    $businessName = $_GET['id'];
 
-    $hashedPW = password_hash($pw, PASSWORD_DEFAULT);
-    var_dump($hashedPW);
+    $statement = $db->prepare('SELECT id FROM users WHERE name=:name');
+    $statement->bindValue(':name', $username, PDO::PARAM_STR);
+    try {
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        $businessId = $result['id'];
+        $statement->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error with userId: $e";
+          echo '<br/>';
+          }
 
-    $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name)');
-    $stmt->bindValue(':username', $un, PDO::PARAM_STR);
-    $stmt->bindValue(':password', $hashedPW, PDO::PARAM_STR);
-    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    $statement = $db->prepare('SELECT id FROM business WHERE name=:name');
+    $statement->bindValue(':name', $businessName, PDO::PARAM_STR);
+    try {
+    	$statement->execute();
+    	$result = $statement->fetch(PDO::FETCH_ASSOC);
+    	$businessId = $result['id'];
+    	$statement->closeCursor();
+    	} catch(PDOException $e) {
+          echo "Error with businessId: $e";
+          echo '<br/>';
+    	  }
+
+    echo "Do we get it all?";
+    echo $rating;
+    echo $details;
+    echo $userId;
+    echo $businessId;
+
+    $stmt = $db->prepare('INSERT INTO reviews(rating, description, user_id, business) VALUES(:rating, :description, :userId, :businessId )');
+    $stmt->bindValue(':rating', $rating, PDO::PARAM_STR);
+    $stmt->bindValue(':details', $details, PDO::PARAM_STR);
+    $stmt->bindValue(':userId', $userId, PDO::PARAM_STR);
+    $stmt->bindValue(':businessId', $businessId, PDO::PARAM_STR);
     try {
         $stmt->execute();
         $stmt->closeCursor();
         session_start();
-        $_SESSION['loggedIn'] = true;
-        $_SESSION['name'] = $name;
-        header("Location: index.php");
-        exit;
+	echo "Thank you for your review";
         } catch(PDOException $e) {
           echo "Error";
         }
