@@ -24,7 +24,7 @@ catch (PDOException $ex)
 
 function leaveReview($db)
 {
-    $session_start();
+    session_start();
     $username = $_SESSION['name'];        
     $rating = $_POST["rating"];
     $details = $_POST["details"];
