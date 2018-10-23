@@ -33,7 +33,7 @@ function signup($db)
 
     $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name)');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
-    $stmt->bindValue(':password', $pw, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $hashedPW, PDO::PARAM_STR);
     $stmt->bindValue(':name', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
