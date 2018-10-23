@@ -31,8 +31,8 @@ function leaveReview($db)
     echo $rating;
     $details = $_POST["details"];
     echo $details;
-    $businessName = $_GET['id'];
-    echo $businessName;
+    //$businessName = $_GET['id'];
+    //echo $businessName;
 
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
     $stamt->bindValue(':name', $username, PDO::PARAM_STR);
