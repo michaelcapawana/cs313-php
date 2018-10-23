@@ -25,10 +25,14 @@ catch (PDOException $ex)
 function leaveReview($db)
 {
     session_start();
-    $username = $_SESSION['name'];        
+    $username = $_SESSION['name'];
+    echo $username;
     $rating = $_POST["rating"];
+    echo $rating;
     $details = $_POST["details"];
+    echo $details;
     $businessName = $_GET['id'];
+    echo $businessName;
 
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
     $stamt->bindValue(':name', $username, PDO::PARAM_STR);
