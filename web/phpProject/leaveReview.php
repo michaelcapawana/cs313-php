@@ -42,7 +42,7 @@ function leaveReview($db, $businessName, $username)
     try {
     	$statement->execute();
     	$results = $statement->fetch(PDO::FETCH_ASSOC);
-    	$businessId = $result['id'];
+    	$businessId = $results['id'];
     	$statement->closeCursor();
     	} catch(PDOException $e) {
           echo "Error with businessId: $e";
@@ -57,8 +57,6 @@ function leaveReview($db, $businessName, $username)
     try {
         $stmt->execute();
         $stmt->closeCursor();
-        session_start();
-	echo "Thank you for your review";
         } catch(PDOException $e) {
           echo "Error";
         }
