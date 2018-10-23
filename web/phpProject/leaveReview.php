@@ -76,7 +76,7 @@ function leaveReview($db)
 
 }
 
-if(isset($_POST['login']))
+if(isset($_POST['leaveReview']))
 {
    leaveReview($db);
 }
