@@ -77,11 +77,12 @@ if(isset($_POST['login']))
 
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
   <br>
-  <input type="radio" name="rating" value="1 Star">1 Star
-  <input type="radio" name="rating" value="2 Star">2 Star
-  <input type="radio" name="rating" value="3 Star">3 Star
-  <input type="radio" name="rating" value="4 Star">4 Star
-  <input type="radio" name="rating" value="5 Star">5 Star
+  <input type="radio" name="rating" value=1>1 Star
+  <input type="radio" name="rating" value=2>2 Star
+  <input type="radio" name="rating" value=3>3 Star
+  <input type="radio" name="rating" value=4>4 Star
+  <input type="radio" name="rating" value=5>5 Star
+  <br>
   <br>
   <textarea rows="10" cols="70" name="details">comments</textarea>
   <br>

@@ -76,13 +76,14 @@ if(isset($_POST['login']))
   echo "<html><h3>Leave a Review for ".$name."</h3></html>";?>
 
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
-  <input type="radio" name="rating" value="1 Star">1 Star<br>
-  <input type="radio" name="rating" value="2 Star">2 Star<br>
-  <input type="radio" name="rating" value="3 Star">3 Star<br>
-  <input type="radio" name="rating" value="4 Star">4 Star<br>
-  <input type="radio" name="rating" value="5 Star">5 Star<br>
   <br>
-  <textarea rows="10" cols="30" name="details">comments</textarea>
+  <input type="radio" name="rating" value="1 Star">1 Star
+  <input type="radio" name="rating" value="2 Star">2 Star
+  <input type="radio" name="rating" value="3 Star">3 Star
+  <input type="radio" name="rating" value="4 Star">4 Star
+  <input type="radio" name="rating" value="5 Star">5 Star
+  <br>
+  <textarea rows="10" cols="70" name="details">comments</textarea>
   <br>
   <input type="submit" value="Leave Review" name="leaveReview" style="color: black; font-size: 2em; margin-top:25px;">
 </form>
