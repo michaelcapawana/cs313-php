@@ -2,23 +2,17 @@
 
 session_start();
 $username = $_SESSION['name'];
-echo $username;
-$businessName = $_GET['id'];
-echo $businessName;
+$businessName = $_GET['id'];//This is my problem
 try
 {
   $dbUrl = getenv('DATABASE_URL');
-
   $dbOpts = parse_url($dbUrl);
-
   $dbHost = $dbOpts["host"];
   $dbPort = $dbOpts["port"];
   $dbUser = $dbOpts["user"];
   $dbPassword = $dbOpts["pass"];
   $dbName = ltrim($dbOpts["path"],'/');
-
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $ex)
@@ -29,13 +23,8 @@ catch (PDOException $ex)
 
 function leaveReview($db, $businessName, $username)
 {
-    echo $username;
     $rating = $_POST["rating"];
-    echo $rating;
     $details = $_POST["details"];
-    echo $details;
-    echo $businessName;
-
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
     $stamt->bindValue(':name', $username, PDO::PARAM_STR);
     try {
@@ -47,7 +36,7 @@ function leaveReview($db, $businessName, $username)
           echo "Error with userId: $e";
           echo '<br/>';
           }
-
+    
     $statement = $db->prepare('SELECT id FROM business WHERE name=:name');
     $statement->bindValue(':name', $businessName, PDO::PARAM_STR);
     try {
@@ -59,15 +48,7 @@ function leaveReview($db, $businessName, $username)
           echo "Error with businessId: $e";
           echo '<br/>';
     	  }
-
-    echo "Do we get it all?";
-    echo $rating;
-    echo $details;
-    var_dump($userId);
-    var_dump($businessId);
-    echo $userId;
-    echo $businessId;
-
+    
     $stmt = $db->prepare('INSERT INTO reviews(rating, description, user_id, business) VALUES(:rating, :description, :userId, :businessId )');
     $stmt->bindValue(':rating', $rating, PDO::PARAM_STR);
     $stmt->bindValue(':description', $details, PDO::PARAM_STR);

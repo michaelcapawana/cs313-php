@@ -6,17 +6,13 @@ $businessName = $_GET['id'];//This is my problem
 try
 {
   $dbUrl = getenv('DATABASE_URL');
-
   $dbOpts = parse_url($dbUrl);
-
   $dbHost = $dbOpts["host"];
   $dbPort = $dbOpts["port"];
   $dbUser = $dbOpts["user"];
   $dbPassword = $dbOpts["pass"];
   $dbName = ltrim($dbOpts["path"],'/');
-
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $ex)
@@ -40,7 +36,7 @@ function leaveReview($db, $businessName, $username)
           echo "Error with userId: $e";
           echo '<br/>';
           }
-
+    
     $statement = $db->prepare('SELECT id FROM business WHERE name=:name');
     $statement->bindValue(':name', $businessName, PDO::PARAM_STR);
     try {
@@ -52,7 +48,7 @@ function leaveReview($db, $businessName, $username)
           echo "Error with businessId: $e";
           echo '<br/>';
     	  }
-
+    
     $stmt = $db->prepare('INSERT INTO reviews(rating, description, user_id, business) VALUES(:rating, :description, :userId, :businessId )');
     $stmt->bindValue(':rating', $rating, PDO::PARAM_STR);
     $stmt->bindValue(':description', $details, PDO::PARAM_STR);
@@ -95,7 +91,7 @@ if(isset($_POST['leaveReview']))
   //$businessName = $_GET['id'];
   echo "<html><h3>Leave a Review for ".$businessName."</h3></html>";?>
 
-<form action="leaveReview.php" method="post" accept-charset='UTF-8'>
+<form action="leaveReview.php?id=$businessName" method="post" accept-charset='UTF-8'>
   <br>
   <input type="radio" name="rating" value=1>1 Star
   <input type="radio" name="rating" value=2>2 Star
