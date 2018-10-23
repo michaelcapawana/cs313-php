@@ -32,15 +32,27 @@ function login($db)
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	//echo "Pass: " . $tempPassword;
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
 	}
+
+    $statement = $db->prepare('SELECT name FROM users WHERE username=:username LIMIT 1');
+    $statement->bindValue(':username', $un, PDO::PARAM_STR);
+    try {
+        $statement->execute();
+        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        $name = $result['name'];
+        $statement->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error";
+        }
+
+
      if(password_verify($pw, $tempPassword)) {
           session_start();
 	  $_SESSION['loggedIn'] = true;
-	  $_SESSION['name'] = $un;
+	  $_SESSION['name'] = $name;
 
 	  header("Location: index.php");
     	  exit;
