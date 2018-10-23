@@ -27,18 +27,19 @@ function signup($db)
     $un = $_POST["username"];
     $pw = $_POST["password"];
     $name = $_POST["name"];
-    echo $un;
-    echo $pw;
-    echo $name;
 
-    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
+    $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name);
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $pw, PDO::PARAM_STR);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
     try {
         $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $tempPassword = $result['password'];
-        echo "Pass: " . $tempPassword;
         $stmt->closeCursor();
+	session_start();
+	$_SESSION['loggedIn'] = true;
+        $_SESSION['name'] = $name;
+        header("Location: index.php");
+        exit;
         } catch(PDOException $e) {
           echo "Error";
         }
