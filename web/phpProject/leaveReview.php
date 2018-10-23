@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+$username = $_SESSION['name'];
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -22,10 +25,10 @@ catch (PDOException $ex)
   die();
 }
 
-function leaveReview($db)
+function leaveReview($db, $businessName, $username)
 {
     //session_start();
-    $username = $_SESSION['name'];
+    //$username = $_SESSION['name'];
     echo $username;
     $rating = $_POST["rating"];
     echo $rating;
@@ -84,7 +87,7 @@ function leaveReview($db)
 
 if(isset($_POST['leaveReview']))
 {
-   leaveReview($db);
+   leaveReview($db, $businessName, $username);
 }
 ?>
 
