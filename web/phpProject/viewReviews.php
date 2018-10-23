@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+$username = $_SESSION['name'];
+$_SESSION['name'] = $username;
+
 try
 {
   $dbUrl = getenv('DATABASE_URL');
