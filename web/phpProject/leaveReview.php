@@ -57,12 +57,14 @@ function leaveReview($db)
     echo "Do we get it all?";
     echo $rating;
     echo $details;
+    var_dump($userId);
+    var_dump($businessId);
     echo $userId;
     echo $businessId;
 
     $stmt = $db->prepare('INSERT INTO reviews(rating, description, user_id, business) VALUES(:rating, :description, :userId, :businessId )');
     $stmt->bindValue(':rating', $rating, PDO::PARAM_STR);
-    $stmt->bindValue(':details', $details, PDO::PARAM_STR);
+    $stmt->bindValue(':description', $details, PDO::PARAM_STR);
     $stmt->bindValue(':userId', $userId, PDO::PARAM_STR);
     $stmt->bindValue(':businessId', $businessId, PDO::PARAM_STR);
     try {

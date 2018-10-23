@@ -35,7 +35,7 @@ function leaveReview($db)
     try {
         $statement->execute();
         $result = $statement->fetch(PDO::FETCH_ASSOC);
-        $businessId = $result['id'];
+        $userId = $result['id'];
         $statement->closeCursor();
         } catch(PDOException $e) {
           echo "Error with userId: $e";
