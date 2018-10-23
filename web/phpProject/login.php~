@@ -32,7 +32,7 @@ function login($db)
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
-	echo "Pass: " . $tempPassword;
+	//echo "Pass: " . $tempPassword;
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
