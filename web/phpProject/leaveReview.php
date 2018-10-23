@@ -2,9 +2,7 @@
 
 session_start();
 $username = $_SESSION['name'];
-echo $username;
-$businessName = $_GET['id'];
-echo $businessName;
+$businessName = $_GET['id'];//This is my problem
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -29,13 +27,8 @@ catch (PDOException $ex)
 
 function leaveReview($db, $businessName, $username)
 {
-    echo $username;
     $rating = $_POST["rating"];
-    echo $rating;
     $details = $_POST["details"];
-    echo $details;
-    echo $businessName;
-
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
     $stamt->bindValue(':name', $username, PDO::PARAM_STR);
     try {
@@ -59,14 +52,6 @@ function leaveReview($db, $businessName, $username)
           echo "Error with businessId: $e";
           echo '<br/>';
     	  }
-
-    echo "Do we get it all?";
-    echo $rating;
-    echo $details;
-    var_dump($userId);
-    var_dump($businessId);
-    echo $userId;
-    echo $businessId;
 
     $stmt = $db->prepare('INSERT INTO reviews(rating, description, user_id, business) VALUES(:rating, :description, :userId, :businessId )');
     $stmt->bindValue(':rating', $rating, PDO::PARAM_STR);

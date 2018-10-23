@@ -3,6 +3,8 @@
 session_start();
 $username = $_SESSION['name'];
 echo $username;
+$businessName = $_GET['id'];
+echo $businessName;
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -27,14 +29,11 @@ catch (PDOException $ex)
 
 function leaveReview($db, $businessName, $username)
 {
-    //session_start();
-    //$username = $_SESSION['name'];
     echo $username;
     $rating = $_POST["rating"];
     echo $rating;
     $details = $_POST["details"];
     echo $details;
-    //$businessName = $_GET['id'];
     echo $businessName;
 
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
@@ -108,7 +107,7 @@ if(isset($_POST['leaveReview']))
 <div class="standard">
 
 <?php
-  $businessName = $_GET['id'];
+  //$businessName = $_GET['id'];
   echo "<html><h3>Leave a Review for ".$businessName."</h3></html>";?>
 
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
