@@ -26,8 +26,10 @@ function signup($db)
 {
     $un = $_POST["username"];
     $pw = $_POST["password"];
+    $name = $_POST["name"];
     echo $un;
     echo $pw;
+    echo $name;
 
     $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
@@ -70,7 +72,7 @@ if(isset($_POST['signup']))
   <br>
   <input type="password" name="password" placeholder="Password" style="font-size: 2em; margin-top:25px;">
   <br>
-  <input type="text" name="verifyPassword" placeholder="Verify Password" style="font-size: 2em; margin-top:25px;">
+  <input type="password" name="verifyPassword" placeholder="Verify Password" style="font-size: 2em; margin-top:25px;">
   <br>
   <input type="text" name="name" placeholder="Name (eg. John Doe)" style="font-size: 2em; margin-top:25px;">
   <br>
