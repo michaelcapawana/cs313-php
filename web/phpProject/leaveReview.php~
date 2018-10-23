@@ -30,13 +30,13 @@ function leaveReview($db)
     $details = $_POST["details"];
     $businessName = $_GET['id'];
 
-    $statement = $db->prepare('SELECT id FROM users WHERE name=:name');
-    $statement->bindValue(':name', $username, PDO::PARAM_STR);
+    $stmt = $db->prepare('SELECT id FROM users WHERE name=:name');
+    $stmt->bindValue(':name', $username, PDO::PARAM_STR);
     try {
-        $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
         $userId = $result['id'];
-        $statement->closeCursor();
+        $stmt->closeCursor();
         } catch(PDOException $e) {
           echo "Error with userId: $e";
           echo '<br/>';

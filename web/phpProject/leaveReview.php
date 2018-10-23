@@ -30,13 +30,13 @@ function leaveReview($db)
     $details = $_POST["details"];
     $businessName = $_GET['id'];
 
-    $stmt = $db->prepare('SELECT id FROM users WHERE name=:name');
-    $stmt->bindValue(':name', $username, PDO::PARAM_STR);
+    $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
+    $stamt->bindValue(':name', $username, PDO::PARAM_STR);
     try {
-        $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stamt->execute();
+        $result = $stamt->fetch(PDO::FETCH_ASSOC);
         $userId = $result['id'];
-        $stmt->closeCursor();
+        $stamt->closeCursor();
         } catch(PDOException $e) {
           echo "Error with userId: $e";
           echo '<br/>';
@@ -46,7 +46,7 @@ function leaveReview($db)
     $statement->bindValue(':name', $businessName, PDO::PARAM_STR);
     try {
     	$statement->execute();
-    	$result = $statement->fetch(PDO::FETCH_ASSOC);
+    	$results = $statement->fetch(PDO::FETCH_ASSOC);
     	$businessId = $result['id'];
     	$statement->closeCursor();
     	} catch(PDOException $e) {
