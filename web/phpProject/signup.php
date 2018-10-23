@@ -28,7 +28,7 @@ function signup($db)
     $pw = $_POST["password"];
     $name = $_POST["name"];
 
-    $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name);
+    $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name)');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     $stmt->bindValue(':password', $pw, PDO::PARAM_STR);
     $stmt->bindValue(':name', $name, PDO::PARAM_STR);
