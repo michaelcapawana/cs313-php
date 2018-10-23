@@ -24,6 +24,28 @@ catch (PDOException $ex)
 
 function leaveReview($db)
 {
+    $un = $_POST["username"];
+    $pw = $_POST["password"];
+    $name = $_POST["name"];
+
+    $hashedPW = password_hash($pw, PASSWORD_DEFAULT);
+    var_dump($hashedPW);
+
+    $stmt = $db->prepare('INSERT INTO users(username, password, name) VALUES(:username, :password, :name)');
+    $stmt->bindValue(':username', $un, PDO::PARAM_STR);
+    $stmt->bindValue(':password', $hashedPW, PDO::PARAM_STR);
+    $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+    try {
+        $stmt->execute();
+        $stmt->closeCursor();
+        session_start();
+        $_SESSION['loggedIn'] = true;
+        $_SESSION['name'] = $name;
+        header("Location: index.php");
+        exit;
+        } catch(PDOException $e) {
+          echo "Error";
+        }
 
 }
 
@@ -54,7 +76,13 @@ if(isset($_POST['login']))
   echo "<html><h3>Leave a Review for ".$name."</h3></html>";?>
 
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
-  <input type="text" name="password" placeholder="Still in Progress" style="font-size: 2em; margin-top:25px;">
+  <input type="radio" name="rating" value="1 Star">1 Star<br>
+  <input type="radio" name="rating" value="2 Star">2 Star<br>
+  <input type="radio" name="rating" value="3 Star">3 Star<br>
+  <input type="radio" name="rating" value="4 Star">4 Star<br>
+  <input type="radio" name="rating" value="5 Star">5 Star<br>
+  <br>
+  <textarea rows="10" cols="30" name="details">comments</textarea>
   <br>
   <input type="submit" value="Leave Review" name="leaveReview" style="color: black; font-size: 2em; margin-top:25px;">
 </form>
