@@ -66,8 +66,7 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
 <?php
 session_start();
   if($_SESSION['loggedIn'] === True) {
-    $username = $_SESSION['name'];
-    $_SESSION['name'] = $username;?>
+    $username = $_SESSION['name'];?>
     <div class="banner">
     <a class="rightLink" href="index.php"><?php session_unset();?>Log Out</a>
     <a class="leftLink"><?php echo"Hello, " . $username?></a>
@@ -106,8 +105,10 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo ' - ' . $row['score'];
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
-  echo " ";
+  $_SESSION['name'] = $username;
+  echo " or ";
   echo "<a href='viewReviews.php?id=$name'>View Reviews</a>";
+  $_SESSION['name'] = $username;
   echo '<br/>';
 }
 ?></p>

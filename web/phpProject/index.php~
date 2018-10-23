@@ -66,10 +66,11 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
 <?php
 session_start();
   if($_SESSION['loggedIn'] === True) {
-    $name = $_SESSION['name'];?>
+    $username = $_SESSION['name'];
+    $_SESSION['name'] = $username;?>
     <div class="banner">
     <a class="rightLink" href="index.php"><?php session_unset();?>Log Out</a>
-    <a class="leftLink"><?php echo"Hello, " . $name?></a>
+    <a class="leftLink"><?php echo"Hello, " . $username?></a>
     <h1>Rate IBC Groups</h1>
     </div><?php
   } else {?>
@@ -105,10 +106,8 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo ' - ' . $row['score'];
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
-  $_SESSION['name'] = $name;
   echo " ";
   echo "<a href='viewReviews.php?id=$name'>View Reviews</a>";
-  $_SESSION['name'] = $name;
   echo '<br/>';
 }
 ?></p>
