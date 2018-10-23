@@ -32,7 +32,7 @@ function leaveReview($db)
     $details = $_POST["details"];
     echo $details;
     //$businessName = $_GET['id'];
-    //echo $businessName;
+    echo $businessName;
 
     $stamt = $db->prepare('SELECT id FROM users WHERE name=:name');
     $stamt->bindValue(':name', $username, PDO::PARAM_STR);
@@ -105,8 +105,8 @@ if(isset($_POST['leaveReview']))
 <div class="standard">
 
 <?php
-  $name = $_GET['id'];
-  echo "<html><h3>Leave a Review for ".$name."</h3></html>";?>
+  $businessName = $_GET['id'];
+  echo "<html><h3>Leave a Review for ".$businessName."</h3></html>";?>
 
 <form action="leaveReview.php" method="post" accept-charset='UTF-8'>
   <br>
