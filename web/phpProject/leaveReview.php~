@@ -91,7 +91,7 @@ if(isset($_POST['leaveReview']))
   //$businessName = $_GET['id'];
   echo "<html><h3>Leave a Review for ".$businessName."</h3></html>";?>
 
-<form action="leaveReview.php" method="post" accept-charset='UTF-8'>
+<form action="leaveReview.php?id=$businessName" method="post" accept-charset='UTF-8'>
   <br>
   <input type="radio" name="rating" value=1>1 Star
   <input type="radio" name="rating" value=2>2 Star
