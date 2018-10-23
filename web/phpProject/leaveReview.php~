@@ -2,7 +2,7 @@
 
 session_start();
 $username = $_SESSION['name'];
-
+echo $username;
 try
 {
   $dbUrl = getenv('DATABASE_URL');
