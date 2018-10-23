@@ -101,7 +101,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 
 foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
   $name = $row['name'];
-  echo $row['name'];
+  echo $name;
   echo ' - ' . $row['score'];
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
