@@ -105,8 +105,10 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo ' - ' . $row['score'];
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
+  $_SESSION['name'] = $name;
   echo " ";
   echo "<a href='viewReviews.php?id=$name'>View Reviews</a>";
+  $_SESSION['name'] = $name;
   echo '<br/>';
 }
 ?></p>
