@@ -1,7 +1,7 @@
 <?php
 session_start();
 $loggedIn = $SESSION['in'];
-echo $loggedIn;
+var_dump($loggedIn);
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -92,7 +92,7 @@ if(isset($_POST['login']))
 
 <?php
   $error = $_SESSION[errorMessage];
-  if ($error === True)
+  if ($error === true)
   {
 	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";
   } else {

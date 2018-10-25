@@ -52,7 +52,7 @@ function login($db)
 
 
      if(password_verify($pw, $tempPassword)) {
-	  $_SESSION['in'] = True;
+	  $_SESSION['in'] = true;
 	  $_SESSION['name'] = $name;
 
 	  header("Location: index.php");
