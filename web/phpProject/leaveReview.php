@@ -2,15 +2,13 @@
 
 session_start();
 $username = $_SESSION['name'];
-$loggedIn = $SESSION['in'];
+$loggedIn = $_SESSION['in'];
 echo $loggedIn;
 if($loggedIn === true) {
-   echo "we are good";
-   echo $loggedIn;
 } else {
    $_SESSION['errorMessage'] = true;
-   //header("Location: login.php");
-   //exit;
+   header("Location: login.php");
+   exit;
 }
 
 
