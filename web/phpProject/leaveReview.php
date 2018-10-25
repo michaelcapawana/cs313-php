@@ -3,7 +3,6 @@
 session_start();
 $username = $_SESSION['name'];
 $loggedIn = $_SESSION['in'];
-echo $loggedIn;
 if($loggedIn === true) {
 } else {
    $_SESSION['errorMessage'] = true;
