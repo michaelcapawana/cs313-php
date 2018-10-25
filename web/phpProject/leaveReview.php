@@ -2,7 +2,19 @@
 
 session_start();
 $username = $_SESSION['name'];
-$businessName = $_GET['id'];//This is my problem
+$loggedIn = $SESSION['loggedIn'];
+
+if (loggedIn === False) {
+   $_SESSION['errorMessage'] = true;
+   header("Location: login.php");
+   exit;   
+} else {
+  echo "we are good";
+}
+
+
+
+$businessName = $_GET['id'];
 try
 {
   $dbUrl = getenv('DATABASE_URL');
