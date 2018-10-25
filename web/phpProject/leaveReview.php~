@@ -79,8 +79,8 @@ function leaveReview($db, $businessName, $username)
 	
 
 	$statement = $db->prepare('UPDATE business SET score = :score WHERE id=:businessId');
-	$stm->bindValue(':businessId', $businessId, PDO::PARAM_STR);
-	$stm->bindValue(':score', $score, PDO::PARAM_STR);
+	$statment->bindValue(':businessId', $businessId, PDO::PARAM_STR);
+	$statement->bindValue(':score', $score, PDO::PARAM_STR);
 	try {
         $statement->execute();
         $statement->closeCursor();
