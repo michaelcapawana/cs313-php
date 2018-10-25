@@ -95,7 +95,7 @@ if(isset($_POST['login']))
   {
 	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";
   } else {
-    	echo "<html><h3>Please Log In"</h3></html>";
+    	echo "<html><h3>Please Log In</h3></html>";
   }?>
 
 <form action="login.php" method="post" accept-charset='UTF-8'>

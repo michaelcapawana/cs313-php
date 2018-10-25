@@ -1,5 +1,7 @@
 <?php
-
+session_start();
+$loggedIn = $SESSION['loggedIn'];
+echo $loggedIn;
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -50,8 +52,7 @@ function login($db)
 
 
      if(password_verify($pw, $tempPassword)) {
-          session_start();
-	  $_SESSION['loggedIn'] = true;
+	  $_SESSION['loggedIn'] = True;
 	  $_SESSION['name'] = $name;
 
 	  header("Location: index.php");
