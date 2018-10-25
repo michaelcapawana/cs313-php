@@ -68,11 +68,24 @@ function leaveReview($db, $businessName, $username)
     try {
     	$stm->execute();
 	$results = $stm->fetchAll(PDO::FETCH_ASSOC);
-        $tempScore = 0;
+        $tempScore = 0.0;
+	$numRatings = 0.0;
 	foreach($results as $row) {
-	   
+	     $tempScore += $row['rating'];	   
+             $numRatings++;
 	}
+
+	$score = $tempScore / $numRatings;
 	
+
+	$statement = $db->query('UPDATE business SET score = $score WHERE businessId=$businessId');
+	try {
+        $statement->execute();
+        $statement->closeCursor();
+        } catch(PDOException $e) {
+          echo "Error";
+        }
+
 	$stm->closeCursor();
         } catch(PDOException $e) {
           echo "Error with businessId: $e";
