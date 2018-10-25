@@ -58,13 +58,9 @@ catch (PDOException $ex)
 foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 5') as $row)
 {
   echo $row['name'];
-
   $score = $row['score'];
-
   $formatted_number =  number_format((float)$score, 1, '.', '');
-
   echo ' - ' . $formatted_number;
-  //echo ' - ' . $row['score'];  
   echo '<br/>';
 }
 ?></p>
@@ -77,7 +73,9 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
 {
   $name = $row['name'];
   echo $name;
-  echo ' - ' . $row['score'];
+  $score = $row['score'];
+  $formatted_number =  number_format((float)$score, 1, '.', '');
+  echo ' - ' . $formatted_number;
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
   $_SESSION['name'] = $username;
