@@ -9,8 +9,8 @@ if($loggedIn === true) {
    echo $loggedIn;
 } else {
    $_SESSION['errorMessage'] = true;
-   header("Location: login.php");
-   exit;
+   //header("Location: login.php");
+   //exit;
 }
 
 
