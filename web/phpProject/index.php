@@ -22,32 +22,6 @@ catch (PDOException $ex)
   die();
 }
 
-/*
-foreach ($db->query('SELECT username, password, name FROM users') as $row)
-{
-  echo 'user: ' . $row['username'];
-  echo ' password: ' . $row['password'];
-  echo ' name: ' . $row['name'];
-  echo '<br/>';
-}
-
-
-foreach ($db->query('SELECT rating, description, user_id, business FROM reviews') as $row)
-{
-  echo 'rating: ' . $row['rating'];
-  echo ' description: ' . $row['description'];
-  echo ' rating: ' . $row['user_id'];	
-  echo ' userID: ' . $row['business'];
-  echo '<br/>';
-}
-
-foreach ($db->query('SELECT name, score FROM business') as $row)
-{
-  echo 'business: ' . $row['name'];
-  echo ' score: ' . $row['score'];
-  echo '<br/>';
-}
-*/
 ?>
 
 <!DOCTYPE html>
@@ -57,10 +31,6 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-
-
-
-
 
 
 <?php

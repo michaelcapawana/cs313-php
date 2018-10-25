@@ -83,8 +83,6 @@ foreach($data as $row) {
           echo '<br/>';
     }
 
-
-    //$reviewer = $row['user_id'];
     echo $reviewer;
     echo '<br/>';
     $description = $row['description'];

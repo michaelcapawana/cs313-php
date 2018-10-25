@@ -59,10 +59,6 @@ foreach ($db->query('SELECT name, score FROM business') as $row)
 <body>
 
 
-
-
-
-
 <?php
 session_start();
   if($_SESSION['loggedIn'] === True) {
@@ -106,7 +102,7 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY name') as $row)
   echo '<br/>';
   echo "<a href='leaveReview.php?id=$name'>Leave Review</a>";
   $_SESSION['name'] = $username;
-  echo " or ";
+  echo "  ";
   echo "<a href='viewReviews.php?id=$name'>View Reviews</a>";
   $_SESSION['name'] = $username;
   echo '<br/>';
