@@ -10,7 +10,7 @@ if($loggedIn === False) {
    exit;   
 } else {
   echo "we are good";
-  echo $loggedIn
+  echo $loggedIn;
 }
 
 
