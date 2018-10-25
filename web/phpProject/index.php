@@ -37,7 +37,7 @@ catch (PDOException $ex)
   if($_SESSION['loggedIn'] === True) {
     $username = $_SESSION['name'];?>
     <div class="banner">
-    <a class="rightLink" href="index.php"><?php session_unset();?>Log Out</a>
+    <a class="rightLink" href="index.php">Log Out</a>
     <a class="leftLink"><?php echo"Hello, " . $username?></a>
     <h1>Rate IBC Groups</h1>
     </div><?php

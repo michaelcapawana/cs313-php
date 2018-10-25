@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -34,7 +34,6 @@ catch (PDOException $ex)
 
 
 <?php
-session_start();
   if($_SESSION['loggedIn'] === True) {
     $username = $_SESSION['name'];?>
     <div class="banner">
