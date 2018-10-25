@@ -1,7 +1,7 @@
 <?php
 session_start();
-$loggedIn = $SESSION['loggedIn'];
-echo $loggedIn;
+$loggedIn = $SESSION['in'];
+var_dump($loggedIn);
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -52,7 +52,7 @@ function login($db)
 
 
      if(password_verify($pw, $tempPassword)) {
-	  $_SESSION['loggedIn'] = True;
+	  $_SESSION['in'] = True;
 	  $_SESSION['name'] = $name;
 
 	  header("Location: index.php");
@@ -92,7 +92,7 @@ if(isset($_POST['login']))
 
 <?php
   $error = $_SESSION[errorMessage];
-  if ($error === True)
+  if ($error === true)
   {
 	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";
   } else {

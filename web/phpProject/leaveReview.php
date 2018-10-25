@@ -2,9 +2,9 @@
 
 session_start();
 $username = $_SESSION['name'];
-$loggedIn = $SESSION['loggedIn'];
+$loggedIn = $SESSION['in'];
 echo $loggedIn;
-if($loggedIn == True) {
+if($loggedIn === true) {
    echo "we are good";
    echo $loggedIn;
 } else {
