@@ -58,9 +58,11 @@ catch (PDOException $ex)
 foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 5') as $row)
 {
   echo $row['name'];
-  //$formatted_number = round_to_1dp($row['score']);
-  //echo ' - ' . $formatted_number;
-  echo ' - ' . $row['score'];  
+
+  $score = $row['score'];
+  $formatted_number = round_to_1dp($score);
+  echo ' - ' . $formatted_number;
+  //echo ' - ' . $row['score'];  
   echo '<br/>';
 }
 ?></p>
