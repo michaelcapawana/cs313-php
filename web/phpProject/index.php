@@ -60,7 +60,9 @@ foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 
   echo $row['name'];
 
   $score = $row['score'];
-  $formatted_number = round_to_2dp($score);
+
+  $formatted_number =  number_format((float)$score, 1, '.', '');
+
   echo ' - ' . $formatted_number;
   //echo ' - ' . $row['score'];  
   echo '<br/>';
