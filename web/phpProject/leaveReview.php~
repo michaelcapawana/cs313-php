@@ -6,7 +6,10 @@ $loggedIn = $SESSION['loggedIn'];
 
 if (loggedIn === False) {
    $_SESSION['errorMessage'] = true;
-   
+   header("Location: login.php");
+   exit;   
+} else {
+  echo "we are good";
 }
 
 
