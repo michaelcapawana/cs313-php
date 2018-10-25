@@ -3,8 +3,8 @@
 session_start();
 $username = $_SESSION['name'];
 $loggedIn = $SESSION['loggedIn'];
-
-if($loggedIn === True) {
+echo $loggedIn;
+if($loggedIn == True) {
    echo "we are good";
    echo $loggedIn;
 } else {
