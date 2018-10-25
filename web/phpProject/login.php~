@@ -93,10 +93,10 @@ if(isset($_POST['login']))
   $error = $_SESSION[errorMessage];
   if ($error === True)
   {
-	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";?>
+	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";
   } else {
     	echo "<html><h3>Please Log In"</h3></html>";?>
-  }
+  }?>
 
 <form action="login.php" method="post" accept-charset='UTF-8'>
   <input type="text" name="username" placeholder="Username" style="font-size: 2em; margin-top:50px;">
