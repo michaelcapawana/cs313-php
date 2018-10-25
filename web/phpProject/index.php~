@@ -37,7 +37,7 @@ catch (PDOException $ex)
   if($_SESSION['loggedIn'] === True) {
     $username = $_SESSION['name'];?>
     <div class="banner">
-    <a class="rightLink" href="index.php"><?php session_unset();?>Log Out</a>
+    <a class="rightLink" href="index.php">Log Out</a>
     <a class="leftLink"><?php echo"Hello, " . $username?></a>
     <h1>Rate IBC Groups</h1>
     </div><?php
@@ -58,6 +58,9 @@ catch (PDOException $ex)
 foreach ($db->query('SELECT name, score FROM business ORDER BY score DESC LIMIT 5') as $row)
 {
   echo $row['name'];
+  $formatted_number = round_to_1dp($row['score']);
+
+  echo ' - ' . $formatted_number;
   echo ' - ' . $row['score'];
   echo '<br/>';
 }
