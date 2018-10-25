@@ -1,7 +1,6 @@
 <?php
 session_start();
 $loggedIn = $SESSION['in'];
-var_dump($loggedIn);
 try
 {
   $dbUrl = getenv('DATABASE_URL');

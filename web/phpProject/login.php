@@ -94,6 +94,7 @@ if(isset($_POST['login']))
   if ($error === true)
   {
 	echo "<html><h3>Must Log In Before Leaving a Review</h3></html>";
+        $_SESSION[errorMessage] = false;
   } else {
     	echo "<html><h3>Please Log In</h3></html>";
   }?>
