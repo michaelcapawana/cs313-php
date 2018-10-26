@@ -34,7 +34,7 @@ catch (PDOException $ex)
 
 
 <?php
-  if($_SESSION['loggedIn'] === True) {
+  if($_SESSION['in'] === true) {
     $username = $_SESSION['name'];?>
     <div class="banner">
     <a class="rightLink" href="index.php">Log Out</a>
