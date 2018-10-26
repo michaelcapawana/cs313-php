@@ -26,8 +26,14 @@ function signup($db)
 {
     $un = $_POST["username"];
     $pw = $_POST["password"];
+    $vpw = $_POST["verifyPassword"];
     $name = $_POST["name"];
 
+ if($un == NULL || $pw == NULL || $vpw == NULL || $name == NULL) {
+    alert("All fields must be filled out");
+ } elseif($pw != $vpw) {
+    alert("Passwords did not match up");
+ } else {
     $hashedPW = password_hash($pw, PASSWORD_DEFAULT);
     var_dump($hashedPW);
 
@@ -46,6 +52,11 @@ function signup($db)
         } catch(PDOException $e) {
           echo "Error";
         }
+ }
+}
+
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
 }
 
 if(isset($_POST['signup']))
