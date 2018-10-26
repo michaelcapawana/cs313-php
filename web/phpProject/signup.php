@@ -44,7 +44,7 @@ function signup($db)
     try {
         $stmt->execute();
         $stmt->closeCursor();
-	$_SESSION['loggedIn'] = true;
+	$_SESSION['in'] = true;
         $_SESSION['name'] = $name;
         header("Location: index.php");
         exit;

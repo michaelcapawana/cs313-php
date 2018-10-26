@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 try
 {
   $dbUrl = getenv('DATABASE_URL');
@@ -44,7 +44,6 @@ function signup($db)
     try {
         $stmt->execute();
         $stmt->closeCursor();
-	session_start();
 	$_SESSION['loggedIn'] = true;
         $_SESSION['name'] = $name;
         header("Location: index.php");
