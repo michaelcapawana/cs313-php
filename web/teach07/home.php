@@ -49,3 +49,23 @@ catch (PDOException $ex)
     </div><?php
   }
 ?>
+
+
+
+
+/*
+Add this code below to whatever page requires the user to login before accessing
+
+
+<?php
+
+session_start();
+$username = $_SESSION['name'];
+$loggedIn = $_SESSION['in'];
+if($loggedIn === true) {
+} else {
+   $_SESSION['errorMessage'] = true;
+   header("Location: login.php");
+   exit;
+}
+*/
