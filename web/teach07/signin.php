@@ -106,7 +106,7 @@ if(isset($_POST['login']))
 
 
 
-<form action="login.php" method="post" accept-charset='UTF-8'>
+<form action="signin.php" method="post" accept-charset='UTF-8'>
   <input type="text" name="username" placeholder="Username" style="font-size: 2em; margin-top:50px;">
   <br>
   <input type="password" name="password" placeholder="Password" style="font-size: 2em; margin-top:25px;">

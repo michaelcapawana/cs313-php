@@ -72,8 +72,8 @@ if(isset($_POST['signup']))
 <body>
 
 <div class="banner">
-<a class="rightLink" href="index.php">Return to Home</a>
-<a class="leftLink" href="login.php">Log In</a>
+<a class="rightLink" href="home.php">Return to Home</a>
+<a class="leftLink" href="signin.php">Log In</a>
 <h1>Teach 07</h1>
 </div>
 <div class="body">

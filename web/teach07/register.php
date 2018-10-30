@@ -79,7 +79,7 @@ if(isset($_POST['signup']))
 <div class="body">
 <div class="standard">
 <h3>Please Sign Up</h3>
-<form action="signup.php" method="post" accept-charset='UTF-8'>
+<form action="register.php" method="post" accept-charset='UTF-8'>
   <input type="text" name="username" placeholder="Username" style="font-size: 2em; margin-top:50px;">
   <br>
   <input type="password" name="password" placeholder="Password" style="font-size: 2em; margin-top:25px;">
