@@ -27,17 +27,19 @@ function login($db)
 {
     $un = $_POST["username"];
     $pw = $_POST["password"];
-    $stmt = $db->prepare('SELECT password FROM users WHERE username=:username LIMIT 1');
+    $stmt = $db->prepare('SELECT password, name FROM users WHERE username=:username LIMIT 1');
     $stmt->bindValue(':username', $un, PDO::PARAM_STR);
     try {
     	$stmt->execute();
 	$result = $stmt->fetch(PDO::FETCH_ASSOC);
 	$tempPassword = $result['password'];
+	$name = $result['name'];
 	$stmt->closeCursor();
 	} catch(PDOException $e) {
 	  echo "Error";
 	}
 
+/*
     $statement = $db->prepare('SELECT name FROM users WHERE username=:username LIMIT 1');
     $statement->bindValue(':username', $un, PDO::PARAM_STR);
     try {
@@ -48,7 +50,7 @@ function login($db)
         } catch(PDOException $e) {
           echo "Error";
         }
-
+*/
 
      if(password_verify($pw, $tempPassword)) {
 	  $_SESSION['in'] = true;
