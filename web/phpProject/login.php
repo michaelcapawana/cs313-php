@@ -39,19 +39,6 @@ function login($db)
 	  echo "Error";
 	}
 
-/*
-    $statement = $db->prepare('SELECT name FROM users WHERE username=:username LIMIT 1');
-    $statement->bindValue(':username', $un, PDO::PARAM_STR);
-    try {
-        $statement->execute();
-        $result = $statement->fetch(PDO::FETCH_ASSOC);
-        $name = $result['name'];
-        $statement->closeCursor();
-        } catch(PDOException $e) {
-          echo "Error";
-        }
-*/
-
      if(password_verify($pw, $tempPassword)) {
 	  $_SESSION['in'] = true;
 	  $_SESSION['name'] = $name;
